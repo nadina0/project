@@ -1,0 +1,21 @@
+language: "en"
+pipeline:
+  - name: WhitespaceTokenizer
+    case_sensitive: False
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-uncased"
+    cache_dir: lfs
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+#  - name: DucklingEntityExtractor
+#    url: "http://duckling:8000"
+#    dimensions: []  # Add dimensions if the DDD has built-in the sorts integer or datetime e.g. ["number", "time"]
+  - name: EntitySynonymMapper

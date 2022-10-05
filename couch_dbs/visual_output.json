@@ -1,0 +1,32 @@
+[
+    {
+        "semantic_expression": "some(semantic_expression_of_a_move)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Some text to show if the image cannot be shown"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://some-image-url"
+            }
+        ]
+    },
+    {
+        "semantic_expression": "another(semantic_expression_of_a_move)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Another text to show if the image cannot be shown"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://another-image-url"
+            }
+        ]
+    }
+]

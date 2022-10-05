@@ -1,0 +1,12 @@
+name: nlu-rasa
+sync:
+  - ./:/app/okteto/models/
+workdir: /app/okteto/
+command:
+  - rasa
+  - run
+  - --enable-api
+  - -vv
+persistentVolume:
+  enabled: true
+  size: 300Mi

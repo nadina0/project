@@ -1,0 +1,29 @@
+{
+    "active_ddd": "cooking_app",
+    "asr": "none",
+    "confidence_prediction_thresholds": {
+        "ACKNOWLEDGE": 0.8,
+        "CHECK": 0.6,
+        "TRUST": 1.0
+    },
+    "confidence_thresholds": {
+        "ACKNOWLEDGE": 0.15,
+        "CHECK": 0.1,
+        "TRUST": 0.3
+    },
+    "ddds": [
+        "cooking_app"
+    ],
+    "inactive_seconds_allowed": 7200,
+    "long_timeout": 5.0,
+    "medium_timeout": 2.0,
+    "repeat_questions": true,
+    "rerank_amount": 0.2,
+    "response_timeout": 2.5,
+    "short_timeout": 1.0,
+    "supported_languages": [
+        "eng"
+    ],
+    "use_recognition_profile": false,
+    "use_word_list_correction": false
+}

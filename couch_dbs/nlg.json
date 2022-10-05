@@ -1,0 +1,55 @@
+[
+    {
+        "match": "request(whisk_eggs)",
+        "utterance": "Crack three eggs on a bowl and whisk with a pinch of salt."
+    },
+    {
+        "match": "request(heat_butter)",
+        "utterance": "Heat butter or oil on a pan on high heat."
+    },
+    {
+        "match": "request(stir_eggs)",
+        "utterance": "Add the egg mixture to the pan and stir the eggs."
+    },
+    {
+        "match": "request(fold)",
+        "utterance": "When the eggs are set but look slightly wet, turn off the heat and fold the omelette."
+    },
+    {
+        "match": "report(action_status(transfer_plate, done))",
+        "utterance": "After a few seconds, transfer the omelette onto a plate."
+    },
+    {
+        "match": "request(cut_vegetables)",
+        "utterance": "Cut all your vegetables."
+    },
+    {
+        "match": "request(put_bowl)",
+        "utterance": "Put your vegetables in a bowl."
+    },
+    {
+        "match": "request(add_seasoning)",
+        "utterance": "Add salt, pepper and olive oil."
+    },
+    {
+        "match": "request(mix_everything)",
+        "utterance": "Mix everything."
+    },
+    {
+        "match": "request(whisk_explain)",
+        "utterance": "Mix the eggs with your whisk in a circular fast wrist motion."
+    },
+    {
+        "match": "report(action_status(whisk_eggs, done))",
+        "utterance": "ok"
+    },
+    {
+        "match": "request(mix_explain)",
+        "utterance": "Mix all of your vegetables in the bowls so they'll be coated evenly with the seasonings."
+    },
+    {
+        "match": "report(action_status(mix_everything, done))",
+        "utterance": "ok"
+    }
+
+]

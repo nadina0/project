@@ -1,0 +1,92 @@
+[
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_1))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Some text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://some-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_2))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Some other text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://some-other-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_3))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Another text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://another-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_1)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_2)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
+                }
+            ]
+        }
+    }
+]

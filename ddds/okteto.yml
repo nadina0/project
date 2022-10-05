@@ -1,0 +1,6 @@
+name: tdm
+sync:
+  - ./:/okteto/
+workdir: /okteto/
+command:
+  - bash

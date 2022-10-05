@@ -1,0 +1,309 @@
+language: "en"
+pipeline:
+  - name: WhitespaceTokenizer
+    case_sensitive: False
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-uncased"
+    cache_dir: lfs
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+#  - name: DucklingEntityExtractor
+#    url: "http://duckling:8000"
+#    dimensions: []  # Add dimensions if the DDD has built-in the sorts integer or datetime e.g. ["number", "time"]
+  - name: EntitySynonymMapper
+
+version: "2.0"
+
+nlu:
+- intent: action::make_omelette
+  examples: |
+    - I want to prepare a French omelette
+    - I want to make an omelette
+    - omelette
+    - French omelette
+
+- intent: action::make_salad
+  examples: |
+    - I want to make a salad
+    - salad
+    - How do i make a salad
+
+- intent: question::what_vegetables
+  examples: |
+    - what vegetables should i use
+    - what vegetables
+    - what vegetables to use
+
+- intent: question::stir_time
+  examples: |
+    - how long do i stir
+    - for how long should i stir
+    - how long
+
+- intent: answer
+  examples: |
+    - [the omelette recipe]{"entity": "sort.recipe", "value": "individual.omelette_recipe"}
+    - [the salad recipe]{"entity": "sort.recipe", "value": "individual.salad_recipe"}
+    - [Amazing! You have finished preparing a French omelette. Bon appétit!.]{"entity": "sort.finished_action", "value": "individual.finished_omelette"}
+    - [Great, your salad is ready.]{"entity": "sort.finished_action", "value": "individual.finished_salad"}
+    - [Stir until the mixture is not runny anymore, about 25 to 30 seconds.]{"entity": "sort.stir_duration", "value": "individual.stir_answer"}
+    - [You could use onions, cucumbers and tomatoes for a fresh summer salad.]{"entity": "sort.choose_vegetables", "value": "individual.vegetables_answer"}
+    - yes [the omelette recipe]{"entity": "sort.recipe", "value": "individual.omelette_recipe"}
+    - no [the salad recipe]{"entity": "sort.recipe", "value": "individual.salad_recipe"}
+
+- intent: answer_negation
+  examples: |
+    - not [the omelette recipe]{"entity": "sort.recipe", "value": "individual.omelette_recipe"}
+    - not [the salad recipe]{"entity": "sort.recipe", "value": "individual.salad_recipe"}
+    - not [Amazing! You have finished preparing a French omelette. Bon appétit!.]{"entity": "sort.finished_action", "value": "individual.finished_omelette"}
+    - not [Great, your salad is ready.]{"entity": "sort.finished_action", "value": "individual.finished_salad"}
+    - not [Stir until the mixture is not runny anymore, about 25 to 30 seconds.]{"entity": "sort.stir_duration", "value": "individual.stir_answer"}
+    - not [You could use onions, cucumbers and tomatoes for a fresh summer salad.]{"entity": "sort.choose_vegetables", "value": "individual.vegetables_answer"}
+
+- intent: NEGATIVE
+  examples: |
+    - aboard
+    - about
+    - above
+    - across
+    - after
+    - against
+    - along
+    - among
+    - as
+    - at
+    - on
+    - atop
+    - before
+    - behind
+    - below
+    - beneath
+    - beside
+    - between
+    - beyond
+    - but
+    - by
+    - come
+    - down
+    - during
+    - except
+    - for
+    - from
+    - in
+    - inside
+    - into
+    - less
+    - like
+    - near
+    - of
+    - off
+    - on
+    - onto
+    - opposite
+    - out
+    - outside
+    - over
+    - past
+    - save
+    - short
+    - since
+    - than
+    - then
+    - through
+    - throughout
+    - to
+    - toward
+    - under
+    - underneath
+    - unlike
+    - until
+    - up
+    - upon
+    - with
+    - within
+    - without
+    - worth
+    - is
+    - it
+    - the
+    - a
+    - am
+    - are
+    - them
+    - this
+    - that
+    - I
+    - you
+    - he
+    - she
+    - they
+    - them
+    - his
+    - her
+    - my
+    - mine
+    - their
+    - your
+    - us
+    - our
+    - how
+    - how's
+    - how is
+    - how's the
+    - how is the
+    - when
+    - when's
+    - when is
+    - when is the
+    - when's the
+    - what
+    - what is
+    - what's
+    - what's the
+    - what is the
+    - why
+    - why is
+    - why's
+    - why is the
+    - why's the
+    - do
+    - make
+    - tell
+    - start
+    - stop
+    - enable
+    - disable
+    - raise
+    - lower
+    - decrease
+    - increase
+    - act
+    - determine
+    - say
+    - ask
+    - go
+    - shoot
+    - wait
+    - hang on
+    - ok
+    - show
+    - help
+
+- intent: answer:yes
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - sure
+    - ok
+    - of course
+    - very well
+    - fine
+    - right
+    - excellent
+    - okay
+    - perfect
+    - I think so
+
+- intent: answer:no
+  examples: |
+    - no
+    - nope
+    - no thanks
+    - no thank you
+    - negative
+    - don't want to
+    - don't
+    - do not
+    - please don't
+
+- intent: request:top
+  examples: |
+    - forget it
+    - never mind
+    - get me out of here
+    - start over
+    - beginning
+    - never mind that
+    - restart
+
+- intent: request:up
+  examples: |
+    - go back
+    - back
+    - previous
+    - back to the previous
+    - go to the previous
+    - go back to the previous one
+
+- intent: request:how
+  examples: |
+    - how do I do that
+    - how
+    - can you tell me how to do that
+    - I don't know how should I do that
+    - how can I do that
+
+- intent: report:done
+  examples: |
+    - I'm done
+    - done
+    - ready
+    - it's ready
+    - I'm ready
+    - completed
+    - check
+    - I have finished
+    - finished
+    - done and done
+    - it's done now
+    - okay next
+    - next
+    - next instruction
+
+- intent: icm:per*neg
+  examples: |
+    - repeat
+    - repeat it
+    - repeat that
+    - pardon
+    - sorry
+    - can you repeat that
+    - excuse me
+    - what was that
+    - what did you say
+    - come again
+
+- intent: icm:acc*neg:issue
+  examples: |
+    - I don't know
+    - I don't know that
+    - it doesn't matter
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thank you very much
+    - thanks
+    - big thanks
+    - thanks a lot
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good day
+    - what's up
+    - good evening
+    - good morning
+    - hey
+
+

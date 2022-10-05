@@ -1,0 +1,12 @@
+name: ddds-http-service
+sync:
+  - ./:/okteto/
+workdir: /okteto/
+command: pip install -r requirements.txt; gunicorn --workers=3 --bind=0.0.0.0:80 --worker-class=gevent --reload http_service:app
+resources:
+  requests:
+    cpu: "100m"
+  limits:
+    cpu: "500m"
+persistentVolume:
+  enabled: false

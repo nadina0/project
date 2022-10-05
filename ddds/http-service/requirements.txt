@@ -1,0 +1,5 @@
+Flask[async]==2.2.2
+gevent==21.12.0
+gunicorn==20.1.0
+python-Levenshtein==0.12.2
+structlog==22.1.0

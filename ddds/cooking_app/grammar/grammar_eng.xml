@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <action name="make_omelette">
+    <one-of>
+      <item>I want to prepare a French omelette</item>
+      <item>I want to make an omelette</item>
+      <item>omelette</item>
+      <item>French omelette</item>     
+    </one-of>
+  </action>
+
+  <action name="make_salad">
+    <one-of>
+      <item>I want to make a salad</item>
+      <item>salad</item>
+      <item>How do i make a salad</item>
+    </one-of>
+  </action>
+
+
+  <question speaker="user" predicate="what_vegetables" type="wh_question">
+    <one-of>
+      <item>what vegetables should i use</item>
+      <item>what vegetables</item>
+      <item>what vegetables to use</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="stir_time" type="wh_question">
+    <one-of>
+      <item>how long do i stir</item>
+      <item>for how long should i stir</item>
+      <item>how long</item>
+    </one-of>
+  </question>
+
+
+  <individual name="omelette_recipe"> the omelette recipe</individual>
+
+  <individual name="salad_recipe"> the salad recipe</individual>
+
+
+  <individual name="finished_omelette">
+    <one-of>
+      <item>Amazing! You have finished preparing a French omelette. Bon appétit!.</item>
+    </one-of>
+  </individual>
+
+  <individual name="finished_salad">
+    <one-of>
+      <item>Great, your salad is ready.</item>
+    </one-of>
+  </individual>
+
+  <individual name="vegetables_answer">
+    <one-of>
+      <item>You could use onions, cucumbers and tomatoes for a fresh summer salad.</item>
+    </one-of>
+  </individual>
+
+  <individual name="stir_answer">
+    <one-of>
+      <item>Stir until the mixture is not runny anymore, about 25 to 30 seconds.</item>
+    </one-of>
+  </individual>
+
+
+  <question type="wh_question" predicate="current_recipe" speaker="system">what is the current recipe</question>
+
+
+
+
+</grammar>

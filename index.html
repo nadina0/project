@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>DS2 Project</title>
+    <style>
+        .App {
+        height: 0 !important;
+        }
+        .control {
+        position: absolute !important;
+        top: 10vh !important;
+        width: 50vw !important;
+        }
+        .select-wrapper {
+        top: 20vh !important;
+        }
+        .splide__slide img {
+        width: 100%;
+        height: auto;
+        }
+        .splide__pagination__page.is-active {
+        background: #063746 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="tala-speech"
+        data-azure-key=""
+        data-tdm-endpoint="http://localhost:9090/interact"
+        data-tts-voice="en-US, JennyNeural"
+        data-asr-language="en-US"
+        data-tts-lexicon=""
+        data-i18n-click-to-start="Click to start!"
+        data-i18n-click-to-continue="Click to continue"
+        data-i18n-speaking="Talking…"
+        data-i18n-listening="Listening…">
+    </div>
+
+<script>
+    const pages = [
+        "call_john"
+    ]  // in pages you should have the name of your DDD
+    const turnPage = (segment) => {
+    event = new CustomEvent('turnpage', { detail: segment });
+    window.dispatchEvent(event);
+    }
+  const listener = (event) => {
+    window.availableDDDs = event.detail
+    turnPage({"pageNumber": 0, "dddName": pages[0]});
+  }
+  window.addEventListener('setAvailableDDDs', listener);
+
+  const listener2 = (event) => {
+    window.talaSpeechState = event.detail;
+    if (window.talaSpeechState.context.tdmAll) {
+      console.debug("Expected Input:", window.talaSpeechState.context.tdmAll.context.expected_input);
+      console.debug("Facts:", window.talaSpeechState.context.tdmAll.context.facts);
+      console.debug("Plan:", window.talaSpeechState.context.tdmAll.context.plan);
+      console.debug("Moves:", window.talaSpeechState.context.tdmAll.output.moves);
+    }
+  }
+  window.addEventListener('talaSpeechState', listener2);
+
+</script>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet"/>
+<link href="https://tala-speech.eu2.ddd.tala.cloud/tala-speech-0.1.2/index.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+        integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=" crossorigin="anonymous"></script>
+
+<script>
+      // document.addEventListener( 'DOMContentLoaded', function () {
+      //      new Splide( '#fullscreen-slider', {
+      //           perPage: 3,
+      //          rewind : true,).mount();
+      //            } );
+
+</script>
+<script src="https://tala-speech.eu2.ddd.tala.cloud/tala-speech-0.1.2/index.js"></script>
+
+</body>
+
+</html>

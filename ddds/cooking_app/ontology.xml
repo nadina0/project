@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="CookingAppOntology">
+
+
+<action name="make_omelette"/>
+<action name="make_salad"/>
+
+<action name="whisk_eggs"/>
+<action name="mix_everything"/>
+
+
+
+<predicate name="done_cooking" sort="finished_action"/>
+<predicate name="current_recipe" sort="recipe"/>
+<predicate name="what_vegetables" sort="choose_vegetables"/>
+<predicate name="stir_time" sort="stir_duration"/>
+
+<individual name="omelette_recipe" sort="recipe"/>
+<individual name="salad_recipe" sort="recipe"/>
+
+<sort name="finished_action" dynamic="false"/>
+<sort name="recipe" dynamic="false"/>
+<sort name="choose_vegetables" dynamic="false"/>
+<sort name="stir_duration" dynamic="false"/>
+
+
+<individual name="finished_omelette" sort="finished_action"/>
+<individual name="finished_salad" sort="finished_action"/>
+
+<individual name="vegetables_answer" sort="choose_vegetables"/>
+<individual name="stir_answer" sort="stir_duration"/>
+
+</ontology>
