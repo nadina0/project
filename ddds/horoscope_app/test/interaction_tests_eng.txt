@@ -2,7 +2,7 @@
 S> What would you like to do?
 U> I would like you to tell me the horoscope
 S> What sign?
-U> aries
+U> libra
 S> What day?
 U> today
 S> Your prognosis is *

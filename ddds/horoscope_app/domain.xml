@@ -7,6 +7,21 @@
     </plan>
   </goal>
 
+
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+        <alt>
+          <resolve type="wh_question" predicate="horoscope"/>
+        </alt>
+        <alt>
+          <resolve type="wh_question" predicate="tarot"/>
+        </alt>
+      </findout>
+    </plan>
+  </goal>
+
   <goal type="resolve" question_type="wh_question" predicate="horoscope">
     <plan>
       <findout type="wh_question" predicate="sign_search"/>
@@ -14,6 +29,12 @@
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
   </goal>
-  
+
+  <goal type="resolve" question_type="wh_question" predicate="tarot">
+    <plan>
+      <findout type="wh_question" predicate="card_search"/>
+      <invoke_service_query predicate="tarot" type="wh_question"/>
+    </plan>
+  </goal>
   
 </domain>

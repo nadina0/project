@@ -30,18 +30,25 @@
     </one-of>
   </question>
 
+  <question speaker="user" predicate="tarot" type="wh_question">
+    <one-of>
+      <item>Tell me about a tarot card</item>
+    </one-of>
+  </question>
+
 
   <answer speaker="user">
     <one-of>
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
+      <item><slot predicate="card_search"/> </item>
     </one-of>
   </answer>
 
 
-  <individual name="aries">
+  <individual name="libra">
     <one-of>
-      <item>aries</item>
+      <item>libra</item>
     </one-of>
   </individual>
 
@@ -49,6 +56,12 @@
   <individual name="today">
     <one-of>
       <item>today</item>
+    </one-of>
+  </individual>
+
+  <individual name="emperor">
+    <one-of>
+      <item>The Emperor</item>
     </one-of>
   </individual>
 
@@ -60,6 +73,12 @@
     What day
     </question>
 
+    <question speaker="system" predicate="card_search" type="wh_question">
+    What card
+    </question>
+
     <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+    <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
 </grammar>
