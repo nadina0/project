@@ -1,0 +1,8 @@
+--- test
+S> What would you like to do?
+U> I would like you to tell me the horoscope
+S> For what sign?
+U> aries
+S> For what day?
+U> today
+S> Your prognosis is *

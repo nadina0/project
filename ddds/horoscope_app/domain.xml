@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="HoroscopeAppDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="goal"/>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="horoscope">
+    <plan>
+      <findout type="wh_question" predicate="sign_search"/>
+      <findout type="wh_question" predicate="day_search"/>
+      <invoke_service_query predicate="horoscope" type="wh_question"/>
+    </plan>
+  </goal>
+  
+  
+</domain>

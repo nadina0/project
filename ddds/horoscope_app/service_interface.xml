@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+  <query name="horoscope">
+    <parameters>
+      <parameter predicate="sign_search" format="value"/>
+      <parameter predicate="day_search" format="value"/>
+    </parameters>
+    <target>
+      <http endpoint="http://ddds-http-service/horoscope"/>
+    </target>
+  </query>
+</service_interface>

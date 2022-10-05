@@ -1,5 +1,5 @@
 {
-    "active_ddd": "cooking_app",
+    "active_ddd": "horoscope_app",
     "asr": "none",
     "confidence_prediction_thresholds": {
         "ACKNOWLEDGE": 0.8,
@@ -12,7 +12,7 @@
         "TRUST": 0.3
     },
     "ddds": [
-        "cooking_app"
+        "horoscope_app"
     ],
     "inactive_seconds_allowed": 7200,
     "long_timeout": 5.0,

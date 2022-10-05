@@ -1,7 +1,0 @@
-{
-    "device_module": null,
-    "rasa_nlu": {},
-    "use_rgl": false,
-    "use_third_party_parser": false,
-    "word_list": "word_list.txt"
-}

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import json
-
 from flask import Flask, request
 from jinja2 import Environment
+
+import requests
 
 app = Flask(__name__)
 environment = Environment()
@@ -149,3 +150,22 @@ def action_success_response():
         mimetype='application/json'
     )
     return response
+
+
+def get_current_data(day, sign):
+  api_url = "https://aztro.sameerkumar.website/?sign="+sign+"&day="+day
+  response = requests.post(api_url)
+  data = response.json()
+  print(response)
+  return data
+
+
+
+@app.route("/horoscope", methods=['POST'])
+def get_horoscope():
+    facts = request.get_json()["context"]["facts"]
+    sign = facts["sign_search"]["grammar_entry"]
+    day = facts["day_search"]["grammar_entry"]
+    api_response = get_current_data(sign, day)
+    print(api_response)
+    return query_response(value=api_response, grammar_entry=None)
