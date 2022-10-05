@@ -5,6 +5,11 @@
   <predicate name="day_search" sort="day"/>
   <predicate name="horoscope" sort="string"/>
 
+  <sort name="sign" dynamic="true"/>
+  <sort name="day" dynamic="true"/>
+
+  <!-- individual cards -->
+
   
   <!-- individual signs-->
   <individual name="aries" sort="sign"/>
@@ -25,7 +30,5 @@
   <individual name="tomorrow" sort="day"/>
   <individual name="yesterday" sort="day"/>
 
-  <sort name="sign" dynamic="true"/>
-  <sort name="day" dynamic="true"/>
 
 </ontology>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
 
+<!-- menu items-->
+
   <action name="top">
     <one-of>
       <item>main menu</item>
@@ -21,7 +23,7 @@
     </one-of>
   </action>
 
-
+<!-- question and answers -->
 
   <question speaker="user" predicate="horoscope" type="wh_question">
     <one-of>
