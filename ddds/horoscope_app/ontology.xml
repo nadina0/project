@@ -9,17 +9,98 @@
 
   <sort name="sign" dynamic="true"/>
   <sort name="day" dynamic="true"/>
+  <sort name="card" dynamic="true"/>
 
   <!-- individual cards -->
 
-  
-  <individual name="libra" sort="sign"/>
-  <individual name="today" sort="day"/>
-  <individual name="emperor" sort="card"/>
+  <!-- major arcana-->
+  <individual name="the_fool" sort="card"/>
+  <individual name="the_magician" sort="card"/>
+  <individual name="the_high_priestess" sort="card"/>
+  <individual name="the_empress" sort="card"/>
+  <individual name="the_emperor" sort="card"/>
+  <individual name="the_hierophant" sort="card"/>
+  <individual name="the_lovers" sort="card"/>
+  <individual name="the_chariot" sort="card"/>
+  <individual name="strength" sort="card"/>
+  <individual name="the_hermit" sort="card"/>
+  <individual name="wheel_of_fortune" sort="card"/>
+  <individual name="justice" sort="card"/>
+  <individual name="the_hanged_man" sort="card"/>
+  <individual name="death" sort="card"/>
+  <individual name="temperance" sort="card"/>
+  <individual name="the_devil" sort="card"/>
+  <individual name="the_tower" sort="card"/>
+  <individual name="the_star" sort="card"/>
+  <individual name="the_moon" sort="card"/>
+  <individual name="the_sun" sort="card"/>
+  <individual name="judgment" sort="card"/>
+  <individual name="the_world" sort="card"/>
+<!--minor arcana-->
+<!--suit of wands-->
+  <individual name="ace_of_wands" sort="card"/>
+  <individual name="two_of_wands" sort="card"/>
+  <individual name="three_of_wands" sort="card"/>
+  <individual name="four_of_wands" sort="card"/>
+  <individual name="five_of_wands" sort="card"/>
+  <individual name="six_of_wands" sort="card"/>
+  <individual name="seven_of_wands" sort="card"/>
+  <individual name="eight_of_wands" sort="card"/>
+  <individual name="nine_of_wands" sort="card"/>
+  <individual name="ten_of_wands" sort="card"/>
+  <individual name="page_of_wands" sort="card"/>
+  <individual name="knight_of_wands" sort="card"/>
+  <individual name="queen_of_wands" sort="card"/>
+  <individual name="king_of_wands" sort="card"/>
+<!--suit of cups-->
+<individual name="ace_of_cups" sort="card"/>
+<individual name="two_of_cups" sort="card"/>
+<individual name="three_of_cups" sort="card"/>
+<individual name="four_of_cups" sort="card"/>
+<individual name="five_of_cups" sort="card"/>
+<individual name="six_of_cups" sort="card"/>
+<individual name="seven_of_cups" sort="card"/>
+<individual name="eight_of_cups" sort="card"/>
+<individual name="nine_of_cups" sort="card"/>
+<individual name="ten_of_cups" sort="card"/>
+<individual name="page_of_cups" sort="card"/>
+<individual name="knight_of_cups" sort="card"/>
+<individual name="queen_of_cups" sort="card"/>
+<individual name="king_of_cups" sort="card"/>
+<!--suit of swords-->
+<individual name="ace_of_swords" sort="card"/>
+<individual name="two_of_swords" sort="card"/>
+<individual name="three_of_swords" sort="card"/>
+<individual name="four_of_swords" sort="card"/>
+<individual name="five_of_swords" sort="card"/>
+<individual name="six_of_swords" sort="card"/>
+<individual name="seven_of_swords" sort="card"/>
+<individual name="eight_of_swords" sort="card"/>
+<individual name="nine_of_swords" sort="card"/>
+<individual name="ten_of_swords" sort="card"/>
+<individual name="page_of_swords" sort="card"/>
+<individual name="knight_of_swords" sort="card"/>
+<individual name="queen_of_swords" sort="card"/>
+<individual name="king_of_swords" sort="card"/>
+<!--suit of pentacles-->
+<individual name="ace_of_pentacles" sort="card"/>
+<individual name="two_of_pentacles" sort="card"/>
+<individual name="three_of_pentacles" sort="card"/>
+<individual name="four_of_pentacles" sort="card"/>
+<individual name="five_of_pentacles" sort="card"/>
+<individual name="six_of_pentacles" sort="card"/>
+<individual name="seven_of_pentacles" sort="card"/>
+<individual name="eight_of_pentacles" sort="card"/>
+<individual name="nine_of_pentacles" sort="card"/>
+<individual name="ten_of_pentacles" sort="card"/>
+<individual name="page_of_pentacles" sort="card"/>
+<individual name="knight_of_pentacles" sort="card"/>
+<individual name="queen_of_pentacles" sort="card"/>
+<individual name="king_of_pentacles" sort="card"/>
 
-  <sort name="sign" dynamic="true"/>
-  <sort name="day" dynamic="true"/>
-  <sort name="card" dynamic="true"/>
+
+
+
   <!-- individual signs-->
   <individual name="aries" sort="sign"/>
   <individual name="taurus" sort="sign"/>
