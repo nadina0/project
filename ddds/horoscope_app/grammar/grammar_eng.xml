@@ -101,7 +101,7 @@
 <!-- individual cards -->
 <individual name="the_fool">The Fool</individual>
 <individual name="the_magician">The Magician</individual>
-<individual name="the_high_priestess">The High Priestess</individual>
+<individual name="the_high_priestess">The High priestess</individual>
 <individual name="the_empress">The Empress</individual>
 <individual name="the_emperor">The Emperor</individual>
 <individual name="the_hierophant">The Hierophant</individual>
@@ -114,7 +114,7 @@
 <individual name="the_hanged_man">The Hanged Man</individual>
 <individual name="death">Death</individual>
 <individual name="temperance">Temperance</individual>
-<individual name="the_devil">Devil</individual>
+<individual name="the_devil">The Devil</individual>
 <individual name="the_tower">The Tower</individual>
 <individual name="the_star">The Star</individual>
 <individual name="the_moon">The Moon</individual>
