@@ -160,6 +160,12 @@ def get_current_data(sign, day):
   print(response)
   return data
 
+def get_card_data(card):
+  api_url = "https://rws-cards-api.herokuapp.com/api/v1/cards"
+  response = requests.get(api_url)
+  data = response.json()
+  print(response)
+  return data
 
 
 @app.route("/horoscope", methods=['POST'])
@@ -172,3 +178,17 @@ def get_horoscope():
     description = api_response['description']
     print(type(description))
     return query_response(value=description, grammar_entry=None)
+
+
+@app.route("/tarot", methods=['POST'])
+def get_tarot():
+    facts = request.get_json()["context"]["facts"]
+    card = facts["card_search"]["grammar_entry"]
+    print(card)
+    api_response = get_card_data(card)
+    print(api_response)
+    for the_card in api_response['cards']:
+      if the_card['name'] == card:
+        chosen_card = the_card['meaning_up']
+        break
+    return query_response(value=chosen_card, grammar_entry=None)

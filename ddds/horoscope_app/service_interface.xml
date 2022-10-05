@@ -10,4 +10,16 @@
       <http endpoint="http://ddds-http-service/horoscope"/>
     </target>
   </query>
+
+
+
+  <query name="tarot">
+    <parameters>
+      <parameter predicate="card_search" format="value"/>
+    </parameters>
+    <target>
+      <http endpoint="http://ddds-http-service/tarot"/>
+    </target>
+  </query>
+
 </service_interface>

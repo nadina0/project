@@ -1,8 +1,6 @@
 --- test
-S> What would you like to do?
-U> I would like you to tell me the horoscope
-S> What sign?
-U> libra
-S> What day?
-U> today
-S> Your prognosis is *
+S> Would you like to know about your horoscope or about a tarot card?
+U> Tell me about a tarot card
+S> What card?
+U> The Emperor
+S> Your card means *
