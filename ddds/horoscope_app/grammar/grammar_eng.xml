@@ -25,7 +25,8 @@
 
   <question speaker="user" predicate="horoscope" type="wh_question">
     <one-of>
-      <item>I would like you to tell me the horoscope </item>
+      <item>I would like you to tell me the horoscope</item>
+      <item>tell me my horoscope</item>
     </one-of>
   </question>
 

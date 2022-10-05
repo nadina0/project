@@ -1,5 +1,9 @@
 # Dialogue Systems 2 - ddd-orchestration
 
-Baseline orchestration files prepared for the Dialogue Systems 2 course in the Master in Language Technology of the University of Gothenburg.
+This is our project for Dialogue Systems 2.
 
-Students can fork this repository (changing the name to the name of the project or lab) or download a zip copy.
+Google Docs plan: https://docs.google.com/document/d/1Jt8OXtm9Hl4h0dSl8M8GP_9Z-mD__F1dG8rWprq4LKo/edit 
+
+The project proposal: https://docs.google.com/document/d/1PcwKO8RwVsZp6KzGwtJWPDcLGGAKC88QxcBMnQEfplQ/edit 
+
+Emelie & Nadina
