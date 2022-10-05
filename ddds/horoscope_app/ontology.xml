@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ontology name="HoroscopeAppOntology">
 
-  <sort name="sign"/>
-  <sort name="day"/>
-
   <predicate name="sign_search" sort="sign"/>
   <predicate name="day_search" sort="day"/>
   <predicate name="horoscope" sort="string"/>

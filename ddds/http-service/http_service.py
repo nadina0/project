@@ -152,8 +152,9 @@ def action_success_response():
     return response
 
 
-def get_current_data(day, sign):
+def get_current_data(sign, day):
   api_url = "https://aztro.sameerkumar.website/?sign="+sign+"&day="+day
+  print(api_url)
   response = requests.post(api_url)
   data = response.json()
   print(response)
