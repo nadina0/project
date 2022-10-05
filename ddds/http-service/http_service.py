@@ -169,4 +169,4 @@ def get_horoscope():
     day = facts["day_search"]["grammar_entry"]
     api_response = get_current_data(sign, day)
     print(api_response)
-    return query_response(value=api_response, grammar_entry=None)
+    return query_response(value=str(api_response), grammar_entry=None)
