@@ -39,13 +39,30 @@
     </one-of>
   </question>
 
-
   <answer speaker="user">
     <one-of>
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
     </one-of>
   </answer>
+
+  <question speaker="system" predicate="sign_search" type="wh_question">
+    What sign
+  </question>
+
+  <question speaker="system" predicate="day_search" type="wh_question">
+    What day
+  </question>
+
+  <question speaker="system" predicate="card_search" type="wh_question">
+    What card
+  </question>
+
+  <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+  <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
+
+  <!-- individual signs -->
 
   <individual name="aries">aries</individual>
   <individual name="taurus">taurus</individual>
@@ -58,7 +75,6 @@
   <individual name="capricorn">capricorn</individual>
   <individual name="aquarius">aquarius</individual>
   <individual name="pisces">pisces</individual>
-
 
 
 <!-- individual days-->
@@ -80,22 +96,6 @@
       <item>yesterday</item>
     </one-of>
   </individual>
-
-  <question speaker="system" predicate="sign_search" type="wh_question">
-    What sign
-  </question>
-
-  <question speaker="system" predicate="day_search" type="wh_question">
-    What day
-  </question>
-
-  <question speaker="system" predicate="card_search" type="wh_question">
-    What card
-  </question>
-
-  <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
-
-    <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
 
 <!-- individual cards -->
@@ -169,7 +169,6 @@
 <individual name="knight_of_swords">knight of swords</individual>
 <individual name="queen_of_swords">queen of swords</individual>
 <individual name="king_of_swords">king of swords</individual>
-
 
 
 <individual name="ace_of_pentacles">ace of pentacles</individual>
