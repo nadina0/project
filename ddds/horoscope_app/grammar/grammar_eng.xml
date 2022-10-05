@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
 
+<!-- menu items-->
+
   <action name="top">
     <one-of>
       <item>main menu</item>
@@ -21,7 +23,7 @@
     </one-of>
   </action>
 
-
+<!-- question and answers -->
 
   <question speaker="user" predicate="horoscope" type="wh_question">
     <one-of>
@@ -41,7 +43,6 @@
     <one-of>
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
-      <item><slot predicate="card_search"/> </item>
     </one-of>
   </answer>
 
@@ -53,6 +54,8 @@
   </individual>
 
 
+<!-- individual days-->
+
   <individual name="today">
     <one-of>
       <item>today</item>
@@ -62,6 +65,15 @@
   <individual name="emperor">
     <one-of>
       <item>The Emperor</item>
+  <individual name="tomorrow">
+    <one-of>
+      <item>tomorrow</item>
+    </one-of>
+  </individual>
+
+   <individual name="yesterday">
+    <one-of>
+      <item>yesterday</item>
     </one-of>
   </individual>
 
