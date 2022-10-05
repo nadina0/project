@@ -39,16 +39,92 @@
   </answer>
 
 
+<!-- individual signs-->
+
   <individual name="aries">
     <one-of>
       <item>aries</item>
     </one-of>
   </individual>
 
+  <individual name="taurus"> 
+  <one-of>
+      <item>taurus</item>
+    </one-of>
+  </individual>
+
+  <individual name="gemini"> 
+  <one-of>
+      <item>gemini</item>
+    </one-of>
+  </individual>
+
+  <individual name="cancer">
+  <one-of>
+      <item>cancer</item>
+    </one-of>
+  </individual>
+
+  <individual name="leo">
+  <one-of>
+      <item>leo</item>
+    </one-of>
+  </individual>
+
+  <individual name="virgo">
+  <one-of>
+      <item>virgo</item>
+    </one-of>
+  </individual>
+
+  <individual name="libra">
+  <one-of>
+      <item>libra</item>
+    </one-of>
+  </individual>
+
+  <individual name="sagittarius">
+  <one-of>
+      <item>sagittarius</item>
+    </one-of>
+  </individual>
+
+  <individual name="capricorn">
+  <one-of>
+      <item>capricorn</item>
+    </one-of>
+  </individual>
+
+  <individual name="aquarius">
+  <one-of>
+      <item>aguarius</item>
+    </one-of>
+  </individual>
+
+  <individual name="pisces">
+  <one-of>
+      <item>pisces</item>
+    </one-of>
+  </individual>
+
+
+<!-- individual days-->
 
   <individual name="today">
     <one-of>
       <item>today</item>
+    </one-of>
+  </individual>
+
+  <individual name="tomorrow">
+    <one-of>
+      <item>tomorrow</item>
+    </one-of>
+  </individual>
+
+   <individual name="yesterday">
+    <one-of>
+      <item>yesterday</item>
     </one-of>
   </individual>
 

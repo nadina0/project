@@ -6,8 +6,24 @@
   <predicate name="horoscope" sort="string"/>
 
   
+  <!-- individual signs-->
   <individual name="aries" sort="sign"/>
+  <individual name="taurus" sort="sign"/>
+  <individual name="gemini" sort="sign"/>
+  <individual name="cancer" sort="sign"/>
+  <individual name="leo" sort="sign"/>
+  <individual name="virgo" sort="sign"/>
+  <individual name="libra" sort="sign"/>
+  <individual name="sagittarius" sort="sign"/>
+  <individual name="capricorn" sort="sign"/>
+  <individual name="aquarius" sort="sign"/>
+  <individual name="pisces" sort="sign"/>
+
+
+  <!-- individual days-->
   <individual name="today" sort="day"/>
+  <individual name="tomorrow" sort="day"/>
+  <individual name="yesterday" sort="day"/>
 
   <sort name="sign" dynamic="true"/>
   <sort name="day" dynamic="true"/>
