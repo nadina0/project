@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+
+
+  <question speaker="user" predicate="horoscope" type="wh_question">
+    <one-of>
+      <item>I would like you to tell me the horoscope </item>
+    </one-of>
+  </question>
+
+
+  <answer speaker="user">
+    <one-of>
+      <item><slot predicate="sign_search"/></item>
+      <item><slot predicate="day_search"/> </item>
+    </one-of>
+  </answer>
+
+
+  <individual name="aries">
+    <one-of>
+      <item>aries</item>
+    </one-of>
+  </individual>
+
+
+  <individual name="today">
+    <one-of>
+      <item>today</item>
+    </one-of>
+  </individual>
+
+    <question speaker="system" predicate="sign_search" type="wh_question">
+    What sign
+    </question>
+
+    <question speaker="system" predicate="day_search" type="wh_question">
+    What day
+    </question>
+
+    <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+</grammar>

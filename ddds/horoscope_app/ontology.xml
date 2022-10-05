@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="HoroscopeAppOntology">
+
+  <predicate name="sign_search" sort="sign"/>
+  <predicate name="day_search" sort="day"/>
+  <predicate name="horoscope" sort="string"/>
+
+  
+  <individual name="aries" sort="sign"/>
+  <individual name="today" sort="day"/>
+
+  <sort name="sign" dynamic="true"/>
+  <sort name="day" dynamic="true"/>
+
+</ontology>
