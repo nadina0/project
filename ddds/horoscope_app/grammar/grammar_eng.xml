@@ -46,12 +46,19 @@
     </one-of>
   </answer>
 
+  <individual name="aries">aries</individual>
+  <individual name="taurus">taurus</individual>
+  <individual name="gemini">gemini</individual>
+  <individual name="cancer">cancer</individual>
+  <individual name="leo">leo</individual>
+  <individual name="virgo">virgo</individual>
+  <individual name="libra">libra</individual>
+  <individual name="sagittarius">sagittarius</individual>
+  <individual name="capricorn">capricorn</individual>
+  <individual name="aquarius">aquarius</individual>
+  <individual name="pisces">pisces</individual>
 
-  <individual name="libra">
-    <one-of>
-      <item>libra</item>
-    </one-of>
-  </individual>
+
 
 
 <!-- individual days-->
@@ -62,9 +69,6 @@
     </one-of>
   </individual>
 
-  <individual name="emperor">
-    <one-of>
-      <item>The Emperor</item>
   <individual name="tomorrow">
     <one-of>
       <item>tomorrow</item>
@@ -92,5 +96,96 @@
     <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
     <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
+
+
+<!-- individual cards -->
+<individual name="the_fool">fool</individual>
+<individual name="the_magician">magician</individual>
+<individual name="the_high_priestess">high priestess</individual>
+<individual name="the_empress">empress</individual>
+<individual name="the_emperor">emperor</individual>
+<individual name="the_hierophant">hierophant</individual>
+<individual name="the_lovers">lovers</individual>
+<individual name="the_chariot">chariot</individual>
+<individual name="strength">strength</individual>
+<individual name="the_hermit">hermit</individual>
+<individual name="wheel_of_fortune">wheel of fortune</individual>
+<individual name="justice">justice</individual>
+<individual name="the_hanged_man">hanged man</individual>
+<individual name="death">death</individual>
+<individual name="temperance">temperance</individual>
+<individual name="the_devil">devil</individual>
+<individual name="the_tower">the tower</individual>
+<individual name="the_star">the star</individual>
+<individual name="the_moon">the moon</individual>
+<individual name="the_sun">the sun</individual>
+<individual name="judgment"></individual>
+<individual name="the_world">the world</individual>
+
+
+<individual name="ace_of_wands">ace of wands</individual>
+<individual name="two_of_wands">two of wands</individual>
+<individual name="three_of_wands">three of wands</individual>
+<individual name="four_of_wands">four of wands</individual>
+<individual name="five_of_wands">five of wands</individual>
+<individual name="six_of_wands">six of wands</individual>
+<individual name="seven_of_wands">seven of wands</individual>
+<individual name="eight_of_wands">eight of wands</individual>
+<individual name="nine_of_wands">nine of wands</individual>
+<individual name="ten_of_wands">ten of wands</individual>
+<individual name="page_of_wands">page of wands</individual>
+<individual name="knight_of_wands">knight of wands</individual>
+<individual name="queen_of_wands">queen of wands</individual>
+<individual name="king_of_wands">king of wands</individual>
+
+
+<individual name="ace_of_cups">ace of cups</individual>
+<individual name="two_of_cups">two of cups</individual>
+<individual name="three_of_cups">three of cups</individual>
+<individual name="four_of_cups">four of cups</individual>
+<individual name="five_of_cups">five of cups</individual>
+<individual name="six_of_cups">six of cups</individual>
+<individual name="seven_of_cups">seven of cups</individual>
+<individual name="eight_of_cups">eight of cups</individual>
+<individual name="nine_of_cups">nine of cups</individual>
+<individual name="ten_of_cups">ten of cups</individual>
+<individual name="page_of_cups">page of cups</individual>
+<individual name="knight_of_cups">knight of cups</individual>
+<individual name="queen_of_cups">queen of cups</individual>
+<individual name="king_of_cups">king of cups</individual>
+
+
+<individual name="ace_of_swords">ace of swords</individual>
+<individual name="two_of_swords">two of swords</individual>
+<individual name="three_of_swords">three of swords</individual>
+<individual name="four_of_swords">four of swords</individual>
+<individual name="five_of_swords">five of swords</individual>
+<individual name="six_of_swords">six of swords</individual>
+<individual name="seven_of_swords">seven of swords</individual>
+<individual name="eight_of_swords">eight of swords</individual>
+<individual name="nine_of_swords">nine of swords</individual>
+<individual name="ten_of_swords">ten of swords</individual>
+<individual name="page_of_swords">page of swords</individual>
+<individual name="knight_of_swords">knight of swords</individual>
+<individual name="queen_of_swords">queen of swords</individual>
+<individual name="king_of_swords">king of swords</individual>
+
+
+
+<individual name="ace_of_pentacles">ace of pentacles</individual>
+<individual name="two_of_pentacles">two of pentacles</individual>
+<individual name="three_of_pentacles">three of pentacles</individual>
+<individual name="four_of_pentacles">four of pentacles</individual>
+<individual name="five_of_pentacles">five of pentacles</individual>
+<individual name="six_of_pentacles">six of pentacles</individual>
+<individual name="seven_of_pentacles">seven of pentacles</individual>
+<individual name="eight_of_pentacles">eight of pentacles</individual>
+<individual name="nine_of_pentacles">nine of pentacles</individual>
+<individual name="ten_of_pentacles">ten of pentacles</individual>
+<individual name="page_of_pentacles">page of pentacles</individual>
+<individual name="knight_of_pentacles">knight of pentacles</individual>
+<individual name="queen_of_pentacles">queen of pentacles</individual>
+<individual name="king_of_pentacles">king of pentacles</individual>
+
 
 </grammar>
