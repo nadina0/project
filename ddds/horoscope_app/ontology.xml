@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ontology name="HoroscopeAppOntology">
 
+  <action name="which_horoscope"/>
+
   <predicate name="sign_search" sort="sign"/>
   <predicate name="day_search" sort="day"/>
   <predicate name="card_search" sort="card"/>
+  <predicate name="info_choice" sort="category_of_horoscope"/>
   <predicate name="horoscope" sort="string"/>
   <predicate name="tarot" sort="string"/>
 
   <sort name="sign" dynamic="true"/>
   <sort name="day" dynamic="true"/>
   <sort name="card" dynamic="true"/>
+  <sort name="category_of_horoscope" dynamic="true"/>
 
-  <!-- individual cards -->
+  <!-- individual cards -->  
 
   <!-- major arcana-->
   <individual name="the_fool" sort="card"/>
@@ -34,7 +38,7 @@
   <individual name="the_star" sort="card"/>
   <individual name="the_moon" sort="card"/>
   <individual name="the_sun" sort="card"/>
-  <individual name="judgment" sort="card"/>
+  <individual name="the_last_judgment" sort="card"/>
   <individual name="the_world" sort="card"/>
 <!--minor arcana-->
 <!--suit of wands-->
@@ -120,5 +124,11 @@
   <individual name="tomorrow" sort="day"/>
   <individual name="yesterday" sort="day"/>
 
+  <!-- individual horoscope categories-->
+  <individual name="description" sort="category_of_horoscope"/>
+  <individual name="compatibility" sort="category_of_horoscope"/>
+  <individual name="lucky_number" sort="category_of_horoscope"/>
+  <individual name="color" sort="category_of_horoscope"/>
+  <individual name="mood" sort="category_of_horoscope"/>
 
 </ontology>

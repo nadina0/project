@@ -1,6 +1,0 @@
---- test
-S> Would you like to know about your horoscope or about a tarot card?
-U> Tell me about a tarot card
-S> What card?
-U> The Emperor
-S> Your card means *

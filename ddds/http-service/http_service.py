@@ -152,7 +152,7 @@ def action_success_response():
     return response
 
 
-def get_current_data(sign, day):
+def get_current_data(sign, day, info_choice):
   api_url = "https://aztro.sameerkumar.website/?sign="+sign+"&day="+day
   print(api_url)
   response = requests.post(api_url)
@@ -173,22 +173,25 @@ def get_horoscope():
     facts = request.get_json()["context"]["facts"]
     sign = facts["sign_search"]["grammar_entry"]
     day = facts["day_search"]["grammar_entry"]
-    api_response = get_current_data(sign, day)
-    print(api_response)
-    description = api_response['description']
-    print(type(description))
-    return query_response(value=description, grammar_entry=None)
+    info_choice = facts["info_choice"]["grammar_entry"]
+    api_response = get_current_data(sign, day, info_choice)
+    for key, value in api_response.items():
+      if key == info_choice:
+        chosen_category = value
+        break
+    return query_response(value=chosen_category, grammar_entry=None)
 
 
 @app.route("/tarot", methods=['POST'])
 def get_tarot():
     facts = request.get_json()["context"]["facts"]
     card = facts["card_search"]["grammar_entry"]
-    print(card)
     api_response = get_card_data(card)
-    print(api_response)
     for the_card in api_response['cards']:
+      print(card)
+      print(the_card['name'])
       if the_card['name'] == card:
-        chosen_card = the_card['meaning_up']
+        chosen_card_up = the_card['meaning_up']
+        chosen_card_reversed = the_card['meaning_rev']
         break
-    return query_response(value=chosen_card, grammar_entry=None)
+    return query_response(value=f'Your card upright means: {chosen_card_up}. Reversed, it means: {chosen_card_reversed}', grammar_entry=None)

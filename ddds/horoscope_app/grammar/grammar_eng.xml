@@ -43,6 +43,7 @@
     <one-of>
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
+      <item><slot predicate="info_choice"/> </item>
     </one-of>
   </answer>
 
@@ -52,6 +53,10 @@
 
   <question speaker="system" predicate="day_search" type="wh_question">
     What day
+  </question>
+
+  <question speaker="system" predicate="info_choice" type="wh_question">
+    What category
   </question>
 
   <question speaker="system" predicate="card_search" type="wh_question">
@@ -119,7 +124,7 @@
 <individual name="the_star">The Star</individual>
 <individual name="the_moon">The Moon</individual>
 <individual name="the_sun">The Sun</individual>
-<individual name="judgment">Judgment</individual>
+<individual name="the_last_judgment">The last Judgment</individual>
 <individual name="the_world">The World</individual>
 
 
@@ -149,7 +154,7 @@
 <individual name="eight_of_cups">eight of cups</individual>
 <individual name="nine_of_cups">nine of cups</individual>
 <individual name="ten_of_cups">ten of cups</individual>
-<individual name="page_of_cups">page of cups</individual>
+<individual name="page_of_cups">Page of Cups</individual>
 <individual name="knight_of_cups">knight of cups</individual>
 <individual name="queen_of_cups">queen of cups</individual>
 <individual name="king_of_cups">king of cups</individual>
@@ -185,6 +190,13 @@
 <individual name="knight_of_pentacles">knight of pentacles</individual>
 <individual name="queen_of_pentacles">queen of pentacles</individual>
 <individual name="king_of_pentacles">king of pentacles</individual>
+
+
+<individual name="description">description</individual>
+<individual name="mood">mood</individual>
+<individual name="lucky_number">lucky number</individual>
+<individual name="color">color</individual>
+<individual name="compatibility">compatibility</individual>
 
 
 </grammar>
