@@ -57,6 +57,14 @@
     past present future
   </question>
 
+  <question speaker="all" predicate="love_cross_formation" type="alt_question">
+    love cross formation
+  </question>
+
+  <question speaker="all" predicate="mental_healing_spread" type="alt_question">
+    mental healing spread
+  </question>
+
 <question speaker="system" predicate="card_reading_type" type="wh_question">
     What card
   </question>

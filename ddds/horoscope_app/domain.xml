@@ -40,6 +40,12 @@
         <alt>
           <resolve type="wh_question" predicate="past_present_future"/>
         </alt>
+        <alt>
+          <resolve type="wh_question" predicate="love_cross_formation"/>
+        </alt>
+         <alt>
+          <resolve type="wh_question" predicate="mental_healing_spread"/>
+        </alt>
       </findout>
        <invoke_service_query predicate="tarot" type="wh_question"/>
     </plan>
