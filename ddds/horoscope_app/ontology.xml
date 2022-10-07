@@ -2,6 +2,7 @@
 <ontology name="HoroscopeAppOntology">
 
   <action name="which_horoscope"/>
+  <action name="tarot_reading"/>
 
   <predicate name="sign_search" sort="sign"/>
   <predicate name="day_search" sort="day"/>
@@ -9,6 +10,16 @@
   <predicate name="info_choice" sort="category_of_horoscope"/>
   <predicate name="horoscope" sort="string"/>
   <predicate name="tarot" sort="string"/>
+
+  <predicate name="one_card_spread" sort="type_of_spread"/>
+  <predicate name="past_present_future" sort="type_of_spread"/>
+  <predicate name="love_cross_formation" sort="type_of_spread"/>
+  <predicate name="mental_healing_spread" sort="type_of_spread"/>
+
+  <predicate name="card_reading_type" sort="type_of_spread"/>
+
+
+  <sort name="type_of_spread" dynamic="true"/>
 
   <sort name="sign" dynamic="true"/>
   <sort name="day" dynamic="true"/>
@@ -101,8 +112,6 @@
 <individual name="knight_of_pentacles" sort="card"/>
 <individual name="queen_of_pentacles" sort="card"/>
 <individual name="king_of_pentacles" sort="card"/>
-
-
 
 
   <!-- individual signs-->

@@ -34,6 +34,12 @@
     about tarot card reading
   </question>
 
+<!-- tarot card reading menu -->
+
+<question speaker="system" predicate="card_search" type="wh_question">
+    What card
+  </question>
+
 <!-- menu question and answers -->
 
   <question speaker="user" predicate="horoscope" type="alt_question">
@@ -74,12 +80,6 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-
-<!-- tarot card reading -->
-  <question speaker="system" predicate="card_search" type="wh_question">
-    What card
-  </question>
-
   <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
   <!-- individual signs -->
@@ -99,23 +99,9 @@
 
 <!-- individual days-->
 
-  <individual name="today">
-    <one-of>
-      <item>today</item>
-    </one-of>
-  </individual>
-
-  <individual name="tomorrow">
-    <one-of>
-      <item>tomorrow</item>
-    </one-of>
-  </individual>
-
-  <individual name="yesterday">
-    <one-of>
-      <item>yesterday</item>
-    </one-of>
-  </individual>
+  <individual name="today">today</individual>
+  <individual name="tomorrow">tomorrow</individual>
+  <individual name="yesterday">yesterday</individual>
 
 
 <!-- individual cards -->
