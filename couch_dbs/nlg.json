@@ -1,11 +1,23 @@
 
 [
     {
-        "match": "some(semantic_expression_of_a_move)",
-        "utterance": "some utterance"
+        "match": "request(one_card_spread_info)",
+        "utterance": "You can use this card to interpret your yes or no questions or to shed light on any situation you have in mind. Think about a question or a specific situation."
     },
     {
-        "match": "another(semantic_expression_of_a_move)",
-        "utterance": "another utterance"
+        "match": "request(shuffle_deck)",
+        "utterance": "Take your deck and shuffle it."
+    },
+    {
+        "match": "request(split_deck)",
+        "utterance": "Split it in the middle"
+    },
+    {
+        "match": "request(take_card)",
+        "utterance": "Take out a card and place it in front of you"
+    },
+    {
+        "match": "request(ask_card)",
+        "utterance": "What is your card?"
     }
 ]

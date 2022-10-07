@@ -4,6 +4,11 @@
   <action name="which_horoscope"/>
   <action name="tarot_reading"/>
 
+  <action name="do_one_card_spread"/>
+  <action name="do_past_present_future"/>
+  <action name="do_love_cross_formation"/>
+  <action name="do_mental_healing_spread"/>
+
   <predicate name="sign_search" sort="sign"/>
   <predicate name="day_search" sort="day"/>
   <predicate name="card_search" sort="card"/>
@@ -16,7 +21,13 @@
   <predicate name="love_cross_formation" sort="type_of_spread"/>
   <predicate name="mental_healing_spread" sort="type_of_spread"/>
 
-  <predicate name="card_reading_type" sort="type_of_spread"/>
+
+<!-- one card spread -->
+<action name="one_card_spread_info"/>
+<action name="shuffle_deck"/>
+<action name="split_deck"/>
+<action name="take_card"/>
+<action name="ask_card"/>
 
 
   <sort name="type_of_spread" dynamic="true"/>

@@ -29,13 +29,13 @@
       <findout type="wh_question" predicate="card_search"/>
       <invoke_service_query predicate="tarot" type="wh_question"/>
     </plan>
-  </goal>  -->
+  </goal>  this is the old "resolve goal that only asked for which card"-->
 
   <goal type="perform" action="tarot_reading">
     <plan>
       <findout type="alt_question">
         <alt>
-          <resolve type="wh_question" predicate="one_card_spread"/>
+          <resolve type="wh_question" predicate="one_card_spread"/> <!-- these should probably be action like in lab 3-->
         </alt>
         <alt>
           <resolve type="wh_question" predicate="past_present_future"/>

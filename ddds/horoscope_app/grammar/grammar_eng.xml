@@ -111,6 +111,8 @@
 
   <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
+  <individual name="one_card_reading">testing</individual>
+
   <!-- individual signs -->
 
   <individual name="aries">aries</individual>
