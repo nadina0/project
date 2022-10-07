@@ -23,6 +23,15 @@
     </one-of>
   </action>
 
+  <action name="tarot_reading">
+    <one-of>
+      <item>tarot card</item>
+      <item>tarot card reading</item>
+      <item>i want to do a tarot card reading</item>
+      <item>reading a card</item>
+    </one-of>
+  </action>
+
 
 <!-- menu question from system -->
 
@@ -36,7 +45,19 @@
 
 <!-- tarot card reading menu -->
 
-<question speaker="system" predicate="card_search" type="wh_question">
+ <question speaker="system" predicate="card_reading_type" type="wh_question">
+    What type of reading
+  </question>
+
+<question speaker="all" predicate="one_card_spread" type="alt_question">
+    one card spread
+  </question>
+
+  <question speaker="all" predicate="past_present_future" type="alt_question">
+    past present future
+  </question>
+
+<question speaker="system" predicate="card_reading_type" type="wh_question">
     What card
   </question>
 

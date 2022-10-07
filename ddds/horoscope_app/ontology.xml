@@ -13,8 +13,8 @@
 
   <predicate name="one_card_spread" sort="type_of_spread"/>
   <predicate name="past_present_future" sort="type_of_spread"/>
-  <predicate name="love_cross_formation" sort="type_of_spread"/>
-  <predicate name="mental_healing_spread" sort="type_of_spread"/>
+  <!--<predicate name="love_cross_formation" sort="type_of_spread"/>
+  <predicate name="mental_healing_spread" sort="type_of_spread"/> -->
 
   <predicate name="card_reading_type" sort="type_of_spread"/>
 

@@ -24,12 +24,23 @@
     </plan>
   </goal>
 
-  <goal type="resolve" question_type="wh_question" predicate="tarot"> 
+ <!--  <goal type="resolve" question_type="wh_question" predicate="tarot"> 
     <plan>
       <findout type="wh_question" predicate="card_search"/>
       <invoke_service_query predicate="tarot" type="wh_question"/>
     </plan>
-  </goal> 
+  </goal>  -->
+
+  <goal type="perform" action="tarot_reading">
+    <plan>
+      <findout type="wh_question" predicate="card_reading_type"/>
+      <findout type="alt_question">
+        <alt><proposition predicate="one_card_spread"/></alt>
+        <alt><proposition predicate="past_present_future"/></alt>
+      </findout>
+       <invoke_service_query predicate="tarot" type="wh_question"/>
+    </plan>
+  </goal>
 
   
 </domain>
