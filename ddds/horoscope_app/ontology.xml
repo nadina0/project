@@ -21,13 +21,41 @@
   <predicate name="love_cross_formation" sort="type_of_spread"/>
   <predicate name="mental_healing_spread" sort="type_of_spread"/>
 
+  <predicate name="current_reading" sort="type_of_spread"/>
+
+  <individual name="one_card_reading" sort="type_of_spread"/>
+  <individual name="ppf_reading" sort="type_of_spread"/>
+  <individual name="love_reading" sort="type_of_spread"/>
+  <individual name="mental_health_reading" sort="type_of_spread"/>
+
 
 <!-- one card spread -->
+
 <action name="one_card_spread_info"/>
 <action name="shuffle_deck"/>
 <action name="split_deck"/>
 <action name="take_card"/>
 <action name="ask_card"/>
+
+<!-- past present future spread -->
+<action name="ppf_info"/>
+<action name="take_second_card"/>
+<action name="take_third_card"/>
+
+
+<!-- love cross formation -->
+<action name="love_cross_info"/>
+<action name="present_state"/>
+<action name="perspective_card"/>
+<action name="fourth_card_foundation"/>
+<action name="final_card_outcome"/>
+
+<!-- mental healing spread -->
+<action name="bottom_cross"/>
+<action name="left_center"/>
+<action name="center_card"/>
+<action name="right_center"/>
+<action name="top_cross"/>
 
 
   <sort name="type_of_spread" dynamic="true"/>

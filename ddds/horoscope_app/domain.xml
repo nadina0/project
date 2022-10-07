@@ -35,21 +35,81 @@
     <plan>
       <findout type="alt_question">
         <alt>
-          <resolve type="wh_question" predicate="one_card_spread"/> <!-- these should probably be action like in lab 3-->
+          <perform action="do_one_card_spread"/> <!-- these should probably be action like in lab 3-->
         </alt>
         <alt>
-          <resolve type="wh_question" predicate="past_present_future"/>
+          <perform action="do_past_present_future"/>
         </alt>
         <alt>
-          <resolve type="wh_question" predicate="love_cross_formation"/>
+          <perform action="do_love_cross_formation"/>
         </alt>
          <alt>
-          <resolve type="wh_question" predicate="mental_healing_spread"/>
+          <perform action="do_mental_healing_spread"/>
         </alt>
       </findout>
        <invoke_service_query predicate="tarot" type="wh_question"/>
     </plan>
   </goal>
+
+  <goal type="perform" action="do_one_card_spread">
+    <plan>
+    <assume_shared>
+  <proposition predicate="current_reading" value="one_card_reading"/>
+</assume_shared>
+     <get_done action="one_card_spread_info"/>
+    <get_done action="shuffle_deck"/>
+    <get_done action="split_deck"/>
+    <get_done action="take_card"/>
+    <get_done action="ask_card"/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="do_past_present_future">
+    <plan>
+    <assume_shared>
+  <proposition predicate="current_reading" value="ppf_reading"/>
+</assume_shared>
+     <get_done action="ppf_info"/>
+    <get_done action="shuffle_deck"/>
+    <get_done action="split_deck"/>
+    <get_done action="take_card"/>
+    <get_done action="take_second_card"/>
+    <get_done action="take_third_card"/>
+    <get_done action="ask_card"/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="do_love_cross_formation">
+    <plan>
+    <assume_shared>
+  <proposition predicate="current_reading" value="love_reading"/>
+</assume_shared>
+     <get_done action="love_cross_info"/>
+    <get_done action="shuffle_deck"/>
+    <get_done action="split_deck"/>
+    <get_done action="present_state"/>
+    <get_done action="perspective_card"/>
+    <get_done action="fourth_card_foundation"/>
+    <get_done action="final_card_outcome"/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="do_mental_healing_spread">
+    <plan>
+    <assume_shared>
+  <proposition predicate="current_reading" value="love_reading"/>
+</assume_shared>
+     <get_done action="love_cross_info"/>
+    <get_done action="shuffle_deck"/>
+    <get_done action="split_deck"/>
+    <get_done action="bottom_cross"/>
+    <get_done action="left_center"/>
+    <get_done action="center_card"/>
+    <get_done action="right_center"/>
+    <get_done action="top_cross"/>
+    </plan>
+  </goal>
+
 
   
 </domain>

@@ -32,6 +32,27 @@
     </one-of>
   </action>
 
+  <action name="do_one_card_spread">
+    <one-of>
+      <item>one card spread</item>
+      <item>only one card spread</item>
+    </one-of>
+  </action>
+
+  <action name="do_past_present_future">
+   <one-of>
+      <item>past present future</item>
+      <item>ppf</item>
+    </one-of>
+  </action>
+
+  <action name="do_mental_healing_spread">
+   <one-of>
+      <item>mental healing</item>
+      <item>mental healing spread</item>
+    </one-of>
+  </action>
+
 
 <!-- menu question from system -->
 
@@ -50,7 +71,7 @@
   </question>
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
-    one card spread
+    do a one card spread
   </question>
 
   <question speaker="all" predicate="past_present_future" type="alt_question">
@@ -111,7 +132,10 @@
 
   <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
-  <individual name="one_card_reading">testing</individual>
+  <individual name="one_card_reading">one card spread</individual>
+  <individual name="ppf_reading">past present future spread</individual>
+  <individual name="love_reading">love cross formation reading</individual>
+   <individual name="mental_health_reading">mental health reading</individual>
 
   <!-- individual signs -->
 

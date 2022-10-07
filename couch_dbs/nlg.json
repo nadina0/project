@@ -19,5 +19,60 @@
     {
         "match": "request(ask_card)",
         "utterance": "What is your card?"
+    },
+    {
+        "match": "request(ppf_info)",
+        "utterance": "Think about a situation in your life that you would like clarity on."
+    },
+    {
+        "match": "request(take_second_card)",
+        "utterance": "Take out the second card and place it to the left"
+    },
+    {
+        "match": "request(take_third_card)",
+        "utterance": "Take out the last card and place it to the right"
+    },
+    {
+        "match": "request(love_cross_info)",
+        "utterance": "Think about your current situation first"
+    },
+    {
+        "match": "request(present_state)",
+        "utterance": "Take out a card and place it in the middle. This card symbolizes the present state or the issue at hand."
+    },
+    {
+        "match": "request(perspective_card)",
+        "utterance": "Take out the second card and place it to the left. This represents your perspective."
+    },
+    {
+        "match": "request(fourth_card_foundation)",
+        "utterance": "The fourth card should be placed below the central cads. This represents the foundation of the relationship or something in the past contributing to the current issue."
+    },
+    {
+        "match": "request(final_card_outcome)",
+        "utterance": "The final card should be placed above the central card and represents the likely outcome."
+    },
+    {
+        "match": "request(bottom_cross)",
+        "utterance": "Take out a card and place it in the bottom of a cross. This card symbolizes what you see in others that you can't see in yourself."
+    },
+    {
+        "match": "request(left_center)",
+        "utterance": "The second card should be to the left of the center of a cross. This symbolizes the source of your projection."
+    },
+    {
+        "match": "request(center_card)",
+        "utterance": "The third card should be in the center. This represents what part of the projection you can reclaim."
+    },
+    {
+        "match": "request(right_center)",
+        "utterance": "Place the fourth card to the right of the center. This tells you the feelings that you might experience when you release this pattern."
+    },
+    {
+        "match": "request(top_cross)",
+        "utterance": "Your final card should be at the top of the cross. This represents what you could gain by reclaiming this projection."
     }
+
+
 ]
+
