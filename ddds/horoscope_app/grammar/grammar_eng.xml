@@ -23,10 +23,22 @@
     </one-of>
   </action>
 
-<!-- question and answers -->
+
+<!-- menu question from system -->
+
+<question speaker="all" predicate="horoscope">
+    about a horoscope
+  </question>
+
+<question speaker="all" predicate="tarot">
+    about tarot card reading
+  </question>
+
+<!-- menu question and answers -->
 
   <question speaker="user" predicate="horoscope" type="alt_question">
     <one-of>
+      <item>horoscope</item>
       <item>I would like you to tell me the horoscope</item>
       <item>tell me my horoscope</item>
     </one-of>
@@ -47,6 +59,7 @@
     </one-of>
   </answer>
 
+<!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
     What sign
   </question>
@@ -59,11 +72,13 @@
     What category
   </question>
 
+  <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+
+<!-- tarot card reading -->
   <question speaker="system" predicate="card_search" type="wh_question">
     What card
   </question>
-
-  <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
   <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
 
