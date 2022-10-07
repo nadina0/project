@@ -71,7 +71,7 @@
   </question>
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
-    do a one card spread
+    do one card spread
   </question>
 
   <question speaker="all" predicate="past_present_future" type="alt_question">
@@ -135,7 +135,7 @@
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>
   <individual name="love_reading">love cross formation reading</individual>
-   <individual name="mental_health_reading">mental health reading</individual>
+  <individual name="mental_health_reading">mental health reading</individual>
 
   <!-- individual signs -->
 

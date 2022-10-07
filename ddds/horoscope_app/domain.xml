@@ -35,19 +35,22 @@
     <plan>
       <findout type="alt_question">
         <alt>
-          <perform action="do_one_card_spread"/> <!-- these should probably be action like in lab 3-->
+        <resolve type="wh_question" predicate="one_card_spread"/> <!-- these should probably be action like in lab 3-->
         </alt>
         <alt>
-          <perform action="do_past_present_future"/>
+         <resolve type="wh_question" predicate="past_present_future"/>
+         <!-- <perform action="do_past_present_future" predicate="past_present_future"/> -->
         </alt>
         <alt>
-          <perform action="do_love_cross_formation"/>
+         <resolve type="wh_question" predicate="love_cross_formation"/>
+         <!-- <perform action="do_love_cross_formation" predicate="love_cross_formation"/> -->
         </alt>
          <alt>
-          <perform action="do_mental_healing_spread"/>
+          <resolve type="wh_question" predicate="mental_healing_spread"/>
+         <!-- <perform action="do_mental_healing_spread" predicate="mental_healing_spread"/> --> <!-- how to ask these as question ? with action-->
         </alt>
       </findout>
-       <invoke_service_query predicate="tarot" type="wh_question"/>
+       <!--<invoke_service_query predicate="tarot" type="wh_question"/>-->
     </plan>
   </goal>
 
