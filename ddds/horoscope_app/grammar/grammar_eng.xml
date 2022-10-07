@@ -46,7 +46,7 @@
 <!-- tarot card reading menu -->
 
  <question speaker="system" predicate="card_reading_type" type="wh_question">
-    What type of reading
+    What type of reading?
   </question>
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
