@@ -67,10 +67,6 @@
     about a horoscope
   </question>
 
-<question speaker="all" predicate="tarot">
-    about tarot card reading
-  </question>
-
 <!-- tarot card reading menu -->
 
  <question speaker="system" predicate="card_reading_type" type="wh_question">
@@ -107,12 +103,7 @@
     </one-of>
   </question>
 
-  <question speaker="user" predicate="tarot" type="alt_question">
-    <one-of>
-      <item>tarot card</item>
-      <item>Tell me about a tarot card</item>
-    </one-of>
-  </question>
+
 
   <answer speaker="user">
     <one-of>
@@ -127,7 +118,7 @@
     What sign
   </question>
 
-  <question speaker="system" predicate="card_search" type="wh_question">
+  <question speaker="system" predicate="tarot_card" type="wh_question">
     What card is it
   </question>
 
@@ -141,7 +132,7 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-  <answer speaker="system" predicate="tarot">Your card means <slot predicate="tarot"/> </answer>
+  <answer speaker="system" predicate="tarot_card">Your card means <slot predicate="card_search"/> </answer>
 
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>

@@ -9,7 +9,7 @@
           <resolve type="wh_question" predicate="horoscope"/>
         </alt>
         <alt>
-          <resolve type="wh_question" predicate="tarot"/>
+          <resolve type="wh_question" predicate="tarot_reading_pred"/>
         </alt>
       </findout>
     </plan>
@@ -23,13 +23,6 @@
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
   </goal>
-
- <!--  <goal type="resolve" question_type="wh_question" predicate="tarot"> 
-    <plan>
-      <findout type="wh_question" predicate="card_search"/>
-      <invoke_service_query predicate="tarot" type="wh_question"/>
-    </plan>
-  </goal>  this is the old "resolve goal that only asked for which card"-->
 
   <goal type="perform" action="tarot_reading">
     <plan>
@@ -64,10 +57,18 @@
     <get_done action="split_deck"/>
     <get_done action="take_card"/>
    <!--- <get_done action="ask_card"/> -->
-    <findout type="wh_question" predicate="card_search"/>
-    <invoke_service_query predicate="tarot" type="wh_question"/>
+      <findout type="wh_question" predicate="tarot_card"/>
+      <invoke_service_query predicate="card_search" type="wh_question"/>
     </plan>
   </goal>
+
+ <!--  <goal type="resolve" question_type="wh_question" predicate="tarot"> 
+    <plan>
+      <findout type="wh_question" predicate="card_search"/>
+      <invoke_service_query predicate="tarot" type="wh_question"/>
+    </plan>
+  </goal>  this is the old "resolve goal that only asked for which card"-->
+
 
   <goal type="perform" action="do_past_present_future">
     <plan>

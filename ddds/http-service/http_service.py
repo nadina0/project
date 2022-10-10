@@ -188,8 +188,6 @@ def get_tarot():
     card = facts["card_search"]["grammar_entry"]
     api_response = get_card_data(card)
     for the_card in api_response['cards']:
-      print(card)
-      print(the_card['name'])
       if the_card['name'] == card:
         chosen_card_up = the_card['meaning_up']
         chosen_card_reversed = the_card['meaning_rev']
