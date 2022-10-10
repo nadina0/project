@@ -33,15 +33,13 @@
 
   <action name="tarot_reading">
     <one-of>
-      <item>tarot card reading</item>
-      <item>i want to do a tarot card reading</item>
-      <item>reading a card</item>
+      <item>reading</item>
     </one-of>
   </action>
 
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
     <one-of>
-      <item>tarot card</item>
+      <item>card</item>
     </one-of>
   </question>
 
