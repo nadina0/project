@@ -178,7 +178,7 @@
 <!-- individual cards -->
 <individual name="the_fool">The Fool</individual>
 <individual name="the_magician">The Magician</individual>
-<individual name="the_high_priestess">The High priestess</individual>
+<individual name="the_high_priestess">The High Priestess</individual>
 <individual name="the_empress">The Empress</individual>
 <individual name="the_emperor">The Emperor</individual>
 <individual name="the_hierophant">The Hierophant</individual>
@@ -201,67 +201,67 @@
 
 
 <individual name="ace_of_wands">Ace of Wands</individual>
-<individual name="two_of_wands">two of wands</individual>
-<individual name="three_of_wands">three of wands</individual>
-<individual name="four_of_wands">four of wands</individual>
-<individual name="five_of_wands">five of wands</individual>
-<individual name="six_of_wands">six of wands</individual>
-<individual name="seven_of_wands">seven of wands</individual>
-<individual name="eight_of_wands">eight of wands</individual>
-<individual name="nine_of_wands">nine of wands</individual>
-<individual name="ten_of_wands">ten of wands</individual>
-<individual name="page_of_wands">page of wands</individual>
-<individual name="knight_of_wands">knight of wands</individual>
-<individual name="queen_of_wands">queen of wands</individual>
-<individual name="king_of_wands">king of wands</individual>
+<individual name="two_of_wands">Two of Wands</individual>
+<individual name="three_of_wands">Three of Wands</individual>
+<individual name="four_of_wands">Four of Wands</individual>
+<individual name="five_of_wands">Five of Wands</individual>
+<individual name="six_of_wands">Six of Wands</individual>
+<individual name="seven_of_wands">Seven of Wands</individual>
+<individual name="eight_of_wands">Eight of Wands</individual>
+<individual name="nine_of_wands">Nine of Wands</individual>
+<individual name="ten_of_wands">Ten of Wands</individual>
+<individual name="page_of_wands">Page of Wands</individual>
+<individual name="knight_of_wands">Knight of Wands</individual>
+<individual name="queen_of_wands">Queen of Wands</individual>
+<individual name="king_of_wands">King of Wands</individual>
 
 
-<individual name="ace_of_cups">ace of cups</individual>
-<individual name="two_of_cups">two of cups</individual>
-<individual name="three_of_cups">three of cups</individual>
-<individual name="four_of_cups">four of cups</individual>
-<individual name="five_of_cups">five of cups</individual>
-<individual name="six_of_cups">six of cups</individual>
-<individual name="seven_of_cups">seven of cups</individual>
-<individual name="eight_of_cups">eight of cups</individual>
-<individual name="nine_of_cups">nine of cups</individual>
-<individual name="ten_of_cups">ten of cups</individual>
+<individual name="ace_of_cups">Ace of Cups</individual>
+<individual name="two_of_cups">Two of Cups</individual>
+<individual name="three_of_cups">Three of Cups</individual>
+<individual name="four_of_cups">Four of Cups</individual>
+<individual name="five_of_cups">Five of Cups</individual>
+<individual name="six_of_cups">Six of Cups</individual>
+<individual name="seven_of_cups">Seven of Cups</individual>
+<individual name="eight_of_cups">Eight of Cups</individual>
+<individual name="nine_of_cups">Nine of Cups</individual>
+<individual name="ten_of_cups">Ten of Cups</individual>
 <individual name="page_of_cups">Page of Cups</individual>
-<individual name="knight_of_cups">knight of cups</individual>
-<individual name="queen_of_cups">queen of cups</individual>
-<individual name="king_of_cups">king of cups</individual>
+<individual name="knight_of_cups">Knight of Cups</individual>
+<individual name="queen_of_cups">Queen of Cups</individual>
+<individual name="king_of_cups">King of Cups</individual>
 
 
-<individual name="ace_of_swords">ace of swords</individual>
-<individual name="two_of_swords">two of swords</individual>
-<individual name="three_of_swords">three of swords</individual>
-<individual name="four_of_swords">four of swords</individual>
-<individual name="five_of_swords">five of swords</individual>
-<individual name="six_of_swords">six of swords</individual>
-<individual name="seven_of_swords">seven of swords</individual>
-<individual name="eight_of_swords">eight of swords</individual>
-<individual name="nine_of_swords">nine of swords</individual>
-<individual name="ten_of_swords">ten of swords</individual>
-<individual name="page_of_swords">page of swords</individual>
-<individual name="knight_of_swords">knight of swords</individual>
-<individual name="queen_of_swords">queen of swords</individual>
-<individual name="king_of_swords">king of swords</individual>
+<individual name="ace_of_swords">Ace of Swords</individual>
+<individual name="two_of_swords">Two of Swords</individual>
+<individual name="three_of_swords">Three of Swords</individual>
+<individual name="four_of_swords">Four of Swords</individual>
+<individual name="five_of_swords">Five of Swords</individual>
+<individual name="six_of_swords">Six of Swords</individual>
+<individual name="seven_of_swords">Seven of Swords</individual>
+<individual name="eight_of_swords">Eight of Swords</individual>
+<individual name="nine_of_swords">Nine of Swords</individual>
+<individual name="ten_of_swords">Ten of Swords</individual>
+<individual name="page_of_swords">Page of Swords</individual>
+<individual name="knight_of_swords">Knight of Swords</individual>
+<individual name="queen_of_swords">Queen of Swords</individual>
+<individual name="king_of_swords">King of Swords</individual>
 
 
-<individual name="ace_of_pentacles">ace of pentacles</individual>
-<individual name="two_of_pentacles">two of pentacles</individual>
-<individual name="three_of_pentacles">three of pentacles</individual>
-<individual name="four_of_pentacles">four of pentacles</individual>
-<individual name="five_of_pentacles">five of pentacles</individual>
-<individual name="six_of_pentacles">six of pentacles</individual>
-<individual name="seven_of_pentacles">seven of pentacles</individual>
-<individual name="eight_of_pentacles">eight of pentacles</individual>
-<individual name="nine_of_pentacles">nine of pentacles</individual>
-<individual name="ten_of_pentacles">ten of pentacles</individual>
-<individual name="page_of_pentacles">page of pentacles</individual>
-<individual name="knight_of_pentacles">knight of pentacles</individual>
-<individual name="queen_of_pentacles">queen of pentacles</individual>
-<individual name="king_of_pentacles">king of pentacles</individual>
+<individual name="ace_of_pentacles">Ace of Pentacles</individual>
+<individual name="two_of_pentacles">Two of Pentacles</individual>
+<individual name="three_of_pentacles">Three of Pentacles</individual>
+<individual name="four_of_pentacles">Four of Pentacles</individual>
+<individual name="five_of_pentacles">Five of Pentacles</individual>
+<individual name="six_of_pentacles">Six of Pentacles</individual>
+<individual name="seven_of_pentacles">Seven of Pentacles</individual>
+<individual name="eight_of_pentacles">Eight of Pentacles</individual>
+<individual name="nine_of_pentacles">Nine of Pentacles</individual>
+<individual name="ten_of_pentacles">Ten of Pentacles</individual>
+<individual name="page_of_pentacles">Page of Pentacles</individual>
+<individual name="knight_of_pentacles">Knight of Pentacles</individual>
+<individual name="queen_of_pentacles">Queen of Pentacles</individual>
+<individual name="king_of_pentacles">King of Pentacles</individual>
 
 
 <individual name="description">description</individual>
