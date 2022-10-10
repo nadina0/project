@@ -127,6 +127,10 @@
     What sign
   </question>
 
+  <question speaker="system" predicate="card_search" type="wh_question">
+    What card is it
+  </question>
+
   <question speaker="system" predicate="day_search" type="wh_question">
     What day
   </question>
