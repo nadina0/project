@@ -65,7 +65,11 @@
 
 <question speaker="all" predicate="horoscope">
     about a horoscope
-  </question>
+</question>
+
+<question speaker="all" predicate="tarot_reading_pred">
+  about tarot reading
+</question>
 
 <!-- tarot card reading menu -->
 
