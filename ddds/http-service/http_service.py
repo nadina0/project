@@ -187,6 +187,7 @@ def get_tarot():
     facts = request.get_json()["context"]["facts"]
     card = facts["card_search"]["grammar_entry"]
     api_response = get_card_data(card)
+    print(api_response)
     for the_card in api_response['cards']:
       if the_card['name'] == card:
         chosen_card_up = the_card['meaning_up']

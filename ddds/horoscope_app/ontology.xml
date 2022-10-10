@@ -14,10 +14,8 @@
   <predicate name="card_search" sort="card"/>
   <predicate name="info_choice" sort="category_of_horoscope"/>
   <predicate name="horoscope" sort="string"/>
-  <predicate name="tarot_card" sort="string"/>
   <predicate name="tarot_reading_pred" sort="string"/>
-
-    <predicate name="tarot_card_question" sort="string"/>
+  <predicate name="tarot_card_question" sort="string"/>
 
 
 

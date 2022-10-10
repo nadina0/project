@@ -39,6 +39,12 @@
     </one-of>
   </action>
 
+  <question speaker="user" predicate="tarot_card_question" type="alt_question">
+    <one-of>
+      <item>tarot card</item>
+    </one-of>
+  </question>
+
   <action name="do_one_card_spread">
     <one-of>
       <item>one card spread</item>
@@ -78,7 +84,7 @@
   about tarot reading
 </question>
 
-<question speaker="all" predicate="tarot_card">
+<question speaker="all" predicate="tarot_card_question">
   about a card
 </question>
 
@@ -104,21 +110,7 @@
     do mental healing spread
   </question>
 
-<question speaker="system" predicate="card_reading_type" type="wh_question">
-    What card
-  </question>
-
 <!-- menu question and answers -->
-
-  
-
-
-  <question speaker="user" predicate="tarot_card" type="alt_question">
-    <one-of>
-      <item>tarot card</item>
-    </one-of>
-  </question>
-
 
 
   <answer speaker="user">
@@ -126,6 +118,7 @@
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
       <item><slot predicate="info_choice"/> </item>
+      <item><slot predicate="card_search"/></item>
     </one-of>
   </answer>
 
@@ -134,16 +127,16 @@
     What sign
   </question>
 
-  <question speaker="system" predicate="tarot_card" type="wh_question">
-    What card is it
-  </question>
-
   <question speaker="system" predicate="day_search" type="wh_question">
     What day
   </question>
 
   <question speaker="system" predicate="info_choice" type="wh_question">
     What category
+  </question>
+
+  <question speaker="system" predicate="card_search" type="wh_question">
+    What card
   </question>
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>

@@ -12,7 +12,7 @@
           <resolve type="wh_question" predicate="tarot_reading_pred"/>
         </alt>
         <alt>
-          <resolve type="wh_question" predicate="tarot_card"/>
+          <resolve type="wh_question" predicate="tarot_card_question"/>
         </alt>
       </findout>
     </plan>
@@ -70,12 +70,6 @@
     </plan>
   </goal>
 
- <goal type="resolve" question_type="wh_question" predicate="tarot_card"> 
-    <plan>
-      <findout type="wh_question" predicate="card_search"/>
-      <invoke_service_query predicate="tarot_card" type="wh_question"/>
-    </plan>
-  </goal>
 
   <goal type="perform" action="do_past_present_future">
     <plan>
