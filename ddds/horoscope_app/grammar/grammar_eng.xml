@@ -88,6 +88,12 @@
   about a card
 </question>
 
+<question speaker="all" predicate="question_about_card">
+  which card did you get
+</question>
+
+
+
 <!-- tarot card reading menu -->
 
  <!--<question speaker="system" predicate="card_reading_type" type="wh_question">

@@ -17,6 +17,10 @@
   <predicate name="tarot_reading_pred" sort="string"/>
   <predicate name="tarot_card_question" sort="string"/>
 
+  <predicate name="question_about_card" sort="string"/>
+
+
+
 
 
 
