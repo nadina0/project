@@ -57,6 +57,7 @@
 <action name="final_card_outcome"/>
 
 <!-- mental healing spread -->
+<action name="mental_healing_info"/>
 <action name="bottom_cross"/>
 <action name="left_center"/>
 <action name="center_card"/>
