@@ -36,6 +36,10 @@
         "utterance": "Think about your current situation first"
     },
     {
+        "match": "request(mental_healing_info)",
+        "utterance": "Think about your current situation first"
+    },
+    {
         "match": "request(present_state)",
         "utterance": "Take out a card and place it in the middle. This card symbolizes the present state or the issue at hand."
     },
