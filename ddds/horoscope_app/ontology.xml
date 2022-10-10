@@ -14,7 +14,7 @@
   <predicate name="card_search" sort="card"/>
   <predicate name="info_choice" sort="category_of_horoscope"/>
   <predicate name="horoscope" sort="string"/>
-  <predicate name="tarot_card" sort="tarot_card_sort"/>
+  <predicate name="tarot_card" sort="string"/>
   <predicate name="tarot_reading_pred" sort="string"/>
 
 
@@ -66,7 +66,6 @@
   <sort name="day" dynamic="true"/>
   <sort name="card" dynamic="true"/>
   <sort name="category_of_horoscope" dynamic="true"/>
-  <sort name="tarot_card_sort" dynamic="true"/>
 
   <!-- individual cards -->  
 

@@ -23,9 +23,16 @@
     </one-of>
   </action>
 
+  <question speaker="user" predicate="horoscope" type="alt_question">
+    <one-of>
+      <item>horoscope</item>
+      <item>I would like you to tell me the horoscope</item>
+      <item>tell me my horoscope</item>
+    </one-of>
+  </question>
+
   <action name="tarot_reading">
     <one-of>
-      <item>tarot card</item>
       <item>tarot card reading</item>
       <item>i want to do a tarot card reading</item>
       <item>reading a card</item>
@@ -99,11 +106,12 @@
 
 <!-- menu question and answers -->
 
-  <question speaker="user" predicate="horoscope" type="alt_question">
+  
+
+
+  <question speaker="user" predicate="tarot_card" type="alt_question">
     <one-of>
-      <item>horoscope</item>
-      <item>I would like you to tell me the horoscope</item>
-      <item>tell me my horoscope</item>
+      <item>tarot card</item>
     </one-of>
   </question>
 
@@ -136,7 +144,6 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-  <answer speaker="system" predicate="tarot_card">Your card means <slot predicate="card_search"/> </answer>
 
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>

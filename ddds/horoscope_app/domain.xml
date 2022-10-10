@@ -11,6 +11,9 @@
         <alt>
           <resolve type="wh_question" predicate="tarot_reading_pred"/>
         </alt>
+        <alt>
+          <resolve type="wh_question" predicate="tarot_card"/>
+        </alt>
       </findout>
     </plan>
   </goal>
@@ -57,15 +60,13 @@
     <get_done action="split_deck"/>
     <get_done action="take_card"/>
    <!--- <get_done action="ask_card"/> -->
-      <findout type="wh_question" predicate="tarot_card"/>
-      <invoke_service_query predicate="card_search" type="wh_question"/>
     </plan>
   </goal>
 
- <!--  <goal type="resolve" question_type="wh_question" predicate="tarot"> 
+ <goal type="resolve" question_type="wh_question" predicate="tarot_card"> 
     <plan>
       <findout type="wh_question" predicate="card_search"/>
-      <invoke_service_query predicate="tarot" type="wh_question"/>
+      <invoke_service_query predicate="tarot_card" type="wh_question"/>
     </plan>
   </goal>
 
@@ -82,7 +83,7 @@
     <get_done action="take_third_card"/>
     <get_done action="ask_card"/> 
     </plan>
-  </goal> -->
+  </goal>
 
   <goal type="perform" action="do_love_cross_formation">
     <plan>
