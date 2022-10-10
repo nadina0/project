@@ -39,7 +39,7 @@
 
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
     <one-of>
-      <item>card</item>
+      <item>info card</item>
     </one-of>
   </question>
 
@@ -184,7 +184,7 @@
 <individual name="the_chariot">The Chariot</individual>
 <individual name="strength">Strength</individual>
 <individual name="the_hermit">The Hermit</individual>
-<individual name="wheel_of_fortune">Wheel of fortune</individual>
+<individual name="wheel_of_fortune">Wheel Of Fortune</individual>
 <individual name="justice">Justice</individual>
 <individual name="the_hanged_man">The Hanged Man</individual>
 <individual name="death">Death</individual>
