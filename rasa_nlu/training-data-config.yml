@@ -23,6 +23,11 @@ pipeline:
 version: "2.0"
 
 nlu:
+- intent: action::do_love_cross_formation
+  examples: |
+    - love cross formation
+    - love cross
+
 - intent: action::do_mental_healing_spread
   examples: |
     - mental healing
@@ -165,9 +170,9 @@ nlu:
     - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
     - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - [aries]{"entity": "sort.sign", "value": "individual.aries"}
     - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
     - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
-    - [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
     - [leo]{"entity": "sort.sign", "value": "individual.leo"}
     - [libra]{"entity": "sort.sign", "value": "individual.libra"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
