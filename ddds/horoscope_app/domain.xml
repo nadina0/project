@@ -108,7 +108,7 @@
     <assume_shared>
   <proposition predicate="current_reading" value="mental_health_reading"/>
 </assume_shared>
-     <get_done action="mental_healing_info"/>
+    <get_done action="mental_healing_info"/>
     <get_done action="shuffle_deck"/>
     <get_done action="split_deck"/>
     <get_done action="bottom_cross"/>
