@@ -13,12 +13,12 @@
 
 
 
-  <query name="tarot">
+  <query name="tarot_card_question">
     <parameters>
       <parameter predicate="card_search" format="value"/>
     </parameters>
     <target>
-      <http endpoint="http://ddds-http-service/tarot"/>
+      <http endpoint="http://ddds-http-service/tarot_card_question"/>
     </target>
   </query>
 
