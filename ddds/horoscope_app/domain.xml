@@ -11,7 +11,17 @@
         <alt>
           <resolve type="wh_question" predicate="tarot_reading_pred"/>
         </alt>
+        <alt>
+          <resolve type="wh_question" predicate="tarot_card_question"/>
+        </alt>
       </findout>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
+    <plan>
+      <findout type="wh_question" predicate="card_search"/>
+      <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
     </plan>
   </goal>
 

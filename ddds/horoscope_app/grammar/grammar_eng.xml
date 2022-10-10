@@ -71,6 +71,10 @@
   about tarot reading
 </question>
 
+<question speaker="all" predicate="tarot_card_question">
+  about a card
+</question>
+
 <!-- tarot card reading menu -->
 
  <!--<question speaker="system" predicate="card_reading_type" type="wh_question">
