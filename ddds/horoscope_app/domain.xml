@@ -72,7 +72,7 @@
     <assume_shared>
   <proposition predicate="current_reading" value="ppf_reading"/>
 </assume_shared>
-     <get_done action="ppf_info"/>
+    <get_done action="ppf_info"/>
     <get_done action="shuffle_deck"/>
     <get_done action="split_deck"/>
     <get_done action="take_card"/>
@@ -100,7 +100,7 @@
   <goal type="perform" action="do_mental_healing_spread">
     <plan>
     <assume_shared>
-  <proposition predicate="current_reading" value="love_reading"/>
+  <proposition predicate="current_reading" value="mental_health_reading"/>
 </assume_shared>
      <get_done action="love_cross_info"/>
     <get_done action="shuffle_deck"/>

@@ -39,6 +39,13 @@
     </one-of>
   </action>
 
+  <action name="do_love_cross_formation">
+    <one-of>
+      <item>love cross formation</item>
+      <item>love cross</item>
+    </one-of>
+  </action>
+
   <action name="do_past_present_future">
    <one-of>
       <item>past present future</item>
