@@ -18,6 +18,13 @@
     </plan>
   </goal>
 
+  <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
+    <plan>
+      <findout type="wh_question" predicate="card_search"/>
+      <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
+    </plan>
+  </goal>
+
   <goal type="resolve" question_type="wh_question" predicate="horoscope">
     <plan>
       <findout type="wh_question" predicate="sign_search"/>
