@@ -130,7 +130,7 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-  <answer speaker="system" predicate="horoscope">Your card means <slot predicate="tarot"/> </answer>
+  <answer speaker="system" predicate="tarot">Your card means <slot predicate="tarot"/> </answer>
 
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>
