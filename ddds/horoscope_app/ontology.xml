@@ -185,5 +185,7 @@
   <individual name="lucky_number" sort="category_of_horoscope"/>
   <individual name="color" sort="category_of_horoscope"/>
   <individual name="mood" sort="category_of_horoscope"/>
+  <individual name="lucky_time" sort="category_of_horoscope"/>
+
 
 </ontology>

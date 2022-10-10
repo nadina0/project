@@ -174,6 +174,10 @@ def get_horoscope():
     sign = facts["sign_search"]["grammar_entry"]
     day = facts["day_search"]["grammar_entry"]
     info_choice = facts["info_choice"]["grammar_entry"]
+    if info_choice == "lucky number":
+      info_choice = "lucky_number"
+    if info_choice == "lucky time":
+      info_choice = "lucky_time"
     api_response = get_current_data(sign, day, info_choice)
     for key, value in api_response.items():
       if key == info_choice:
@@ -187,7 +191,6 @@ def get_tarot():
     facts = request.get_json()["context"]["facts"]
     card = facts["card_search"]["grammar_entry"]
     api_response = get_card_data(card)
-    print(api_response)
     for the_card in api_response['cards']:
       if the_card['name'] == card:
         chosen_card_up = the_card['meaning_up']

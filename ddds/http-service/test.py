@@ -15,6 +15,24 @@ parser = argparse.ArgumentParser()
 parser.add_argument("argument")
 args = parser.parse_args()
 
+def get_horoscope():
+    facts = request.get_json()["context"]["facts"]
+    sign = facts["sign_search"]["grammar_entry"]
+    day = facts["day_search"]["grammar_entry"]
+    info_choice = facts["info_choice"]["grammar_entry"]
+    if info_choice == "lucky number":
+      info_choice = "lucky_number"
+    if info_choice == "lucky time":
+      info_choice = "lucky_time"
+    api_response = get_current_data(sign, day, info_choice)
+    for key, value in api_response.items():
+      if key == info_choice:
+        chosen_category = value
+        break
+    return query_response(value=chosen_category, grammar_entry=None)
+
+
+
 for key, value in dictionary.items():
     if key == args.argument:
         print(value)

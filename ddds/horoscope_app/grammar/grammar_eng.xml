@@ -267,6 +267,7 @@
 <individual name="lucky_number">lucky number</individual>
 <individual name="color">color</individual>
 <individual name="compatibility">compatibility</individual>
+<individual name="lucky_time">lucky time</individual>
 
 
 </grammar>
