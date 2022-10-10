@@ -78,7 +78,7 @@
   about tarot reading
 </question>
 
-<question speaker="all" predicate="tarot_card_question">
+<question speaker="all" predicate="tarot_card">
   about a card
 </question>
 
