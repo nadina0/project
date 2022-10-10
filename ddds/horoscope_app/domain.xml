@@ -67,8 +67,7 @@
       <findout type="wh_question" predicate="card_search"/>
       <invoke_service_query predicate="tarot" type="wh_question"/>
     </plan>
-  </goal>  this is the old "resolve goal that only asked for which card"-->
-
+  </goal>
 
   <goal type="perform" action="do_past_present_future">
     <plan>
@@ -81,9 +80,9 @@
     <get_done action="take_card"/>
     <get_done action="take_second_card"/>
     <get_done action="take_third_card"/>
-    <get_done action="ask_card"/>
+    <get_done action="ask_card"/> 
     </plan>
-  </goal>
+  </goal> -->
 
   <goal type="perform" action="do_love_cross_formation">
     <plan>
@@ -105,7 +104,7 @@
     <assume_shared>
   <proposition predicate="current_reading" value="mental_health_reading"/>
 </assume_shared>
-     <get_done action="love_cross_info"/>
+     <get_done action="mental_healing_info"/>
     <get_done action="shuffle_deck"/>
     <get_done action="split_deck"/>
     <get_done action="bottom_cross"/>

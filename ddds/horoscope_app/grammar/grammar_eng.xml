@@ -73,24 +73,24 @@
 
 <!-- tarot card reading menu -->
 
- <question speaker="system" predicate="card_reading_type" type="wh_question">
+ <!--<question speaker="system" predicate="card_reading_type" type="wh_question">
     What type of reading?
-  </question>
+  </question> -->
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
     do one card spread
   </question>
 
   <question speaker="all" predicate="past_present_future" type="alt_question">
-    past present future
+    about past present future
   </question>
 
   <question speaker="all" predicate="love_cross_formation" type="alt_question">
-    love cross formation
+    about love cross formation
   </question>
 
   <question speaker="all" predicate="mental_healing_spread" type="alt_question">
-    mental healing spread
+    do mental healing spread
   </question>
 
 <question speaker="system" predicate="card_reading_type" type="wh_question">
