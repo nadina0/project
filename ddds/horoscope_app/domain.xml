@@ -68,7 +68,10 @@
     <get_done action="shuffle_deck"/>
     <get_done action="split_deck"/>
     <get_done action="take_card"/>
-    <get_done action="ask_card"/>
+     <inform>
+        <proposition predicate="finished_one_card" value="one_card_spread_done"/>
+      </inform>
+      <signal_action_completion/>
     </plan>
   </goal>
 
@@ -84,7 +87,10 @@
     <get_done action="take_card"/>
     <get_done action="take_second_card"/>
     <get_done action="take_third_card"/>
-    <get_done action="ask_card"/> 
+    <inform>
+        <proposition predicate="finished_reading" value="spread_done"/>
+      </inform>
+    <signal_action_completion/> 
     </plan>
   </goal>
 
@@ -100,6 +106,10 @@
     <get_done action="perspective_card"/>
     <get_done action="fourth_card_foundation"/>
     <get_done action="final_card_outcome"/>
+    <inform>
+        <proposition predicate="finished_reading" value="spread_done"/>
+      </inform>
+    <signal_action_completion/> 
     </plan>
   </goal>
 
@@ -116,6 +126,10 @@
     <get_done action="center_card"/>
     <get_done action="right_center"/>
     <get_done action="top_cross"/>
+    <inform>
+        <proposition predicate="finished_reading" value="spread_done"/>
+      </inform>
+    <signal_action_completion/> 
     </plan>
   </goal>
 
