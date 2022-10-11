@@ -49,7 +49,7 @@
     },
     {
         "match": "request(fourth_card_foundation)",
-        "utterance": "The fourth card should be placed below the central cads. This represents the foundation of the relationship or something in the past contributing to the current issue."
+        "utterance": "The fourth card should be placed below the central cards. This represents the foundation of the relationship or something in the past contributing to the current issue."
     },
     {
         "match": "request(final_card_outcome)",
