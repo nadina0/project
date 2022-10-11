@@ -68,7 +68,7 @@
     <get_done action="shuffle_deck"/>
     <get_done action="split_deck"/>
     <get_done action="take_card"/>
-   <!--- <get_done action="ask_card"/> -->
+    <get_done action="ask_card"/>
     </plan>
   </goal>
 
