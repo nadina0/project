@@ -108,7 +108,7 @@
     <get_done action="final_card_outcome"/>
     <inform>
         <proposition predicate="finished_reading" value="spread_done"/>
-      </inform>
+    </inform>
     <signal_action_completion/> 
     </plan>
   </goal>
