@@ -514,6 +514,9 @@ nlu:
     - okay next
     - next
     - next instruction
+    - shuffled
+    - okay 
+    - ok
 
 - intent: icm:per*neg
   examples: |
@@ -527,6 +530,7 @@ nlu:
     - what was that
     - what did you say
     - come again
+    - what
 
 - intent: icm:acc*neg:issue
   examples: |
