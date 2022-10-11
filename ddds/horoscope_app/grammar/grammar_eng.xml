@@ -34,6 +34,8 @@
   <action name="tarot_reading">
     <one-of>
       <item>reading</item>
+      <item>tarot reading</item>
+      <item>do a reading</item>
     </one-of>
   </action>
 
