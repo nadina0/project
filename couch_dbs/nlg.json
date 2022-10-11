@@ -16,10 +16,6 @@
         "utterance": "Take out a card and place it in front of you"
     },
     {
-        "match": "request(ask_card)",
-        "utterance": "What is your card?"
-    },
-    {
         "match": "request(ppf_info)",
         "utterance": "Think about a situation in your life that you would like clarity on."
     },
