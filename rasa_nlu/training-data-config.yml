@@ -43,6 +43,12 @@ nlu:
     - past present future
     - ppf
 
+- intent: action::tarot_reading
+  examples: |
+    - reading
+    - tarot reading
+    - do a reading
+
 - intent: question::horoscope
   examples: |
     - horoscope
@@ -170,12 +176,12 @@ nlu:
     - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
     - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - [aries]{"entity": "sort.sign", "value": "individual.aries"}
     - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
     - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
     - [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
     - [leo]{"entity": "sort.sign", "value": "individual.leo"}
     - [libra]{"entity": "sort.sign", "value": "individual.libra"}
-    - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
     - [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
     - [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
@@ -188,16 +194,16 @@ nlu:
     - [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
     - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
     - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
-    - [King of Swords]{"entity": "sort.card", "value": "individual.king_of_swords"}
-    - [Nine of Cups]{"entity": "sort.card", "value": "individual.nine_of_cups"}
-    - [Page of Pentacles]{"entity": "sort.card", "value": "individual.page_of_pentacles"}
+    - [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
+    - [Nine of Pentacles]{"entity": "sort.card", "value": "individual.nine_of_pentacles"}
+    - [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
     - [Page of Wands]{"entity": "sort.card", "value": "individual.page_of_wands"}
     - [Queen of Cups]{"entity": "sort.card", "value": "individual.queen_of_cups"}
-    - [Seven of Swords]{"entity": "sort.card", "value": "individual.seven_of_swords"}
-    - [Temperance]{"entity": "sort.card", "value": "individual.temperance"}
-    - [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
-    - [The Empress]{"entity": "sort.card", "value": "individual.the_empress"}
-    - [Two of Pentacles]{"entity": "sort.card", "value": "individual.two_of_pentacles"}
+    - [Queen of Wands]{"entity": "sort.card", "value": "individual.queen_of_wands"}
+    - [Ten of Pentacles]{"entity": "sort.card", "value": "individual.ten_of_pentacles"}
+    - [The Hanged Man]{"entity": "sort.card", "value": "individual.the_hanged_man"}
+    - [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
+    - [Two of Swords]{"entity": "sort.card", "value": "individual.two_of_swords"}
     - yes [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
     - yes [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
     - yes [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
@@ -210,9 +216,9 @@ nlu:
     - yes [hey make it four](sort.string)
     - yes [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
     - yes [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
-    - yes [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - yes [libra]{"entity": "sort.sign", "value": "individual.libra"}
     - yes [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
-    - yes [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
+    - yes [The Hanged Man]{"entity": "sort.card", "value": "individual.the_hanged_man"}
     - no [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
     - no [Justice]{"entity": "sort.card", "value": "individual.justice"}
     - no [The World]{"entity": "sort.card", "value": "individual.the_world"}
@@ -227,7 +233,7 @@ nlu:
     - no [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
     - no [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - no [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
-    - no [The Empress]{"entity": "sort.card", "value": "individual.the_empress"}
+    - no [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
 
 - intent: answer_negation
   examples: |
