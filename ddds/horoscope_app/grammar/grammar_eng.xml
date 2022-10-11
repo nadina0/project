@@ -37,6 +37,7 @@
     </one-of>
   </action>
 
+
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
     <one-of>
       <item>info card</item>

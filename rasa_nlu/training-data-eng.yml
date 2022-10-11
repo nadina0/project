@@ -151,10 +151,10 @@ nlu:
     - [aries]{"entity": "sort.sign", "value": "individual.aries"}
     - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
     - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
-    - [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
     - [leo]{"entity": "sort.sign", "value": "individual.leo"}
     - [libra]{"entity": "sort.sign", "value": "individual.libra"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
     - [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
     - [today]{"entity": "sort.day", "value": "individual.today"}
@@ -167,15 +167,15 @@ nlu:
     - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
     - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
     - [Ace of Cups]{"entity": "sort.card", "value": "individual.ace_of_cups"}
-    - [Death]{"entity": "sort.card", "value": "individual.death"}
-    - [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
-    - [Five of Pentacles]{"entity": "sort.card", "value": "individual.five_of_pentacles"}
-    - [Five of Swords]{"entity": "sort.card", "value": "individual.five_of_swords"}
     - [King of Cups]{"entity": "sort.card", "value": "individual.king_of_cups"}
-    - [Knight of Pentacles]{"entity": "sort.card", "value": "individual.knight_of_pentacles"}
-    - [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
+    - [King of Swords]{"entity": "sort.card", "value": "individual.king_of_swords"}
+    - [Queen of Swords]{"entity": "sort.card", "value": "individual.queen_of_swords"}
+    - [Six of Pentacles]{"entity": "sort.card", "value": "individual.six_of_pentacles"}
     - [Six of Swords]{"entity": "sort.card", "value": "individual.six_of_swords"}
-    - [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
+    - [Ten of Pentacles]{"entity": "sort.card", "value": "individual.ten_of_pentacles"}
+    - [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
+    - [The Chariot]{"entity": "sort.card", "value": "individual.the_chariot"}
+    - [Three of Swords]{"entity": "sort.card", "value": "individual.three_of_swords"}
     - yes [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
     - yes [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
     - yes [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
@@ -188,9 +188,9 @@ nlu:
     - yes [hey make it four](sort.string)
     - yes [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
     - yes [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
-    - yes [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - yes [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
     - yes [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
-    - yes [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
+    - yes [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
     - no [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
     - no [Justice]{"entity": "sort.card", "value": "individual.justice"}
     - no [The World]{"entity": "sort.card", "value": "individual.the_world"}
@@ -203,9 +203,9 @@ nlu:
     - no [the more the merrier five](sort.string)
     - no [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
     - no [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
-    - no [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - no [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - no [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
-    - no [Six of Swords]{"entity": "sort.card", "value": "individual.six_of_swords"}
+    - no [The Chariot]{"entity": "sort.card", "value": "individual.the_chariot"}
 
 - intent: answer_negation
   examples: |
@@ -514,9 +514,6 @@ nlu:
     - okay next
     - next
     - next instruction
-    - shuffled
-    - okay 
-    - ok
 
 - intent: icm:per*neg
   examples: |
@@ -530,7 +527,6 @@ nlu:
     - what was that
     - what did you say
     - come again
-    - what
 
 - intent: icm:acc*neg:issue
   examples: |
