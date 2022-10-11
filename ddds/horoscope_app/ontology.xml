@@ -17,11 +17,9 @@
   <predicate name="tarot_reading_pred" sort="string"/>
   <predicate name="tarot_card_question" sort="string"/>
 
-
-
-
-
-
+  <predicate name="finished_one_card" sort="finished_spread"/>
+  <predicate name="finished_reading" sort="finished_spread"/>
+  
   <predicate name="one_card_spread" sort="type_of_spread"/>
   <predicate name="past_present_future" sort="type_of_spread"/>
   <predicate name="love_cross_formation" sort="type_of_spread"/>
@@ -71,6 +69,7 @@
   <sort name="day" dynamic="true"/>
   <sort name="card" dynamic="true"/>
   <sort name="category_of_horoscope" dynamic="true"/>
+  <sort name ="finished_spread"/>
 
   <!-- individual cards -->  
 
@@ -187,5 +186,7 @@
   <individual name="mood" sort="category_of_horoscope"/>
   <individual name="lucky_time" sort="category_of_horoscope"/>
 
+  <individual name="one_card_spread_done" sort="finished_spread"/>
+  <individual name="spread_done" sort="finished_spread"/>
 
 </ontology>
