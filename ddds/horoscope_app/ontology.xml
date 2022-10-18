@@ -13,12 +13,14 @@
   <predicate name="day_search" sort="day"/>
   <predicate name="card_search" sort="card"/>
   <predicate name="info_choice" sort="category_of_horoscope"/>
+  
   <predicate name="horoscope" sort="string"/>
   <predicate name="tarot_reading_pred" sort="string"/>
   <predicate name="tarot_card_question" sort="string"/>
 
   <predicate name="finished_one_card" sort="finished_spread"/>
   <predicate name="finished_reading" sort="finished_spread"/>
+
   
   <predicate name="one_card_spread" sort="type_of_spread"/>
   <predicate name="past_present_future" sort="type_of_spread"/>

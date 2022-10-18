@@ -126,6 +126,7 @@
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
       <item><slot predicate="info_choice"/> </item>
+       <item><slot predicate="more_info"/> </item>
       <item><slot predicate="card_search"/></item>
     </one-of>
   </answer>
