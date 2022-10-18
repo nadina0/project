@@ -32,6 +32,7 @@
       </if>
       -->
       <findout type="wh_question" predicate="day_search"/>
+      <end_turn expected_passivity="1.0"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
@@ -60,22 +61,18 @@
     <plan>
       <findout type="alt_question">
         <alt>
-        <resolve type="wh_question" predicate="one_card_spread"/> <!-- these should probably be action like in lab 3-->
+        <resolve type="wh_question" predicate="one_card_spread"/> 
         </alt>
         <alt>
          <resolve type="wh_question" predicate="past_present_future"/>
-         <!-- <perform action="do_past_present_future" predicate="past_present_future"/> -->
         </alt>
         <alt>
          <resolve type="wh_question" predicate="love_cross_formation"/>
-         <!-- <perform action="do_love_cross_formation" predicate="love_cross_formation"/> -->
         </alt>
          <alt>
           <resolve type="wh_question" predicate="mental_healing_spread"/>
-         <!-- <perform action="do_mental_healing_spread" predicate="mental_healing_spread"/> --> <!-- how to ask these as question ? with action-->
         </alt>
       </findout>
-       <!--<invoke_service_query predicate="tarot" type="wh_question"/>-->
     </plan>
   </goal>
 
