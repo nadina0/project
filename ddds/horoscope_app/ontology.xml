@@ -189,4 +189,13 @@
   <individual name="one_card_spread_done" sort="finished_spread"/>
   <individual name="spread_done" sort="finished_spread"/>
 
+  <predicate name="sign_status" sort="sign_status_sort"/>
+  <sort name="sign_status_sort"/>
+
+  <predicate name="findout_sign_predicate" sort="sign_status_sort"/>
+
+
+
+
+
 </ontology>

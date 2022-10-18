@@ -131,6 +131,20 @@
     </one-of>
   </answer>
 
+
+   <action name="findout_sign">
+   <one-of>
+      <item>I don't know</item>
+      <item> I don't know my sign </item>
+    </one-of>
+  </action>
+
+  <question speaker="system" predicate="findout_sign_predicate" type="wh_question">
+    When are you born
+  </question>
+
+
+
 <!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
     What sign
