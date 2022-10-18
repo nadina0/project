@@ -28,6 +28,9 @@
       <item>horoscope</item>
       <item>I would like you to tell me the horoscope</item>
       <item>tell me my horoscope</item>
+      <item>horoscope for <slot predicate="sign_search"/> <slot predicate="day_search"/> </item>
+      <item>horoscope for <slot predicate="sign_search"/> for <slot predicate="day_search"/> </item>
+      <item>horoscope for <slot predicate="sign_search"/> </item>
     </one-of>
   </question>
 
@@ -126,7 +129,6 @@
       <item><slot predicate="sign_search"/></item>
       <item><slot predicate="day_search"/> </item>
       <item><slot predicate="info_choice"/> </item>
-       <item><slot predicate="more_info"/> </item>
       <item><slot predicate="card_search"/></item>
     </one-of>
   </answer>
