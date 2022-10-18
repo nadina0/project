@@ -121,7 +121,6 @@
 
 <!-- menu question and answers -->
 
-
   <answer speaker="user">
     <one-of>
       <item><slot predicate="sign_search"/></item>
@@ -131,11 +130,10 @@
     </one-of>
   </answer>
 
-
    <action name="findout_sign">
    <one-of>
       <item>I don't know</item>
-      <item> I don't know my sign </item>
+      <item>I don't know my sign </item>
     </one-of>
   </action>
 
