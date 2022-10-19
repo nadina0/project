@@ -183,6 +183,7 @@ def get_horoscope():
       if key == info_choice:
         chosen_category = value
         break
+    print(api_response)
     return query_response(value=chosen_category, grammar_entry=None)
 
 
@@ -197,4 +198,5 @@ def get_tarot():
         chosen_card_up = the_card['meaning_up']
         chosen_card_reversed = the_card['meaning_rev']
         break
+    print(api_response)
     return query_response(value=f'Your card upright means: {chosen_card_up}. Reversed, it means: {chosen_card_reversed}', grammar_entry=None)
