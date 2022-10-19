@@ -34,6 +34,27 @@
       <findout type="wh_question" predicate="day_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
+      <assume_shared>
+     <proposition predicate="current_horoscope" value="horoscope"/>
+    </assume_shared>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="more_info">
+    <plan>
+      <findout type="wh_question" predicate="more_info"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_horoscope" value="horoscope"/>
+        <then>
+        <findout type="wh_question" predicate="info_choice"/>
+        <invoke_service_query predicate="horoscope" type="wh_question"/>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="more_info" value="cup"/>
+          </inform>
+        </else>
+      </if>
     </plan>
   </goal>
 

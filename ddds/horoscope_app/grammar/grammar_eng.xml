@@ -163,7 +163,23 @@
     What card
   </question>
 
+  <question speaker="system" predicate="more_info" type="wh_question">
+    What do you want to know
+  </question>
+
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+<individual name="cup">cup</individual>
+
+ <question type="wh_question" speaker="user" predicate="more_info">
+    <one-of>
+      <item>more info</item>
+      <item>i want to ask something else</item>
+      <item>what amount of butter</item>
+      <item>how much butter</item>
+    </one-of>
+  </question>
+
 
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>
