@@ -171,14 +171,14 @@
   </question>
 
    <question speaker="system" predicate="more_info_tarot" type="wh_question">
-    What do you want to know
+    What is your card
   </question>
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
   <answer speaker="system" predicate="current_horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-  <answer speaker="system" predicate="current_tarot">Your prognosis is <slot predicate="tarot_card_question"/> </answer>
+  <answer speaker="system" predicate="current_tarot">Your card means <slot predicate="tarot_card_question"/></answer>
 
 <individual name="cup">cup</individual>
 
