@@ -51,24 +51,6 @@
     </plan>
   </goal>
 
-   <goal type="resolve" question_type="wh_question" predicate="more_info_tarot">
-    <plan>
-      <findout type="wh_question" predicate="more_info_tarot"/>
-      <if>
-        <is_private_belief_or_shared_commitment predicate="current_tarot" value="tarot_card_question"/>
-        <then>
-        <findout type="wh_question" predicate="info_choice"/>
-        <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
-        </then>
-        <else>
-          <inform>
-            <proposition predicate="more_info_tarot" value="cup"/>
-          </inform>
-        </else>
-      </if>
-    </plan>
-  </goal>
-
 
   <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
     <plan>
@@ -102,7 +84,6 @@
 
   <goal type="perform" action="do_one_card_spread">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="one_card_reading"/>
 </assume_shared>
@@ -120,7 +101,6 @@
 
   <goal type="perform" action="do_past_present_future">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="ppf_reading"/>
 </assume_shared>
@@ -139,7 +119,6 @@
 
   <goal type="perform" action="do_love_cross_formation">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="love_reading"/>
 </assume_shared>
@@ -159,7 +138,6 @@
 
   <goal type="perform" action="do_mental_healing_spread">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="mental_health_reading"/>
 </assume_shared>
