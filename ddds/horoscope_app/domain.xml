@@ -54,11 +54,28 @@
    <goal type="resolve" question_type="wh_question" predicate="more_info_tarot">
     <plan>
       <findout type="wh_question" predicate="more_info_tarot"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_tarot"/>
+        <then>
+        <findout type="wh_question" predicate="info_choice"/>
         <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="more_info_tarot" value="cup"/>
+          </inform>
+        </else>
+      </if>
     </plan>
   </goal>
 
 
+  <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
+    <plan>
+      <findout type="wh_question" predicate="card_search"/>
+      <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
+    </plan>
+  </goal>
 
 
   <goal type="perform" action="tarot_reading">
