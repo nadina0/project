@@ -176,6 +176,10 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
+  <answer speaker="system" predicate="current_horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+
+  <answer speaker="system" predicate="current_tarot">Your prognosis is <slot predicate="tarot_card_question"/> </answer>
+
 <individual name="cup">cup</individual>
 
  <question type="wh_question" speaker="user" predicate="more_info_horoscope">

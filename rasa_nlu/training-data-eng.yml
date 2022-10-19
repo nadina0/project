@@ -1,0 +1,608 @@
+version: "2.0"
+
+nlu:
+- intent: action::do_love_cross_formation
+  examples: |
+    - love cross formation
+    - love cross
+
+- intent: action::do_mental_healing_spread
+  examples: |
+    - mental healing
+    - mental healing spread
+
+- intent: action::do_one_card_spread
+  examples: |
+    - one card spread
+    - only one card spread
+
+- intent: action::do_past_present_future
+  examples: |
+    - past present future
+    - ppf
+
+- intent: action::tarot_reading
+  examples: |
+    - reading
+    - tarot reading
+    - do a reading
+
+- intent: question::horoscope
+  examples: |
+    - horoscope
+    - I would like you to tell me the horoscope
+    - tell me my horoscope
+    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"} [today]{"entity": "sort.day", "value": "individual.today"}
+    - horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"} [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"} [today]{"entity": "sort.day", "value": "individual.today"}
+    - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"} [today]{"entity": "sort.day", "value": "individual.today"}
+    - horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"} [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"} for [today]{"entity": "sort.day", "value": "individual.today"}
+    - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [taurus]{"entity": "sort.sign", "value": "individual.taurus"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
+    - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+
+- intent: question::more_info_horoscope
+  examples: |
+    - more info
+    - i want to ask something else
+    - what amount of butter
+    - how much butter
+
+- intent: question::more_info_tarot
+  examples: |
+    - more info
+    - i want to ask something else
+    - what amount of butter
+    - how much butter
+
+- intent: question::tarot_card_question
+  examples: |
+    - info card
+
+- intent: answer
+  examples: |
+    - [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
+    - [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
+    - [The High Priestess]{"entity": "sort.card", "value": "individual.the_high_priestess"}
+    - [The Empress]{"entity": "sort.card", "value": "individual.the_empress"}
+    - [The Emperor]{"entity": "sort.card", "value": "individual.the_emperor"}
+    - [The Hierophant]{"entity": "sort.card", "value": "individual.the_hierophant"}
+    - [The Lovers]{"entity": "sort.card", "value": "individual.the_lovers"}
+    - [The Chariot]{"entity": "sort.card", "value": "individual.the_chariot"}
+    - [Strength]{"entity": "sort.card", "value": "individual.strength"}
+    - [The Hermit]{"entity": "sort.card", "value": "individual.the_hermit"}
+    - [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
+    - [Justice]{"entity": "sort.card", "value": "individual.justice"}
+    - [The Hanged Man]{"entity": "sort.card", "value": "individual.the_hanged_man"}
+    - [Death]{"entity": "sort.card", "value": "individual.death"}
+    - [Temperance]{"entity": "sort.card", "value": "individual.temperance"}
+    - [The Devil]{"entity": "sort.card", "value": "individual.the_devil"}
+    - [The Tower]{"entity": "sort.card", "value": "individual.the_tower"}
+    - [The Star]{"entity": "sort.card", "value": "individual.the_star"}
+    - [The Moon]{"entity": "sort.card", "value": "individual.the_moon"}
+    - [The Sun]{"entity": "sort.card", "value": "individual.the_sun"}
+    - [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
+    - [The World]{"entity": "sort.card", "value": "individual.the_world"}
+    - [Ace of Wands]{"entity": "sort.card", "value": "individual.ace_of_wands"}
+    - [Two of Wands]{"entity": "sort.card", "value": "individual.two_of_wands"}
+    - [Three of Wands]{"entity": "sort.card", "value": "individual.three_of_wands"}
+    - [Four of Wands]{"entity": "sort.card", "value": "individual.four_of_wands"}
+    - [Five of Wands]{"entity": "sort.card", "value": "individual.five_of_wands"}
+    - [Six of Wands]{"entity": "sort.card", "value": "individual.six_of_wands"}
+    - [Seven of Wands]{"entity": "sort.card", "value": "individual.seven_of_wands"}
+    - [Eight of Wands]{"entity": "sort.card", "value": "individual.eight_of_wands"}
+    - [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
+    - [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+    - [Page of Wands]{"entity": "sort.card", "value": "individual.page_of_wands"}
+    - [Knight of Wands]{"entity": "sort.card", "value": "individual.knight_of_wands"}
+    - [Queen of Wands]{"entity": "sort.card", "value": "individual.queen_of_wands"}
+    - [King of Wands]{"entity": "sort.card", "value": "individual.king_of_wands"}
+    - [Ace of Cups]{"entity": "sort.card", "value": "individual.ace_of_cups"}
+    - [Two of Cups]{"entity": "sort.card", "value": "individual.two_of_cups"}
+    - [Three of Cups]{"entity": "sort.card", "value": "individual.three_of_cups"}
+    - [Four of Cups]{"entity": "sort.card", "value": "individual.four_of_cups"}
+    - [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
+    - [Six of Cups]{"entity": "sort.card", "value": "individual.six_of_cups"}
+    - [Seven of Cups]{"entity": "sort.card", "value": "individual.seven_of_cups"}
+    - [Eight of Cups]{"entity": "sort.card", "value": "individual.eight_of_cups"}
+    - [Nine of Cups]{"entity": "sort.card", "value": "individual.nine_of_cups"}
+    - [Ten of Cups]{"entity": "sort.card", "value": "individual.ten_of_cups"}
+    - [Page of Cups]{"entity": "sort.card", "value": "individual.page_of_cups"}
+    - [Knight of Cups]{"entity": "sort.card", "value": "individual.knight_of_cups"}
+    - [Queen of Cups]{"entity": "sort.card", "value": "individual.queen_of_cups"}
+    - [King of Cups]{"entity": "sort.card", "value": "individual.king_of_cups"}
+    - [Ace of Swords]{"entity": "sort.card", "value": "individual.ace_of_swords"}
+    - [Two of Swords]{"entity": "sort.card", "value": "individual.two_of_swords"}
+    - [Three of Swords]{"entity": "sort.card", "value": "individual.three_of_swords"}
+    - [Four of Swords]{"entity": "sort.card", "value": "individual.four_of_swords"}
+    - [Five of Swords]{"entity": "sort.card", "value": "individual.five_of_swords"}
+    - [Six of Swords]{"entity": "sort.card", "value": "individual.six_of_swords"}
+    - [Seven of Swords]{"entity": "sort.card", "value": "individual.seven_of_swords"}
+    - [Eight of Swords]{"entity": "sort.card", "value": "individual.eight_of_swords"}
+    - [Nine of Swords]{"entity": "sort.card", "value": "individual.nine_of_swords"}
+    - [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
+    - [Page of Swords]{"entity": "sort.card", "value": "individual.page_of_swords"}
+    - [Knight of Swords]{"entity": "sort.card", "value": "individual.knight_of_swords"}
+    - [Queen of Swords]{"entity": "sort.card", "value": "individual.queen_of_swords"}
+    - [King of Swords]{"entity": "sort.card", "value": "individual.king_of_swords"}
+    - [Ace of Pentacles]{"entity": "sort.card", "value": "individual.ace_of_pentacles"}
+    - [Two of Pentacles]{"entity": "sort.card", "value": "individual.two_of_pentacles"}
+    - [Three of Pentacles]{"entity": "sort.card", "value": "individual.three_of_pentacles"}
+    - [Four of Pentacles]{"entity": "sort.card", "value": "individual.four_of_pentacles"}
+    - [Five of Pentacles]{"entity": "sort.card", "value": "individual.five_of_pentacles"}
+    - [Six of Pentacles]{"entity": "sort.card", "value": "individual.six_of_pentacles"}
+    - [Seven of Pentacles]{"entity": "sort.card", "value": "individual.seven_of_pentacles"}
+    - [Eight of Pentacles]{"entity": "sort.card", "value": "individual.eight_of_pentacles"}
+    - [Nine of Pentacles]{"entity": "sort.card", "value": "individual.nine_of_pentacles"}
+    - [Ten of Pentacles]{"entity": "sort.card", "value": "individual.ten_of_pentacles"}
+    - [Page of Pentacles]{"entity": "sort.card", "value": "individual.page_of_pentacles"}
+    - [Knight of Pentacles]{"entity": "sort.card", "value": "individual.knight_of_pentacles"}
+    - [Queen of Pentacles]{"entity": "sort.card", "value": "individual.queen_of_pentacles"}
+    - [King of Pentacles]{"entity": "sort.card", "value": "individual.king_of_pentacles"}
+    - [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
+    - [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+    - [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
+    - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - [one card spread]{"entity": "sort.type_of_spread", "value": "individual.one_card_reading"}
+    - [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
+    - [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
+    - [mental health reading]{"entity": "sort.type_of_spread", "value": "individual.mental_health_reading"}
+    - [today]{"entity": "sort.day", "value": "individual.today"}
+    - [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - [You're done. You can ask for information about the meaning of your card]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
+    - [Your spread is completed. You can ask for information about any of your cards]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
+    - [single](sort.string)
+    - [double word](sort.string)
+    - [three in one](sort.string)
+    - [hey make it four](sort.string)
+    - [the more the merrier five](sort.string)
+    - [calm down and count to six](sort.string)
+    - [bring them through to the jolly seven](sort.string)
+    - [noone counts toes like an eight toed guy](sort.string)
+    - [it matters to make sense for nine of us](sort.string)
+    - [would you bring ten or none to a desert island](sort.string)
+    - [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
+    - [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
+    - [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
+    - [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
+    - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
+    - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
+    - [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
+    - [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+    - [today]{"entity": "sort.day", "value": "individual.today"}
+    - [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
+    - [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
+    - [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
+    - [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
+    - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
+    - [Ace of Wands]{"entity": "sort.card", "value": "individual.ace_of_wands"}
+    - [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
+    - [Five of Pentacles]{"entity": "sort.card", "value": "individual.five_of_pentacles"}
+    - [King of Cups]{"entity": "sort.card", "value": "individual.king_of_cups"}
+    - [Six of Swords]{"entity": "sort.card", "value": "individual.six_of_swords"}
+    - [Temperance]{"entity": "sort.card", "value": "individual.temperance"}
+    - [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+    - [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
+    - [The High Priestess]{"entity": "sort.card", "value": "individual.the_high_priestess"}
+    - [The Moon]{"entity": "sort.card", "value": "individual.the_moon"}
+    - yes [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
+    - yes [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
+    - yes [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
+    - yes [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
+    - yes [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
+    - yes [Ace of Swords]{"entity": "sort.card", "value": "individual.ace_of_swords"}
+    - yes [Page of Swords]{"entity": "sort.card", "value": "individual.page_of_swords"}
+    - yes [Seven of Pentacles]{"entity": "sort.card", "value": "individual.seven_of_pentacles"}
+    - yes [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - yes [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
+    - yes [three in one](sort.string)
+    - yes [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
+    - yes [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - yes [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - yes [Temperance]{"entity": "sort.card", "value": "individual.temperance"}
+    - no [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
+    - no [Justice]{"entity": "sort.card", "value": "individual.justice"}
+    - no [The World]{"entity": "sort.card", "value": "individual.the_world"}
+    - no [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+    - no [Six of Cups]{"entity": "sort.card", "value": "individual.six_of_cups"}
+    - no [Two of Swords]{"entity": "sort.card", "value": "individual.two_of_swords"}
+    - no [Knight of Swords]{"entity": "sort.card", "value": "individual.knight_of_swords"}
+    - no [Eight of Pentacles]{"entity": "sort.card", "value": "individual.eight_of_pentacles"}
+    - no [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - no [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
+    - no [hey make it four](sort.string)
+    - no [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
+    - no [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - no [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
+    - no [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+
+- intent: answer_negation
+  examples: |
+    - not [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
+    - not [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
+    - not [The High Priestess]{"entity": "sort.card", "value": "individual.the_high_priestess"}
+    - not [The Empress]{"entity": "sort.card", "value": "individual.the_empress"}
+    - not [The Emperor]{"entity": "sort.card", "value": "individual.the_emperor"}
+    - not [The Hierophant]{"entity": "sort.card", "value": "individual.the_hierophant"}
+    - not [The Lovers]{"entity": "sort.card", "value": "individual.the_lovers"}
+    - not [The Chariot]{"entity": "sort.card", "value": "individual.the_chariot"}
+    - not [Strength]{"entity": "sort.card", "value": "individual.strength"}
+    - not [The Hermit]{"entity": "sort.card", "value": "individual.the_hermit"}
+    - not [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
+    - not [Justice]{"entity": "sort.card", "value": "individual.justice"}
+    - not [The Hanged Man]{"entity": "sort.card", "value": "individual.the_hanged_man"}
+    - not [Death]{"entity": "sort.card", "value": "individual.death"}
+    - not [Temperance]{"entity": "sort.card", "value": "individual.temperance"}
+    - not [The Devil]{"entity": "sort.card", "value": "individual.the_devil"}
+    - not [The Tower]{"entity": "sort.card", "value": "individual.the_tower"}
+    - not [The Star]{"entity": "sort.card", "value": "individual.the_star"}
+    - not [The Moon]{"entity": "sort.card", "value": "individual.the_moon"}
+    - not [The Sun]{"entity": "sort.card", "value": "individual.the_sun"}
+    - not [The Last Judgment]{"entity": "sort.card", "value": "individual.the_last_judgment"}
+    - not [The World]{"entity": "sort.card", "value": "individual.the_world"}
+    - not [Ace of Wands]{"entity": "sort.card", "value": "individual.ace_of_wands"}
+    - not [Two of Wands]{"entity": "sort.card", "value": "individual.two_of_wands"}
+    - not [Three of Wands]{"entity": "sort.card", "value": "individual.three_of_wands"}
+    - not [Four of Wands]{"entity": "sort.card", "value": "individual.four_of_wands"}
+    - not [Five of Wands]{"entity": "sort.card", "value": "individual.five_of_wands"}
+    - not [Six of Wands]{"entity": "sort.card", "value": "individual.six_of_wands"}
+    - not [Seven of Wands]{"entity": "sort.card", "value": "individual.seven_of_wands"}
+    - not [Eight of Wands]{"entity": "sort.card", "value": "individual.eight_of_wands"}
+    - not [Nine of Wands]{"entity": "sort.card", "value": "individual.nine_of_wands"}
+    - not [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+    - not [Page of Wands]{"entity": "sort.card", "value": "individual.page_of_wands"}
+    - not [Knight of Wands]{"entity": "sort.card", "value": "individual.knight_of_wands"}
+    - not [Queen of Wands]{"entity": "sort.card", "value": "individual.queen_of_wands"}
+    - not [King of Wands]{"entity": "sort.card", "value": "individual.king_of_wands"}
+    - not [Ace of Cups]{"entity": "sort.card", "value": "individual.ace_of_cups"}
+    - not [Two of Cups]{"entity": "sort.card", "value": "individual.two_of_cups"}
+    - not [Three of Cups]{"entity": "sort.card", "value": "individual.three_of_cups"}
+    - not [Four of Cups]{"entity": "sort.card", "value": "individual.four_of_cups"}
+    - not [Five of Cups]{"entity": "sort.card", "value": "individual.five_of_cups"}
+    - not [Six of Cups]{"entity": "sort.card", "value": "individual.six_of_cups"}
+    - not [Seven of Cups]{"entity": "sort.card", "value": "individual.seven_of_cups"}
+    - not [Eight of Cups]{"entity": "sort.card", "value": "individual.eight_of_cups"}
+    - not [Nine of Cups]{"entity": "sort.card", "value": "individual.nine_of_cups"}
+    - not [Ten of Cups]{"entity": "sort.card", "value": "individual.ten_of_cups"}
+    - not [Page of Cups]{"entity": "sort.card", "value": "individual.page_of_cups"}
+    - not [Knight of Cups]{"entity": "sort.card", "value": "individual.knight_of_cups"}
+    - not [Queen of Cups]{"entity": "sort.card", "value": "individual.queen_of_cups"}
+    - not [King of Cups]{"entity": "sort.card", "value": "individual.king_of_cups"}
+    - not [Ace of Swords]{"entity": "sort.card", "value": "individual.ace_of_swords"}
+    - not [Two of Swords]{"entity": "sort.card", "value": "individual.two_of_swords"}
+    - not [Three of Swords]{"entity": "sort.card", "value": "individual.three_of_swords"}
+    - not [Four of Swords]{"entity": "sort.card", "value": "individual.four_of_swords"}
+    - not [Five of Swords]{"entity": "sort.card", "value": "individual.five_of_swords"}
+    - not [Six of Swords]{"entity": "sort.card", "value": "individual.six_of_swords"}
+    - not [Seven of Swords]{"entity": "sort.card", "value": "individual.seven_of_swords"}
+    - not [Eight of Swords]{"entity": "sort.card", "value": "individual.eight_of_swords"}
+    - not [Nine of Swords]{"entity": "sort.card", "value": "individual.nine_of_swords"}
+    - not [Ten of Swords]{"entity": "sort.card", "value": "individual.ten_of_swords"}
+    - not [Page of Swords]{"entity": "sort.card", "value": "individual.page_of_swords"}
+    - not [Knight of Swords]{"entity": "sort.card", "value": "individual.knight_of_swords"}
+    - not [Queen of Swords]{"entity": "sort.card", "value": "individual.queen_of_swords"}
+    - not [King of Swords]{"entity": "sort.card", "value": "individual.king_of_swords"}
+    - not [Ace of Pentacles]{"entity": "sort.card", "value": "individual.ace_of_pentacles"}
+    - not [Two of Pentacles]{"entity": "sort.card", "value": "individual.two_of_pentacles"}
+    - not [Three of Pentacles]{"entity": "sort.card", "value": "individual.three_of_pentacles"}
+    - not [Four of Pentacles]{"entity": "sort.card", "value": "individual.four_of_pentacles"}
+    - not [Five of Pentacles]{"entity": "sort.card", "value": "individual.five_of_pentacles"}
+    - not [Six of Pentacles]{"entity": "sort.card", "value": "individual.six_of_pentacles"}
+    - not [Seven of Pentacles]{"entity": "sort.card", "value": "individual.seven_of_pentacles"}
+    - not [Eight of Pentacles]{"entity": "sort.card", "value": "individual.eight_of_pentacles"}
+    - not [Nine of Pentacles]{"entity": "sort.card", "value": "individual.nine_of_pentacles"}
+    - not [Ten of Pentacles]{"entity": "sort.card", "value": "individual.ten_of_pentacles"}
+    - not [Page of Pentacles]{"entity": "sort.card", "value": "individual.page_of_pentacles"}
+    - not [Knight of Pentacles]{"entity": "sort.card", "value": "individual.knight_of_pentacles"}
+    - not [Queen of Pentacles]{"entity": "sort.card", "value": "individual.queen_of_pentacles"}
+    - not [King of Pentacles]{"entity": "sort.card", "value": "individual.king_of_pentacles"}
+    - not [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - not [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
+    - not [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - not [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - not [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - not [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+    - not [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - not [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
+    - not [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - not [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
+    - not [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - not [one card spread]{"entity": "sort.type_of_spread", "value": "individual.one_card_reading"}
+    - not [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
+    - not [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
+    - not [mental health reading]{"entity": "sort.type_of_spread", "value": "individual.mental_health_reading"}
+    - not [today]{"entity": "sort.day", "value": "individual.today"}
+    - not [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - not [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - not [You're done. You can ask for information about the meaning of your card]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
+    - not [Your spread is completed. You can ask for information about any of your cards]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
+    - not [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - not [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
+    - not [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
+    - not [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
+    - not [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
+    - not [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
+    - not [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+
+- intent: NEGATIVE
+  examples: |
+    - aboard
+    - about
+    - above
+    - across
+    - after
+    - against
+    - along
+    - among
+    - as
+    - at
+    - on
+    - atop
+    - before
+    - behind
+    - below
+    - beneath
+    - beside
+    - between
+    - beyond
+    - but
+    - by
+    - come
+    - down
+    - during
+    - except
+    - for
+    - from
+    - in
+    - inside
+    - into
+    - less
+    - like
+    - near
+    - of
+    - off
+    - on
+    - onto
+    - opposite
+    - out
+    - outside
+    - over
+    - past
+    - save
+    - short
+    - since
+    - than
+    - then
+    - through
+    - throughout
+    - to
+    - toward
+    - under
+    - underneath
+    - unlike
+    - until
+    - up
+    - upon
+    - with
+    - within
+    - without
+    - worth
+    - is
+    - it
+    - the
+    - a
+    - am
+    - are
+    - them
+    - this
+    - that
+    - I
+    - you
+    - he
+    - she
+    - they
+    - them
+    - his
+    - her
+    - my
+    - mine
+    - their
+    - your
+    - us
+    - our
+    - how
+    - how's
+    - how is
+    - how's the
+    - how is the
+    - when
+    - when's
+    - when is
+    - when is the
+    - when's the
+    - what
+    - what is
+    - what's
+    - what's the
+    - what is the
+    - why
+    - why is
+    - why's
+    - why is the
+    - why's the
+    - do
+    - make
+    - tell
+    - start
+    - stop
+    - enable
+    - disable
+    - raise
+    - lower
+    - decrease
+    - increase
+    - act
+    - determine
+    - say
+    - ask
+    - go
+    - shoot
+    - wait
+    - hang on
+    - ok
+    - show
+    - help
+
+- intent: answer:yes
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - sure
+    - ok
+    - of course
+    - very well
+    - fine
+    - right
+    - excellent
+    - okay
+    - perfect
+    - I think so
+
+- intent: answer:no
+  examples: |
+    - no
+    - nope
+    - no thanks
+    - no thank you
+    - negative
+    - don't want to
+    - don't
+    - do not
+    - please don't
+
+- intent: request:top
+  examples: |
+    - forget it
+    - never mind
+    - get me out of here
+    - start over
+    - beginning
+    - never mind that
+    - restart
+
+- intent: request:up
+  examples: |
+    - go back
+    - back
+    - previous
+    - back to the previous
+    - go to the previous
+    - go back to the previous one
+
+- intent: request:how
+  examples: |
+    - how do I do that
+    - how
+    - can you tell me how to do that
+    - I don't know how should I do that
+    - how can I do that
+
+- intent: report:done
+  examples: |
+    - I'm done
+    - done
+    - ready
+    - it's ready
+    - I'm ready
+    - completed
+    - check
+    - I have finished
+    - finished
+    - done and done
+    - it's done now
+    - okay next
+    - next
+    - next instruction
+
+- intent: icm:per*neg
+  examples: |
+    - repeat
+    - repeat it
+    - repeat that
+    - pardon
+    - sorry
+    - can you repeat that
+    - excuse me
+    - what was that
+    - what did you say
+    - come again
+
+- intent: icm:acc*neg:issue
+  examples: |
+    - I don't know
+    - I don't know that
+    - it doesn't matter
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thank you very much
+    - thanks
+    - big thanks
+    - thanks a lot
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good day
+    - what's up
+    - good evening
+    - good morning
+    - hey
+
+
