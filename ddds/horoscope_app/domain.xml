@@ -41,6 +41,7 @@
         <is_private_belief_or_shared_commitment predicate="current_horoscope" value="horoscope"/>
         <then>
         <findout type="wh_question" predicate="info_choice"/>
+
         <invoke_service_query predicate="horoscope" type="wh_question"/>
         </then>
         <else>
