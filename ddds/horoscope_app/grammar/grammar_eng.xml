@@ -166,10 +166,6 @@
     What card
   </question>
 
-  <question speaker="system" predicate="more_info_horoscope" type="wh_question">
-    What do you want to know
-  </question>
-
    <question speaker="system" predicate="more_info_tarot" type="wh_question">
     What is your card
   </question>
@@ -199,6 +195,7 @@
       <item>how much butter</item>
     </one-of>
   </question>
+  
 
 
   <individual name="one_card_reading">one card spread</individual>
@@ -326,5 +323,35 @@
 
 <individual name="one_card_spread_done">You're done. You can ask for information about the meaning of your card</individual>
 <individual name="spread_done">Your spread is completed. You can ask for information about any of your cards</individual>
+
+
+<action name="take_second_card">take second card</action>
+<action name="take_third_card">take third card</action>
+<action name="left_center">left center</action>
+<action name="love_cross_info">love cross info</action>
+<action name="center_card">center card</action>
+<action name="present_state">present state</action>
+<action name="which_horoscope">which horoscope</action>
+<action name="right_center">right center</action>
+<action name="how">how</action>
+<action name="split_deck">split deck</action>
+<action name="shuffle_deck">shuffle deck</action>
+<action name="bottom_cross">bottom cross</action>
+<action name="one_card_spread_info">one card spread info</action>
+<action name="mental_healing_info">mental healing info</action>
+<action name="fourth_card_foundation">fourth card foundation</action>
+<action name="perspective_card">perspective card</action>
+<action name="ask_card">ask card</action>
+<action name="ppf_info">ppf info</action>
+<action name="final_card_outcome">final card outcome</action>
+<action name="take_card">take card</action>
+<action name="top_cross">top cross</action>
+
+<question type="wh_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
+
+
+
+
+
 
 </grammar>
