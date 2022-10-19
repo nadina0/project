@@ -46,7 +46,6 @@
       <if>
         <is_private_belief_or_shared_commitment predicate="current_horoscope" value="horoscope"/>
         <then>
-        <findout type="wh_question" predicate="info_choice"/>
         <invoke_service_query predicate="horoscope" type="wh_question"/>
         </then>
         <else>
@@ -171,14 +170,6 @@
         <proposition predicate="finished_reading" value="spread_done"/>
       </inform>
     <signal_action_completion/> 
-    </plan>
-  </goal>
-
-
-  <goal type="resolve" question_type="wh_question" predicate="ask_about_card">
-    <plan>
-      <findout type="wh_question" predicate="current_reading"/>
-        <resolve type="wh_question" predicate="what_is_your_card"/>
     </plan>
   </goal>
 
