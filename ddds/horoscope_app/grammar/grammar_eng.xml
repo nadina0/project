@@ -148,17 +148,6 @@
 
 
 
-  <question speaker="user" predicate="ask_about_card" type="wh_question">
-    <one-of>
-      <item>what does my card mean</item>
-    </one-of>
-  </question>
-
-    <question speaker="system" predicate="what_is_your_card" type="wh_question">
-    <one-of>
-      <item>what is your card?</item>
-    </one-of>
-  </question>
 
 <!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
