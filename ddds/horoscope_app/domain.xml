@@ -23,14 +23,6 @@
 <goal type="resolve" question_type="wh_question" predicate="horoscope">
     <plan>
       <findout type="wh_question" predicate="sign_search"/>
-      <!--  
-      <if>
-        <has_shared_value predicate="sign_status"/>
-        <then>
-          <jumpto action="findout_sign"/>
-        </then>
-      </if>
-      -->
       <findout type="wh_question" predicate="day_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
@@ -44,8 +36,28 @@
     <plan>
       <findout type="wh_question" predicate="more_info"/>
       <if>
-        <is_private_belief_or_shared_commitment predicate="current_horoscope" value="horoscope"/>
+        <is_private_belief_or_shared_commitment predicate="current_tarot" value="tarot_card_question"/>
         <then>
+        <findout type="wh_question" predicate="info_choice"/>
+        <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="more_info" value="cup"/>
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+
+  <goal type="resolve" question_type="wh_question" predicate="more_info">
+    <plan>
+      <findout type="wh_question" predicate="more_info"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_reading" value="horoscope"/>
+        <then>
+        <findout type="wh_question" predicate="info_choice"/>
         <invoke_service_query predicate="horoscope" type="wh_question"/>
         </then>
         <else>
@@ -57,15 +69,6 @@
     </plan>
   </goal>
 
- <!-- 
-  <goal type="perform" action="findout_sign">
-    <plan>
-      <findout type="wh_question">
-       <resolve type="wh_question" predicate="findout_sign_predicate"/> 
-      </findout>
-    </plan>
-  </goal>
--->
 
   <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
     <plan>
@@ -73,7 +76,6 @@
       <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
     </plan>
   </goal>
-
 
 
   <goal type="perform" action="tarot_reading">
@@ -92,6 +94,9 @@
           <resolve type="wh_question" predicate="mental_healing_spread"/>
         </alt>
       </findout>
+    <assume_shared>
+     <proposition predicate="current_tarot" value="tarot_card_question"/>
+    </assume_shared>
     </plan>
   </goal>
 
@@ -172,7 +177,6 @@
     <signal_action_completion/> 
     </plan>
   </goal>
-
 
   
 </domain>
