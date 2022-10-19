@@ -20,7 +20,9 @@
   <predicate name="tarot_card_question" sort="string"/>
   <predicate name="current_tarot" sort="card"/>
 
-  <predicate name="more_info" sort="category_of_horoscope"/>
+  <predicate name="more_info_horoscope" sort="category_of_horoscope"/>
+  <predicate name="more_info_tarot" sort="card"/>
+  
   <individual name="cup" sort="category_of_horoscope"/>
 
   <predicate name="finished_one_card" sort="finished_spread"/>

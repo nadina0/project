@@ -166,7 +166,11 @@
     What card
   </question>
 
-  <question speaker="system" predicate="more_info" type="wh_question">
+  <question speaker="system" predicate="more_info_horoscope" type="wh_question">
+    What do you want to know
+  </question>
+
+   <question speaker="system" predicate="more_info_tarot" type="wh_question">
     What do you want to know
   </question>
 
@@ -174,7 +178,16 @@
 
 <individual name="cup">cup</individual>
 
- <question type="wh_question" speaker="user" predicate="more_info">
+ <question type="wh_question" speaker="user" predicate="more_info_horoscope">
+    <one-of>
+      <item>more info</item>
+      <item>i want to ask something else</item>
+      <item>what amount of butter</item>
+      <item>how much butter</item>
+    </one-of>
+  </question>
+
+   <question type="wh_question" speaker="user" predicate="more_info_tarot">
     <one-of>
       <item>more info</item>
       <item>i want to ask something else</item>

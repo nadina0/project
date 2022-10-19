@@ -32,9 +32,28 @@
     </plan>
   </goal>
 
-  <goal type="resolve" question_type="wh_question" predicate="more_info">
+
+  <goal type="resolve" question_type="wh_question" predicate="more_info_horoscope">
     <plan>
-      <findout type="wh_question" predicate="more_info"/>
+      <findout type="wh_question" predicate="more_info_horoscope"/>
+      <if>
+        <is_private_belief_or_shared_commitment predicate="current_horoscope" value="horoscope"/>
+        <then>
+        <findout type="wh_question" predicate="info_choice"/>
+        <invoke_service_query predicate="horoscope" type="wh_question"/>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="more_info_horoscope" value="cup"/>
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+   <goal type="resolve" question_type="wh_question" predicate="more_info_tarot">
+    <plan>
+      <findout type="wh_question" predicate="more_info_tarot"/>
       <if>
         <is_private_belief_or_shared_commitment predicate="current_tarot" value="tarot_card_question"/>
         <then>
@@ -43,26 +62,7 @@
         </then>
         <else>
           <inform>
-            <proposition predicate="more_info" value="cup"/>
-          </inform>
-        </else>
-      </if>
-    </plan>
-  </goal>
-
-
-  <goal type="resolve" question_type="wh_question" predicate="more_info">
-    <plan>
-      <findout type="wh_question" predicate="more_info"/>
-      <if>
-        <is_private_belief_or_shared_commitment predicate="current_reading" value="horoscope"/>
-        <then>
-        <findout type="wh_question" predicate="info_choice"/>
-        <invoke_service_query predicate="horoscope" type="wh_question"/>
-        </then>
-        <else>
-          <inform>
-            <proposition predicate="more_info" value="cup"/>
+            <proposition predicate="more_info_tarot" value="cup"/>
           </inform>
         </else>
       </if>
