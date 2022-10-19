@@ -1,0 +1,10 @@
+--- ask more questions
+S> Do you want to know about a horoscope, know about tarot reading or know about a card?
+U> horoscope for taurus tomorrow
+S> What category?
+U> mood
+S> Your prognosis is Humble.
+U> more info horoscope
+S> What category?
+U> color
+S> Your prognosis is Purple.

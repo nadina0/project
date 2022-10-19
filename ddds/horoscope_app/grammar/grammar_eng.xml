@@ -180,7 +180,7 @@
 
  <question type="wh_question" speaker="user" predicate="more_info_horoscope">
     <one-of>
-      <item>more info</item>
+      <item>more info horoscope</item>
       <item>i want to ask something else</item>
       <item>what amount of butter</item>
       <item>how much butter</item>
