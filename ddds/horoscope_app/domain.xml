@@ -35,10 +35,10 @@
     <plan>
     <forget predicate="info_choice"/>
      <assume_shared>
-  <proposition predicate="horoscope" value="sign_search"/>
+  <proposition predicate="sign_search" value="aries"/>
 </assume_shared>
 <assume_shared>
-  <proposition predicate="horoscope" value="day_search"/>
+  <proposition predicate="day_search" value="tomorrow"/>
 </assume_shared>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
