@@ -201,6 +201,14 @@
   <predicate name="findout_sign_predicate" sort="sign_status_sort"/>
 -->
 
+  <predicate name="ask_about_card" sort="choose_card"/>
+  <predicate name="what_is_your_card" sort="choose_card"/>
+
+  <sort name="choose_card" dynamic="false"/>
+
+
+
+
 
 
 
