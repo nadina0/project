@@ -18,6 +18,7 @@
   <predicate name="current_horoscope" sort="sign"/>
   <predicate name="tarot_reading_pred" sort="string"/>
   <predicate name="tarot_card_question" sort="string"/>
+  <predicate name="current_tarot" sort="card"/>
 
   <predicate name="more_info" sort="category_of_horoscope"/>
   <individual name="cup" sort="category_of_horoscope"/>
