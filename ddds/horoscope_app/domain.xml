@@ -26,6 +26,7 @@
       <findout type="wh_question" predicate="day_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
+              <forget predicate="info_choice"/>
       <assume_shared>
      <proposition predicate="current_horoscope" value="horoscope"/>
     </assume_shared>
