@@ -154,5 +154,13 @@
   </goal>
 
 
+  <goal type="resolve" question_type="wh_question" predicate="ask_about_card">
+    <plan>
+      <findout type="wh_question" predicate="current_reading"/>
+        <resolve type="wh_question" predicate="what_is_your_card"/>
+    </plan>
+  </goal>
+
+
   
 </domain>
