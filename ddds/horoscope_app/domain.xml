@@ -33,7 +33,13 @@
 
   <goal type="resolve" question_type="wh_question" predicate="more_info_horoscope">
     <plan>
-     <forget predicate="info_choice"/>
+    <forget predicate="info_choice"/>
+     <assume_shared>
+  <proposition predicate="sign_search" value="horoscope"/>
+</assume_shared>
+<assume_shared>
+  <proposition predicate="day_search" value="tomorrow"/>
+</assume_shared>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
