@@ -16,7 +16,7 @@
     ],
     "inactive_seconds_allowed": 7200,
     "long_timeout": 10.0,
-    "medium_timeout": 2.0,
+    "medium_timeout": 10.0,
     "repeat_questions": true,
     "rerank_amount": 0.2,
     "response_timeout": 2.5,
