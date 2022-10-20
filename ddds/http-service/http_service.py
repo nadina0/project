@@ -178,6 +178,8 @@ def get_horoscope():
       info_choice = "lucky_number"
     if info_choice == "lucky time":
       info_choice = "lucky_time"
+    if info_choice == "date range":
+      info_choice = "date_range"
     api_response = get_current_data(sign, day, info_choice)
     for key, value in api_response.items():
       if key == info_choice:

@@ -187,7 +187,7 @@
     </one-of>
   </question>
 
-   <question type="wh_question" speaker="user" predicate="more_info_tarot">
+  <question type="wh_question" speaker="user" predicate="more_info_tarot">
     <one-of>
       <item>more info</item>
       <item>i want to ask something else</item>
@@ -320,6 +320,7 @@
 <individual name="color">color</individual>
 <individual name="compatibility">compatibility</individual>
 <individual name="lucky_time">lucky time</individual>
+<individual name="date_range">date range</individual>
 
 <individual name="one_card_spread_done">You're done. You can ask for information about the meaning of your card</individual>
 <individual name="spread_done">Your spread is completed. You can ask for information about any of your cards</individual>
@@ -351,6 +352,21 @@
 
 
 
+
+  <question type="wh_question" speaker="user" predicate="guess_sign_horoscope">
+    <one-of>
+      <item>what is my sign</item>
+      <item>i don't know</item>
+    </one-of>
+  </question>
+  
+
+
+  <individual name="guess_your_sign">
+    <one-of>
+      <item>You can guess a sign, and then verify by asking for its date range in the next category.</item>
+    </one-of>
+  </individual>
 
 
 

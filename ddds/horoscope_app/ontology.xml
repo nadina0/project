@@ -22,8 +22,13 @@
 
   <predicate name="more_info_horoscope" sort="category_of_horoscope"/>
   <predicate name="more_info_tarot" sort="card"/>
+  <predicate name="guess_sign" sort="guessing"/>
+  <predicate name="guess_sign_horoscope" sort="guessing"/>
   
   <individual name="cup" sort="category_of_horoscope"/>
+  <individual name="guess_your_sign" sort="guessing"/>
+
+  <sort name="guessing" dynamic="false"/>
 
   <predicate name="finished_one_card" sort="finished_spread"/>
   <predicate name="finished_reading" sort="finished_spread"/>
@@ -40,6 +45,8 @@
   <individual name="ppf_reading" sort="type_of_spread"/>
   <individual name="love_reading" sort="type_of_spread"/>
   <individual name="mental_health_reading" sort="type_of_spread"/>
+
+
 
 
 <!-- one card spread -->
@@ -194,6 +201,7 @@
   <individual name="color" sort="category_of_horoscope"/>
   <individual name="mood" sort="category_of_horoscope"/>
   <individual name="lucky_time" sort="category_of_horoscope"/>
+  <individual name="date_range" sort="category_of_horoscope"/>
 
   <individual name="one_card_spread_done" sort="finished_spread"/>
   <individual name="spread_done" sort="finished_spread"/>
