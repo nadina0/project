@@ -22,12 +22,26 @@
 
 <goal type="resolve" question_type="wh_question" predicate="horoscope">
     <plan>
-      <findout type="wh_question" predicate="sign_search"/>
+    <assume_shared>
+     <proposition predicate="current_horoscope" value="horoscope"/>
+    </assume_shared>
       <findout type="wh_question" predicate="day_search"/>
+      <findout type="wh_question" predicate="sign_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
       <forget predicate="info_choice"/>
     </plan>
+  </goal>
+
+
+  <goal type="resolve" question_type="wh_question" predicate="guess_sign_horoscope">
+    <plan>
+      <findout type="wh_question" predicate="current_horoscope"/>
+      <inform>
+          <proposition predicate="guess_sign" value="guess_your_sign"/>
+      </inform>
+    </plan>
+
   </goal>
 
 
