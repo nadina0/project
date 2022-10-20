@@ -162,6 +162,10 @@
     What category
   </question>
 
+   <question speaker="system" predicate="more_info" type="wh_question">
+    What other category
+  </question>
+
   <question speaker="system" predicate="card_search" type="wh_question">
     What card
   </question>
@@ -172,7 +176,7 @@
 
   <answer speaker="system" predicate="horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
 
-  <answer speaker="system" predicate="current_horoscope">Your prognosis is <slot predicate="horoscope"/> </answer>
+  <answer speaker="system" predicate="current_horoscope">Your prognosis is <slot predicate="current_horoscope"/> </answer>
 
   <answer speaker="system" predicate="current_tarot">Your card means <slot predicate="tarot_card_question"/></answer>
 
