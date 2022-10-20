@@ -87,7 +87,7 @@ nlu:
 
 - intent: question::more_info_horoscope
   examples: |
-    - more info
+    - more info horoscope
     - i want to ask something else
     - what amount of butter
     - how much butter
