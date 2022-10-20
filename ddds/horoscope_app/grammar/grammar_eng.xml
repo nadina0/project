@@ -365,7 +365,6 @@
   </question>
   
 
-
   <individual name="guess_your_sign">
     <one-of>
       <item>You can guess a sign, and then verify by asking for its date range in the next category.</item>

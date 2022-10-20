@@ -47,9 +47,7 @@
           <proposition predicate="guess_sign" value="guess_your_sign"/>
       </inform>
     </plan>
-
   </goal>
-
 
   <goal type="resolve" question_type="wh_question" predicate="more_info_horoscope">
     <plan>
