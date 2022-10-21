@@ -189,6 +189,8 @@ def get_horoscope():
     return query_response(value=chosen_category, grammar_entry=None)
 
 
+
+
 @app.route("/tarot_card_question", methods=['POST'])
 def get_tarot():
     facts = request.get_json()["context"]["facts"]

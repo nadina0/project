@@ -27,10 +27,19 @@
     <one-of>
       <item>horoscope</item>
       <item>I would like you to tell me the horoscope</item>
-      <item>tell me my horoscope</item>
-      <item>horoscope for <slot predicate="sign_search"/> <slot predicate="day_search"/> </item>
-      <item>horoscope for <slot predicate="sign_search"/> for <slot predicate="day_search"/> </item>
+      <item>I would like to know the horoscope</item>
+      <item>What's my horoscope</item>
+      <item>Tell me my horoscope</item>
+      <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>horoscope for <slot predicate="sign_search"/> </item>
+      <item>the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>the horoscope for <slot predicate="sign_search"/> </item>
+      <item>the horoscope for <slot predicate="day_search"/> <slot predicate="sign_search"/> <slot predicate="info_choice"/></item>  
+      <item>horoscope for <slot predicate="day_search"/> <slot predicate="sign_search"/> <slot predicate="info_choice"/></item> 
+      <item>more info horoscope</item>
+      <item>i want to ask something else</item>
     </one-of>
   </question>
 
@@ -55,8 +64,6 @@
       <item>only one card spread</item>
     </one-of>
   </action>
-
-
 
   <action name="do_love_cross_formation">
     <one-of>
@@ -98,13 +105,7 @@
   which card did you get
 </question>
 
-
-
 <!-- tarot card reading menu -->
-
- <!--<question speaker="system" predicate="card_reading_type" type="wh_question">
-    What type of reading?
-  </question> -->
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
     do one card spread
@@ -132,22 +133,6 @@
       <item><slot predicate="card_search"/></item>
     </one-of>
   </answer>
-
-<!--
-   <action name="sign_status">
-   <one-of>
-      <item>I don't know</item>
-      <item> I don't know my sign </item>
-    </one-of>
-  </action>
-
-  <question speaker="system" predicate="findout_sign_predicatete" type="wh_question">
-    When are you born
-  </question>
--->
-
-
-
 
 <!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
@@ -182,14 +167,6 @@
 
 <individual name="cup">cup</individual>
 
- <question type="wh_question" speaker="user" predicate="more_info_horoscope">
-    <one-of>
-      <item>more info horoscope</item>
-      <item>i want to ask something else</item>
-      <item>what amount of butter</item>
-      <item>how much butter</item>
-    </one-of>
-  </question>
 
   <question type="wh_question" speaker="user" predicate="more_info_tarot">
     <one-of>
@@ -329,7 +306,6 @@
 <individual name="one_card_spread_done">You're done. You can ask for information about the meaning of your card</individual>
 <individual name="spread_done">Your spread is completed. You can ask for information about any of your cards</individual>
 
-
 <action name="take_second_card">take second card</action>
 <action name="take_third_card">take third card</action>
 <action name="left_center">left center</action>
@@ -355,21 +331,20 @@
 <question type="wh_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
 
 
-
-
-  <question type="wh_question" speaker="user" predicate="guess_sign_horoscope">
-    <one-of>
-      <item>what is my sign</item>
-      <item>i don't know</item>
-    </one-of>
-  </question>
   
-
   <individual name="guess_your_sign">
     <one-of>
       <item>You can guess a sign, and then verify by asking for its date range in the next category.</item>
     </one-of>
   </individual>
+
+
+    <action name="guess_sign">
+    <one-of>
+      <item>what is my sign</item>
+      <item>i don't know</item>
+    </one-of>
+  </action>
 
 
 

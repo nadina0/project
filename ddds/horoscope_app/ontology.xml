@@ -4,6 +4,8 @@
   <action name="which_horoscope"/>
   <action name="tarot_reading"/>
 
+  <action name="guess_sign"/>
+
   <action name="do_one_card_spread"/>
   <action name="do_past_present_future"/>
   <action name="do_love_cross_formation"/>
@@ -27,8 +29,8 @@
 
   <predicate name="more_info_horoscope" sort="category_of_horoscope"/>
   <predicate name="more_info_tarot" sort="card"/>
-  <predicate name="guess_sign" sort="guessing"/>
-  <predicate name="guess_sign_horoscope" sort="guessing"/>
+  
+  <predicate name="guess_sign_horoscope" sort="string"/>
   
   <individual name="cup" sort="category_of_horoscope"/>
   <individual name="guess_your_sign" sort="guessing"/>
