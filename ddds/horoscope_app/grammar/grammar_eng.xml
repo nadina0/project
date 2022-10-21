@@ -101,10 +101,6 @@
   about a tarot card
 </question>
 
-<question speaker="all" predicate="question_about_card">
-  which card did you get
-</question>
-
 <!-- tarot card reading menu -->
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
