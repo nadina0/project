@@ -20,7 +20,7 @@
     "repeat_questions": true,
     "rerank_amount": 0.2,
     "response_timeout": 2.5,
-    "short_timeout": 1.0,
+    "short_timeout": 3.0,
     "supported_languages": [
         "eng"
     ],

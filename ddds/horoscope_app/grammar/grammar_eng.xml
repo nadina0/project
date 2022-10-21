@@ -108,19 +108,19 @@
 <!-- tarot card reading menu -->
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
-    do one card spread
+    how to do card spread
   </question>
 
   <question speaker="all" predicate="past_present_future" type="alt_question">
-    about past present future
+    how to do past present future
   </question>
 
   <question speaker="all" predicate="love_cross_formation" type="alt_question">
-    about love cross formation
+    how to do love cross formation
   </question>
 
   <question speaker="all" predicate="mental_healing_spread" type="alt_question">
-    do mental healing spread
+    how to do mental healing spread
   </question>
 
 <!-- menu question and answers -->
