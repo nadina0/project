@@ -184,7 +184,7 @@ def get_horoscope():
     for key, value in api_response.items():
       if key == info_choice:
         chosen_category = value
-        break
+        continue
     print(api_response)
     return query_response(value=chosen_category, grammar_entry=None)
 
