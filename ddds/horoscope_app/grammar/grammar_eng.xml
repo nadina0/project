@@ -29,11 +29,14 @@
       <item>I would like you to tell me the horoscope</item>
       <item>I would like to know the horoscope</item>
       <item>What's my horoscope</item>
+      <item>What's the horoscope</item>
       <item>Tell me my horoscope</item>
+      <item>Tell me the horoscope</item>
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>Tell me the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>      
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>horoscope for <slot predicate="sign_search"/> </item>
-      <item>the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>tell me the horoscope for <slot predicate="day_search"/> </item>
       <item>the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>the horoscope for <slot predicate="sign_search"/> </item>
       <item>the horoscope for <slot predicate="day_search"/> <slot predicate="sign_search"/> <slot predicate="info_choice"/></item>  
@@ -48,13 +51,25 @@
       <item>reading</item>
       <item>tarot reading</item>
       <item>do a reading</item>
+      <item>i want to do a reading</item>
+      <item>i want to learn how to do a reading</item>
+      <item>learn how to do a reading</item>
+      <item>do a tarot reading</item>
+      <item>i want a tarot reading</item>
+      <item>i want to learn how to do a tarot reading</item>
     </one-of>
   </action>
 
 
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
     <one-of>
-      <item>info card</item>
+      <item>Tell me about a card</item>
+      <item>Tell me about my card</item>
+      <item>What does this card mean</item>
+      <item>What does my card mean</item>
+      <item>Tell me what this card means</item>
+      <item>Tell me about this card</item>
+      <item>I want to know what this card means</item>
     </one-of>
   </question>
 
@@ -62,6 +77,11 @@
     <one-of>
       <item>one card spread</item>
       <item>only one card spread</item>
+      <item>do a one card spread</item>
+      <item>I want to learn a one card spread</item>
+      <item>I want to learn how to do a one card spread</item>
+      <item>one card reading</item>
+      <item>i want a one card reading</item>
     </one-of>
   </action>
 
@@ -69,13 +89,25 @@
     <one-of>
       <item>love cross formation</item>
       <item>love cross</item>
+      <item>do a love cross</item>
+      <item>I want to learn the love cross</item>
+      <item>I want to learn how to do the love cross</item>
+      <item>love cross reading</item>
+      <item>i want a love cross reading</item>
     </one-of>
   </action>
 
   <action name="do_past_present_future">
    <one-of>
       <item>past present future</item>
-      <item>ppf</item>
+      <item>do a past present future</item>
+      <item>do a past present future reading</item>
+      <item>do a past present future spread</item>
+      <item>I want to learn the past present future</item>
+      <item>I want to learn how to do the past present future</item>
+      <item>I want to learn how to do the past present future reading</item>
+      <item>past present future reading</item>
+      <item>i want the past present future</item>
     </one-of>
   </action>
 
@@ -83,40 +115,47 @@
    <one-of>
       <item>mental healing</item>
       <item>mental healing spread</item>
+      <item>do the mental healing</item>
+      <item>do a mental healing reading</item>
+      <item>do a mental healing spread</item>
+      <item>I want to learn the mental healing spread</item>
+      <item>I want to learn how to do the mental healing reading</item>
+      <item>I want to learn how to do the mental healing spread</item>
+      <item>mental healing reading</item>
+      <item>i want the mental healing reading</item>
     </one-of>
   </action>
-
 
 <!-- menu question from system -->
 
 <question speaker="all" predicate="horoscope">
-    about a horoscope
+    the horoscope
 </question>
 
 <question speaker="all" predicate="tarot_reading_pred">
-  about tarot reading
+  how to do a tarot reading
 </question>
 
 <question speaker="all" predicate="tarot_card_question">
-  about a tarot card
+  what a certain tarot card means
 </question>
 
 <!-- tarot card reading menu -->
 
 <question speaker="all" predicate="one_card_spread" type="alt_question">
-    how to do card spread
+    how to do a one card spread
   </question>
 
   <question speaker="all" predicate="past_present_future" type="alt_question">
-    how to do past present future
+    how to do a past present future reading
   </question>
 
   <question speaker="all" predicate="love_cross_formation" type="alt_question">
-    how to do love cross formation
+    how to do a love cross formation
   </question>
 
   <question speaker="all" predicate="mental_healing_spread" type="alt_question">
-    how to do mental healing spread
+    how to do a mental healing spread
   </question>
 
 <!-- menu question and answers -->
@@ -132,15 +171,15 @@
 
 <!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
-    What sign
+    What is the sign you're curious about?
   </question>
 
   <question speaker="system" predicate="day_search" type="wh_question">
-    What day
+    Do you want to know the horoscope for yesterday, today or tomorrow?
   </question>
 
   <question speaker="system" predicate="info_choice" type="wh_question">
-    What category
+    Choose a category from the following: the description of the day, the mood, the color, the compatibility, the lucky number, or the lucky time.
   </question>
 
    <question speaker="system" predicate="more_info" type="wh_question">
@@ -174,7 +213,6 @@
   </question>
   
 
-
   <individual name="one_card_reading">one card spread</individual>
   <individual name="ppf_reading">past present future spread</individual>
   <individual name="love_reading">love cross formation reading</individual>
@@ -194,13 +232,11 @@
   <individual name="aquarius">aquarius</individual>
   <individual name="pisces">pisces</individual>
 
-
 <!-- individual days-->
 
   <individual name="today">today</individual>
   <individual name="tomorrow">tomorrow</individual>
   <individual name="yesterday">yesterday</individual>
-
 
 <!-- individual cards -->
 <individual name="the_fool">The Fool</individual>
@@ -299,8 +335,8 @@
 <individual name="lucky_time">lucky time</individual>
 <individual name="date_range">date range</individual>
 
-<individual name="one_card_spread_done">You're done. You can ask for information about the meaning of your card</individual>
-<individual name="spread_done">Your spread is completed. You can ask for information about any of your cards</individual>
+<individual name="one_card_spread_done">You're done. You can ask for information about the meaning of your card in the main menu</individual>
+<individual name="spread_done">Your spread is complete. You can ask for information about any of your cards in the main menu</individual>
 
 <action name="take_second_card">take second card</action>
 <action name="take_third_card">take third card</action>
@@ -326,22 +362,20 @@
 
 <question type="wh_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
 
-
-  
   <individual name="guess_your_sign">
     <one-of>
       <item>You can guess a sign, and then verify by asking for its date range in the next category.</item>
     </one-of>
   </individual>
 
-
     <action name="guess_sign">
     <one-of>
       <item>what is my sign</item>
+      <item>i don't know my sign</item>
       <item>i don't know</item>
+      <item>i don't know what my sign is</item>
+      <item>i don't know which sign i am</item>
     </one-of>
   </action>
-
-
 
 </grammar>

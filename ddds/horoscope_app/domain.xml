@@ -33,8 +33,7 @@
 
     </plan>
   </goal>
-
-
+  
   <goal type="perform"  action="guess_sign">
     <plan>
       <findout type="wh_question" predicate="current_horoscope"/>
