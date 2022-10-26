@@ -1,18 +1,54 @@
 [
     {
-        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
-        "semantic_expression": "answer(example_predicate(individual_1))",
+        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(horoscope)",
         "alternative": {
             "visual_information": [
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Some text to show on the button"
+                    "value": "Horoscope"
                 },
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://some-image-url"
+                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(tarot_reading)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Tarot Reading"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(tarot_card_question)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Ask about a tarot card"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
                 }
             ]
         }
