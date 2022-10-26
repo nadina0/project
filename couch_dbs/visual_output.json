@@ -43,5 +43,20 @@
                 "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
             }
         ]
+    },
+    {
+        "semantic_expression": "request(one_card_spread_info)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "One card spread info."
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
+            }
+        ]
     }
 ]

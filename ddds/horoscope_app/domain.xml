@@ -31,7 +31,6 @@
       <findout type="wh_question" predicate="sign_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
-
     </plan>
   </goal>
   
@@ -55,7 +54,6 @@
 
   <goal type="perform" action="tarot_reading">
     <plan>
-     <forget_all/>
       <findout type="alt_question">
         <alt>
         <resolve type="wh_question" predicate="one_card_spread"/> 
