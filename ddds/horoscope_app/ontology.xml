@@ -32,7 +32,6 @@
   
   <predicate name="guess_sign_horoscope" sort="string"/>
   
-  <individual name="cup" sort="category_of_horoscope"/>
   <individual name="guess_your_sign" sort="guessing"/>
 
   <sort name="guessing" dynamic="false"/>

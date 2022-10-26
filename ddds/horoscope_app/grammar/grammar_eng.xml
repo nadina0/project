@@ -199,18 +199,6 @@
   <answer speaker="system" predicate="current_horoscope">Your prognosis is <slot predicate="current_horoscope"/> </answer>
 
   <answer speaker="system" predicate="current_tarot">Your card means <slot predicate="tarot_card_question"/></answer>
-
-<individual name="cup">cup</individual>
-
-
-  <question type="wh_question" speaker="user" predicate="more_info_tarot">
-    <one-of>
-      <item>more info</item>
-      <item>i want to ask something else</item>
-      <item>what amount of butter</item>
-      <item>how much butter</item>
-    </one-of>
-  </question>
   
 
   <individual name="one_card_reading">one card spread</individual>
