@@ -18,8 +18,8 @@
         }
     },
     {
-        "current_plan_item": "ask(?set([goal(resolve(?X.horoscope(X))), goal(resolve(?X.tarot_reading_pred(X))), goal(resolve(?X.tarot_card_question(X)))]))",
-        "semantic_expression": "ask(?X.tarot_reading_pred(X))",
+        "current_plan_item": "ask(?set([goal(resolve(?X.horoscope(X))), goal(perform(?X.tarot_reading_pred(X))), goal(resolve(?X.tarot_card_question(X)))]))",
+        "semantic_expression": "request(?X.tarot_reading_pred(X))",
         "alternative": {
             "visual_information": [
                 {
@@ -43,7 +43,7 @@
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Ask about a tarot card"
+                    "value": "Ask about a Tarot card"
                 },
                 {
                     "attribute": "image",
