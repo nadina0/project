@@ -1,7 +1,7 @@
 [
     {
-        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "answer(horoscope)",
+        "current_plan_item": "findout(?top(X), set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(top(horoscope))",
         "alternative": {
             "visual_information": [
                 {
@@ -19,7 +19,7 @@
     },
     {
         "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "answer(tarot_reading)",
+        "semantic_expression": "answer(top(tarot_reading))",
         "alternative": {
             "visual_information": [
                 {

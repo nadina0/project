@@ -171,11 +171,11 @@
 
 <!-- horoscope telling -->
   <question speaker="system" predicate="sign_search" type="wh_question">
-    What is the sign you're curious about?
+    What is the sign you're curious about
   </question>
 
   <question speaker="system" predicate="day_search" type="wh_question">
-    Do you want to know the horoscope for yesterday, today or tomorrow?
+    Do you want to know the horoscope for yesterday, today or tomorrow
   </question>
 
   <question speaker="system" predicate="info_choice" type="wh_question">
