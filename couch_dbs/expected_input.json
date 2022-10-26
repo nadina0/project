@@ -1,7 +1,7 @@
 [
     {
-        "current_plan_item": "findout(?top(X), set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "answer(top(horoscope))",
+        "current_plan_item": "findout(?top(X), set([goal(resolve(horoscope)), goal(resolve(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(horoscope)",
         "alternative": {
             "visual_information": [
                 {
@@ -18,8 +18,8 @@
         }
     },
     {
-        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "answer(top(tarot_reading))",
+        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(resolve(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "semantic_expression": "answer(tarot_reading_pred)",
         "alternative": {
             "visual_information": [
                 {
@@ -30,13 +30,13 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
+                    "value": "https://www.takemetothesite.com/wp-content/uploads/2022/09/tarot-reading.jpg"
                 }
             ]
         }
     },
     {
-        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(perform(tarot_reading)), goal(resolve(tarot_card_question))]))",
+        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(resolve(tarot_reading)), goal(resolve(tarot_card_question))]))",
         "semantic_expression": "answer(tarot_card_question)",
         "alternative": {
             "visual_information": [
@@ -48,7 +48,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
+                    "value": "https://wealthofgeeks.com/wp-content/uploads/2022/08/Shutterstock_1589260768.jpg"
                 }
             ]
         }
