@@ -44,8 +44,12 @@
         "utterance": "Take out the second card and place it to the left. This represents your perspective."
     },
     {
+        "match": "request(third_card_place)",
+        "utterance": "Now place the third card to the right of the theme, to show the other person's place."
+    },
+    {
         "match": "request(fourth_card_foundation)",
-        "utterance": "The fourth card should be placed below the central cards. This represents the foundation of the relationship or something in the past contributing to the current issue."
+        "utterance": "The fourth card should be placed below the central card. This represents the foundation of the relationship or something in the past contributing to the current issue."
     },
     {
         "match": "request(final_card_outcome)",

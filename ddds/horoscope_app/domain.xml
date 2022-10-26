@@ -3,6 +3,7 @@
 
   <goal type="perform" action="top">
     <plan>
+    <forget_all/>
       <forget predicate="horoscope"/>
       <findout type="alt_question">
         <alt>
@@ -54,6 +55,7 @@
 
   <goal type="perform" action="tarot_reading">
     <plan>
+     <forget_all/>
       <findout type="alt_question">
         <alt>
         <resolve type="wh_question" predicate="one_card_spread"/> 
@@ -119,6 +121,7 @@
     <get_done action="split_deck"/>
     <get_done action="present_state"/>
     <get_done action="perspective_card"/>
+    <get_done action="third_card_place"/>
     <get_done action="fourth_card_foundation"/>
     <get_done action="final_card_outcome"/>
     <inform>

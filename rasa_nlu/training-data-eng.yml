@@ -5,79 +5,129 @@ nlu:
   examples: |
     - love cross formation
     - love cross
+    - do a love cross
+    - I want to learn the love cross
+    - I want to learn how to do the love cross
+    - love cross reading
+    - i want a love cross reading
 
 - intent: action::do_mental_healing_spread
   examples: |
     - mental healing
     - mental healing spread
+    - do the mental healing
+    - do a mental healing reading
+    - do a mental healing spread
+    - I want to learn the mental healing spread
+    - I want to learn how to do the mental healing reading
+    - I want to learn how to do the mental healing spread
+    - mental healing reading
+    - i want the mental healing reading
 
 - intent: action::do_one_card_spread
   examples: |
     - one card spread
     - only one card spread
+    - do a one card spread
+    - I want to learn a one card spread
+    - I want to learn how to do a one card spread
+    - one card reading
+    - i want a one card reading
 
 - intent: action::do_past_present_future
   examples: |
     - past present future
-    - ppf
+    - do a past present future
+    - do a past present future reading
+    - do a past present future spread
+    - I want to learn the past present future
+    - I want to learn how to do the past present future
+    - I want to learn how to do the past present future reading
+    - past present future reading
+    - i want the past present future
+
+- intent: action::guess_sign
+  examples: |
+    - what is my sign
+    - i don't know my sign
+    - i don't know
+    - i don't know what my sign is
+    - i don't know which sign i am
 
 - intent: action::tarot_reading
   examples: |
     - reading
     - tarot reading
     - do a reading
+    - i want to do a reading
+    - i want to learn how to do a reading
+    - learn how to do a reading
+    - do a tarot reading
+    - i want a tarot reading
+    - i want to learn how to do a tarot reading
 
 - intent: question::horoscope
   examples: |
     - horoscope
     - I would like you to tell me the horoscope
-    - tell me my horoscope
-    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"} [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"} [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"} [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"} [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"} [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"} [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [taurus]{"entity": "sort.sign", "value": "individual.taurus"} [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"} [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"} for [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"} for [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"} for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - horoscope for [taurus]{"entity": "sort.sign", "value": "individual.taurus"} for [today]{"entity": "sort.day", "value": "individual.today"}
-    - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"} for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - I would like to know the horoscope
+    - What's my horoscope
+    - What's the horoscope
+    - Tell me my horoscope
+    - Tell me the horoscope
+    - horoscope for [today]{"entity": "sort.day", "value": "individual.today"} for [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} for [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} for [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
+    - Tell me the horoscope for [today]{"entity": "sort.day", "value": "individual.today"} for [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - Tell me the horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - Tell me the horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} for [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - horoscope for [today]{"entity": "sort.day", "value": "individual.today"} for [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} for [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} for [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - horoscope for [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
     - horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"}
     - horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
     - horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
     - horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
     - horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"}
     - horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"}
-    - horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
     - horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - horoscope for [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
     - horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
-
-- intent: question::more_info_horoscope
-  examples: |
-    - more info
+    - tell me the horoscope for [today]{"entity": "sort.day", "value": "individual.today"}
+    - tell me the horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - tell me the horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - the horoscope for [today]{"entity": "sort.day", "value": "individual.today"} for [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - the horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} for [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - the horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} for [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+    - the horoscope for [aries]{"entity": "sort.sign", "value": "individual.aries"}
+    - the horoscope for [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - the horoscope for [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
+    - the horoscope for [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - the horoscope for [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - the horoscope for [libra]{"entity": "sort.sign", "value": "individual.libra"}
+    - the horoscope for [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - the horoscope for [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
+    - the horoscope for [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
+    - the horoscope for [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
+    - the horoscope for [today]{"entity": "sort.day", "value": "individual.today"} [pisces]{"entity": "sort.sign", "value": "individual.pisces"} [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
+    - the horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} [aries]{"entity": "sort.sign", "value": "individual.aries"} [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - the horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"} [date range]{"entity": "sort.category_of_horoscope", "value": "individual.date_range"}
+    - horoscope for [today]{"entity": "sort.day", "value": "individual.today"} [libra]{"entity": "sort.sign", "value": "individual.libra"} [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - horoscope for [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"} [taurus]{"entity": "sort.sign", "value": "individual.taurus"} [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
+    - horoscope for [yesterday]{"entity": "sort.day", "value": "individual.yesterday"} [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"} [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
+    - more info horoscope
     - i want to ask something else
-    - what amount of butter
-    - how much butter
-
-- intent: question::more_info_tarot
-  examples: |
-    - card question
-    - question about card
 
 - intent: question::tarot_card_question
   examples: |
-    - info card
+    - Tell me about a card
+    - Tell me about my card
+    - What does this card mean
+    - What does my card mean
+    - Tell me what this card means
+    - Tell me about this card
+    - I want to know what this card means
 
 - intent: answer
   examples: |
@@ -170,15 +220,6 @@ nlu:
     - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
     - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
-    - [one card spread]{"entity": "sort.type_of_spread", "value": "individual.one_card_reading"}
-    - [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
-    - [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
-    - [mental health reading]{"entity": "sort.type_of_spread", "value": "individual.mental_health_reading"}
-    - [today]{"entity": "sort.day", "value": "individual.today"}
-    - [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
-    - [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - [You're done. You can ask for information about the meaning of your card]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
-    - [Your spread is completed. You can ask for information about any of your cards]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
     - [single](sort.string)
     - [double word](sort.string)
     - [three in one](sort.string)
@@ -189,13 +230,23 @@ nlu:
     - [noone counts toes like an eight toed guy](sort.string)
     - [it matters to make sense for nine of us](sort.string)
     - [would you bring ten or none to a desert island](sort.string)
-    - [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - [one card spread]{"entity": "sort.type_of_spread", "value": "individual.one_card_reading"}
+    - [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
+    - [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
+    - [mental health reading]{"entity": "sort.type_of_spread", "value": "individual.mental_health_reading"}
+    - [today]{"entity": "sort.day", "value": "individual.today"}
+    - [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
+    - [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
+    - [You're done. You can ask for information about the meaning of your card in the main menu]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
+    - [Your spread is complete. You can ask for information about any of your cards in the main menu]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
     - [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
     - [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
     - [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
     - [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
     - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
     - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - [date range]{"entity": "sort.category_of_horoscope", "value": "individual.date_range"}
+    - [aquarius]{"entity": "sort.sign", "value": "individual.aquarius"}
     - [aries]{"entity": "sort.sign", "value": "individual.aries"}
     - [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
     - [capricorn]{"entity": "sort.sign", "value": "individual.capricorn"}
@@ -203,7 +254,6 @@ nlu:
     - [leo]{"entity": "sort.sign", "value": "individual.leo"}
     - [libra]{"entity": "sort.sign", "value": "individual.libra"}
     - [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
-    - [sagittarius]{"entity": "sort.sign", "value": "individual.sagittarius"}
     - [taurus]{"entity": "sort.sign", "value": "individual.taurus"}
     - [virgo]{"entity": "sort.sign", "value": "individual.virgo"}
     - [today]{"entity": "sort.day", "value": "individual.today"}
@@ -211,20 +261,20 @@ nlu:
     - [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
     - [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
     - [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
-    - [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - [date range]{"entity": "sort.category_of_horoscope", "value": "individual.date_range"}
     - [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
     - [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
     - [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
     - [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
-    - [Ace of Pentacles]{"entity": "sort.card", "value": "individual.ace_of_pentacles"}
-    - [Five of Wands]{"entity": "sort.card", "value": "individual.five_of_wands"}
-    - [King of Cups]{"entity": "sort.card", "value": "individual.king_of_cups"}
+    - [Ace of Swords]{"entity": "sort.card", "value": "individual.ace_of_swords"}
+    - [Death]{"entity": "sort.card", "value": "individual.death"}
+    - [Four of Pentacles]{"entity": "sort.card", "value": "individual.four_of_pentacles"}
+    - [Knight of Wands]{"entity": "sort.card", "value": "individual.knight_of_wands"}
     - [Nine of Pentacles]{"entity": "sort.card", "value": "individual.nine_of_pentacles"}
-    - [Seven of Swords]{"entity": "sort.card", "value": "individual.seven_of_swords"}
-    - [Strength]{"entity": "sort.card", "value": "individual.strength"}
-    - [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
-    - [The Empress]{"entity": "sort.card", "value": "individual.the_empress"}
-    - [The World]{"entity": "sort.card", "value": "individual.the_world"}
+    - [Queen of Swords]{"entity": "sort.card", "value": "individual.queen_of_swords"}
+    - [Seven of Wands]{"entity": "sort.card", "value": "individual.seven_of_wands"}
+    - [The Chariot]{"entity": "sort.card", "value": "individual.the_chariot"}
+    - [The Tower]{"entity": "sort.card", "value": "individual.the_tower"}
     - [Two of Wands]{"entity": "sort.card", "value": "individual.two_of_wands"}
     - yes [The Fool]{"entity": "sort.card", "value": "individual.the_fool"}
     - yes [Wheel Of Fortune]{"entity": "sort.card", "value": "individual.wheel_of_fortune"}
@@ -235,12 +285,12 @@ nlu:
     - yes [Page of Swords]{"entity": "sort.card", "value": "individual.page_of_swords"}
     - yes [Seven of Pentacles]{"entity": "sort.card", "value": "individual.seven_of_pentacles"}
     - yes [gemini]{"entity": "sort.sign", "value": "individual.gemini"}
+    - yes [double word](sort.string)
     - yes [past present future spread]{"entity": "sort.type_of_spread", "value": "individual.ppf_reading"}
-    - yes [three in one](sort.string)
-    - yes [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
-    - yes [libra]{"entity": "sort.sign", "value": "individual.libra"}
-    - yes [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
-    - yes [Strength]{"entity": "sort.card", "value": "individual.strength"}
+    - yes [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
+    - yes [leo]{"entity": "sort.sign", "value": "individual.leo"}
+    - yes [date range]{"entity": "sort.category_of_horoscope", "value": "individual.date_range"}
+    - yes [Queen of Swords]{"entity": "sort.card", "value": "individual.queen_of_swords"}
     - no [The Magician]{"entity": "sort.card", "value": "individual.the_magician"}
     - no [Justice]{"entity": "sort.card", "value": "individual.justice"}
     - no [The World]{"entity": "sort.card", "value": "individual.the_world"}
@@ -250,12 +300,12 @@ nlu:
     - no [Knight of Swords]{"entity": "sort.card", "value": "individual.knight_of_swords"}
     - no [Eight of Pentacles]{"entity": "sort.card", "value": "individual.eight_of_pentacles"}
     - no [cancer]{"entity": "sort.sign", "value": "individual.cancer"}
+    - no [three in one](sort.string)
     - no [love cross formation reading]{"entity": "sort.type_of_spread", "value": "individual.love_reading"}
-    - no [hey make it four](sort.string)
-    - no [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
-    - no [pisces]{"entity": "sort.sign", "value": "individual.pisces"}
+    - no [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
+    - no [libra]{"entity": "sort.sign", "value": "individual.libra"}
     - no [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
-    - no [Ten of Wands]{"entity": "sort.card", "value": "individual.ten_of_wands"}
+    - no [Seven of Wands]{"entity": "sort.card", "value": "individual.seven_of_wands"}
 
 - intent: answer_negation
   examples: |
@@ -355,15 +405,15 @@ nlu:
     - not [today]{"entity": "sort.day", "value": "individual.today"}
     - not [tomorrow]{"entity": "sort.day", "value": "individual.tomorrow"}
     - not [yesterday]{"entity": "sort.day", "value": "individual.yesterday"}
-    - not [You're done. You can ask for information about the meaning of your card]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
-    - not [Your spread is completed. You can ask for information about any of your cards]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
-    - not [cup]{"entity": "sort.category_of_horoscope", "value": "individual.cup"}
+    - not [You're done. You can ask for information about the meaning of your card in the main menu]{"entity": "sort.finished_spread", "value": "individual.one_card_spread_done"}
+    - not [Your spread is complete. You can ask for information about any of your cards in the main menu]{"entity": "sort.finished_spread", "value": "individual.spread_done"}
     - not [description]{"entity": "sort.category_of_horoscope", "value": "individual.description"}
     - not [compatibility]{"entity": "sort.category_of_horoscope", "value": "individual.compatibility"}
     - not [lucky number]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_number"}
     - not [color]{"entity": "sort.category_of_horoscope", "value": "individual.color"}
     - not [mood]{"entity": "sort.category_of_horoscope", "value": "individual.mood"}
     - not [lucky time]{"entity": "sort.category_of_horoscope", "value": "individual.lucky_time"}
+    - not [date range]{"entity": "sort.category_of_horoscope", "value": "individual.date_range"}
 
 - intent: NEGATIVE
   examples: |
@@ -565,6 +615,16 @@ nlu:
     - okay next
     - next
     - next instruction
+    - okay
+    - ok
+    - i got it
+    - yeah
+    - interesting
+    - ok thank you
+    - ok thanks
+    - okay thank you
+    - okay thanks
+    - what's next
 
 - intent: icm:per*neg
   examples: |

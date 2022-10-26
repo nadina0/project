@@ -73,6 +73,7 @@
 <action name="love_cross_info"/>
 <action name="present_state"/>
 <action name="perspective_card"/>
+<action name="third_card_place"/>
 <action name="fourth_card_foundation"/>
 <action name="final_card_outcome"/>
 

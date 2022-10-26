@@ -187,7 +187,7 @@
   </question>
 
   <question speaker="system" predicate="card_search" type="wh_question">
-    What card
+    What is the card 
   </question>
 
    <question speaker="system" predicate="more_info_tarot" type="wh_question">
@@ -332,6 +332,7 @@
 <action name="love_cross_info">love cross info</action>
 <action name="center_card">center card</action>
 <action name="present_state">present state</action>
+<action name="third_card_place">third card place</action>
 <action name="which_horoscope">which horoscope</action>
 <action name="right_center">right center</action>
 <action name="how">how</action>
