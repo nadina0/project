@@ -1,6 +1,6 @@
 [
     {
-        "semantic_expression": "some(semantic_expression_of_a_move)",
+        "semantic_expression": "ask(?X.horoscope(X))",
         "visual_information": [
             {
                 "attribute": "name",
@@ -10,7 +10,7 @@
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://some-image-url"
+                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
             }
         ]
     },
