@@ -30,7 +30,7 @@
         ]
     },
     {
-        "semantic_expression": "answer(current_horoscope(horoscope))",
+        "semantic_expression": "ask(current_horoscope(horoscope))",
         "visual_information": [
             {
                 "attribute": "name",
