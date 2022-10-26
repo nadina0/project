@@ -29,4 +29,19 @@
             }
         ]
     }
+    {
+        "semantic_expression": "answer(current_horoscope(horoscope))",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Horoscope test."
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
+            }
+        ]
+    },
 ]
