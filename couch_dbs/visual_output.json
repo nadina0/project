@@ -5,7 +5,7 @@
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Some text to show if the image cannot be shown"
+                "value": "Different horoscopes"
             },
             {
                 "attribute": "image",
