@@ -101,7 +101,7 @@
     margin-left: 160px;
     margin-right: 20px;
     position: absolute;
-    top: 70vh
+    top: 50vh
 }
 
 .select {
@@ -189,29 +189,29 @@ img {
 
 @-webkit-keyframes bordersize {
     0% {
-        box-shadow: 0 0 rgba(205, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 
     50% {
-        box-shadow: 0 0 0 8vh rgba(205, 21, 21, .9)
+        box-shadow: 0 0 0 8vh rgba(255, 255, 255, 0.9)
     }
 
     to {
-        box-shadow: 0 0 rgba(205, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 }
 
 @keyframes bordersize {
     0% {
-        box-shadow: 0 0 rgba(100, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 
     50% {
-        box-shadow: 0 0 0 8vh rgba(100, 21, 21, .9)
+        box-shadow: 0 0 0 8vh rgba(255, 255, 255, 0.9)
     }
 
     to {
-        box-shadow: 0 0 rgba(100, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 }
 
