@@ -37,7 +37,7 @@
 }
 
 .control:hover .circle-click {
-    background: #deff8a
+    background: #fff
 }
 
 .control .prompt img {
@@ -50,7 +50,7 @@
 .control .status-talk {
     width: 100vw;
     text-align: start;
-    color: #fff;
+    color: #bebebe;
     z-index: 1;
     padding-left: 50px;
     padding-right: 20px;
@@ -101,7 +101,7 @@
     margin-left: 160px;
     margin-right: 20px;
     position: absolute;
-    top: 35vh
+    top: 70vh
 }
 
 .select {
