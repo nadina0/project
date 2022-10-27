@@ -371,7 +371,6 @@
     <one-of>
       <item>what is my sign</item>
       <item>i don't know my sign</item>
-      <item>i don't know</item>
       <item>i don't know what my sign is</item>
       <item>i don't know which sign i am</item>
     </one-of>
