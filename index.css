@@ -99,11 +99,11 @@
 }
 
 .select-wrapper {
+    color: #fff;
     margin-left: 222px;
     margin-right: 20px;
     position: absolute;
     top: 40vh !important;
-    color: #fff;
 }
 
 .select {
