@@ -52,7 +52,7 @@
     </plan>
   </goal>
 
-  <goal type="perform" action="tarot_reading">
+  <goal type="perform" action="tarot_reading_pred">
     <plan>
      <forget_all/>
       <findout type="alt_question">
