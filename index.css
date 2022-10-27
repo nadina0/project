@@ -117,8 +117,6 @@
 .flex {
     cursor: pointer;
     background: #fff;
-    border: 2px solid #063746;
-    border-radius: 5px;
     flex-basis: 20vw;
     margin: .5em;
     padding: 1em
