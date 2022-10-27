@@ -42,6 +42,7 @@
       <item>the horoscope for <slot predicate="day_search"/> <slot predicate="sign_search"/> <slot predicate="info_choice"/></item>  
       <item>horoscope for <slot predicate="day_search"/> <slot predicate="sign_search"/> <slot predicate="info_choice"/></item> 
       <item>more info horoscope</item>
+      <item>can i ask something else</item>
       <item>i want to ask something else</item>
     </one-of>
   </question>
