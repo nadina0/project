@@ -1,7 +1,7 @@
 [
-
-    {        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(resolve(tarot_reading_pred)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "request(horoscope)",
+    {
+        "current_plan_item": "findout(?set([goal(resolve(?X.horoscope(X))), goal(resolve(?X.tarot_reading_pred(X))), goal(resolve(?X.tarot_card_question(X)))]))",
+        "semantic_expression": "ask(?X.horoscope(X))", 
         "alternative": {
             "visual_information": [
                 {
@@ -12,7 +12,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://retete.unica.ro/wp-content/uploads/2021/02/omleta_sufleu.jpg"
+                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
                 }
             ]
         }
@@ -25,30 +25,174 @@
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Tarot reading"
+                    "value": "Tarot Reading"
                 },
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://mariapopa.ro/wp-content/uploads/2020/07/Salata-de-vara-cu-rosii-castraveti-si-ceapa.jpg"
+                    "value": "https://www.takemetothesite.com/wp-content/uploads/2022/09/tarot-reading.jpg"
                 }
             ]
         }
     },
     {
-        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(resolve(tarot_reading_pred)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "request(tarot_card_question)",
+        "current_plan_item": "findout(?set([goal(resolve(?X.horoscope(X))), goal(resolve(?X.tarot_reading_pred(X))), goal(resolve(?X.tarot_card_question(X)))]))",
+        "semantic_expression": "ask(?X.tarot_card_question(X))",
         "alternative": {
             "visual_information": [
                 {
                     "attribute": "name",
                     "type": "text/plain",
-                    "value": "Tarot cards"
+                    "value": "Ask about a Tarot card"
                 },
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://mariapopa.ro/wp-content/uploads/2020/07/Salata-de-vara-cu-rosii-castraveti-si-ceapa.jpg"
+                    "value": "https://wealthofgeeks.com/wp-content/uploads/2022/08/Shutterstock_1589260768.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(?X.one_card_spread(X))), goal(resolve(?X.past_present_future(X))), goal(resolve(?X.love_cross_formation(X))), goal(resolve(?X.mental_healing_spread(X)))]))",
+        "semantic_expression": "ask(?X.one_card_spread(X))", 
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "One card spread"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://cdn-icons-png.flaticon.com/512/4626/4626473.png"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(?X.one_card_spread(X))), goal(resolve(?X.past_present_future(X))), goal(resolve(?X.love_cross_formation(X))), goal(resolve(?X.mental_healing_spread(X)))]))",
+        "semantic_expression": "ask(?X.past_present_future(X))", 
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Past Present Future Spread"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://cdn-icons-png.flaticon.com/512/6679/6679577.png"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(?X.one_card_spread(X))), goal(resolve(?X.past_present_future(X))), goal(resolve(?X.love_cross_formation(X))), goal(resolve(?X.mental_healing_spread(X)))]))",
+        "semantic_expression": "ask(?X.love_cross_formation(X))", 
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Love Cross Formation"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://cdn-icons-png.flaticon.com/512/535/535285.png"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(resolve(?X.one_card_spread(X))), goal(resolve(?X.past_present_future(X))), goal(resolve(?X.love_cross_formation(X))), goal(resolve(?X.mental_healing_spread(X)))]))",
+        "semantic_expression": "ask(?X.mental_healing_spread(X))", 
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Mental Healing Spread"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://cdn-icons-png.flaticon.com/512/3997/3997942.png"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_2))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Some other text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://some-other-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_3))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Another text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://another-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_1)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_2)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
                 }
             ]
         }
