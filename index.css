@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300;1,700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@
     height: 99vh;
     margin: 0;
     padding: 0;
-    font-family: IBM Plex Mono, monospace
+    font-family: 'MedievalSharp', bold;
 }
 
 .chapterbuttons {
@@ -23,7 +23,7 @@
 .chapterbuttons button[id^=cb],
 .chapterbuttons button[class^=active-cb] {
     padding: 10px;
-    font-family: IBM Plex Mono, monospace
+    font-family: 'MedievalSharp', bold;
 }
 
 .control {
@@ -54,7 +54,7 @@
     z-index: 1;
     padding-left: 50px;
     padding-right: 20px;
-    font-family: IBM Plex Mono, monospace;
+    font-family: 'MedievalSharp', bold;
     font-size: 20pt;
     font-weight: 700
 }
@@ -101,7 +101,7 @@
     margin-left: 160px;
     margin-right: 20px;
     position: absolute;
-    top: 40vh
+    top: 35vh
 }
 
 .select {
