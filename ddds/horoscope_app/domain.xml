@@ -40,6 +40,7 @@
       <inform>
           <proposition predicate="guess_sign_horoscope" value="You can guess a sign, and then verify by asking for its date range in the next category."/>
       </inform>
+      <signal_action_completion/>
     </plan>
   </goal>
 
