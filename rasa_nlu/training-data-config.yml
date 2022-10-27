@@ -603,6 +603,7 @@ nlu:
     - beginning
     - never mind that
     - restart
+    - main menu
 
 - intent: request:up
   examples: |
@@ -638,7 +639,6 @@ nlu:
     - next
     - next instruction
     - okay
-    - ok
     - i got it
     - yeah
     - interesting
