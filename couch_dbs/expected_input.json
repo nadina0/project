@@ -12,7 +12,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://assets.cntraveller.in/photos/626fd8b83a04507262ea6d5a/master/pass/Travel-horoscope-May.jpg"
+                    "value": "horoscope_round.png"
                 }
             ]
         }
@@ -30,7 +30,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://www.takemetothesite.com/wp-content/uploads/2022/09/tarot-reading.jpg"
+                    "value": "tarot_reading.png"
                 }
             ]
         }
@@ -48,7 +48,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://wealthofgeeks.com/wp-content/uploads/2022/08/Shutterstock_1589260768.jpg"
+                    "value": "tarot_card.png"
                 }
             ]
         }
