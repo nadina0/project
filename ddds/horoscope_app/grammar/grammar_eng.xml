@@ -23,8 +23,6 @@
     </one-of>
   </action>
 
-  <greeting>I'm a horoscope app</greeting>
-
   <question speaker="user" predicate="horoscope" type="alt_question">
     <one-of>
       <item>horoscope</item>
