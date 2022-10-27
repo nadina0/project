@@ -24,6 +24,7 @@
 .chapterbuttons button[class^=active-cb] {
     padding: 10px;
     font-family: 'MedievalSharp', bold;
+    color:rgba(223, 218, 230, 0.822)
 }
 
 .control {
@@ -102,6 +103,7 @@
     margin-right: 20px;
     position: absolute;
     top: 40vh !important;
+    color: #fff;
 }
 
 .select {
