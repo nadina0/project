@@ -33,7 +33,7 @@
     margin-bottom: auto;
     display: flex;
     position: relative;
-    top: 10vh
+    top: 20vh
 }
 
 .control:hover .circle-click {
@@ -49,7 +49,7 @@
 .control .status,
 .control .status-talk {
     width: 100vw;
-    text-align: start;
+    text-align: left;
     color: #bebebe;
     z-index: 1;
     padding-left: 50px;
@@ -98,10 +98,10 @@
 }
 
 .select-wrapper {
-    margin-left: 160px;
+    margin-left: 222px;
     margin-right: 20px;
     position: absolute;
-    top: 70vh
+    top: 40vh !important;
 }
 
 .select {
@@ -116,7 +116,7 @@
 
 .flex {
     cursor: pointer;
-    flex-basis: 20vw;
+    flex-basis: 15vw;
     margin: .5em;
     padding: 1em
 }
@@ -189,29 +189,29 @@ img {
 
 @-webkit-keyframes bordersize {
     0% {
-        box-shadow: 0 0 rgba(205, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 
     50% {
-        box-shadow: 0 0 0 8vh rgba(205, 21, 21, .9)
+        box-shadow: 0 0 0 8vh rgba(255, 255, 255, 0.9)
     }
 
     to {
-        box-shadow: 0 0 rgba(205, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 }
 
 @keyframes bordersize {
     0% {
-        box-shadow: 0 0 rgba(100, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 
     50% {
-        box-shadow: 0 0 0 8vh rgba(100, 21, 21, .9)
+        box-shadow: 0 0 0 8vh rgba(255, 255, 255, 0.9)
     }
 
     to {
-        box-shadow: 0 0 rgba(100, 21, 21, .9)
+        box-shadow: 0 0 rgba(255, 255, 255, 0.9)
     }
 }
 
