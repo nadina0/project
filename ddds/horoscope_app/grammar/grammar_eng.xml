@@ -23,6 +23,8 @@
     </one-of>
   </action>
 
+  <greeting>I'm a horoscope app</greeting>
+
   <question speaker="user" predicate="horoscope" type="alt_question">
     <one-of>
       <item>horoscope</item>
@@ -65,6 +67,7 @@
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
     <one-of>
       <item>Tell me about a card</item>
+      <item>Could you tell me what this card means</item>
       <item>Tell me about my card</item>
       <item>What does this card mean</item>
       <item>What does my card mean</item>
@@ -77,6 +80,7 @@
   <action name="do_one_card_spread">
     <one-of>
       <item>one card spread</item>
+      <item>one card spread please</item>
       <item>only one card spread</item>
       <item>do a one card spread</item>
       <item>I want to learn a one card spread</item>
@@ -90,6 +94,8 @@
     <one-of>
       <item>love cross formation</item>
       <item>love cross</item>
+      <item>love cross formation please</item>
+      <item>love cross please</item>
       <item>do a love cross</item>
       <item>I want to learn the love cross</item>
       <item>I want to learn how to do the love cross</item>
@@ -101,6 +107,8 @@
   <action name="do_past_present_future">
    <one-of>
       <item>past present future</item>
+      <item>a past present future reading</item>
+      <item>a past present future reading please</item>
       <item>do a past present future</item>
       <item>do a past present future reading</item>
       <item>do a past present future spread</item>
@@ -116,6 +124,7 @@
    <one-of>
       <item>mental healing</item>
       <item>mental healing spread</item>
+      <item>mental healing spread please</item>
       <item>do the mental healing</item>
       <item>do a mental healing reading</item>
       <item>do a mental healing spread</item>
