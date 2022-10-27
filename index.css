@@ -33,7 +33,7 @@
     margin-bottom: auto;
     display: flex;
     position: relative;
-    top: 45vh
+    top: 20vh
 }
 
 .control:hover .circle-click {
@@ -98,10 +98,10 @@
 }
 
 .select-wrapper {
-    margin-left: 180px;
+    margin-left: 222px;
     margin-right: 20px;
     position: absolute;
-    top: 65vh
+    top: 40vh !important;
 }
 
 .select {
@@ -116,7 +116,7 @@
 
 .flex {
     cursor: pointer;
-    flex-basis: 20vw;
+    flex-basis: 15vw;
     margin: .5em;
     padding: 1em
 }
