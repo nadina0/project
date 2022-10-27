@@ -30,7 +30,7 @@
         ]
     },
     {
-        "semantic_expression": "ask(current_horoscope(horoscope))",
+        "semantic_expression": "ask(?X.sign_search(X)",
         "visual_information": [
             {
                 "attribute": "name",
@@ -40,7 +40,7 @@
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
+                "value": "https://numerologysign.com/wp-content/uploads/2020/09/Zodiac-Signs-List-with-Dates-Symbols.png"
             }
         ]
     },
