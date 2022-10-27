@@ -18,8 +18,8 @@
         }
     },
     {
-        "current_plan_item": "findout(?set([goal(resolve(horoscope)), goal(resolve(tarot_reading_pred)), goal(resolve(tarot_card_question))]))",
-        "semantic_expression": "request(tarot_reading_pred)",
+        "current_plan_item": "findout(?set([goal(resolve(?X.horoscope(X))), goal(resolve(?X.tarot_reading_pred(X))), goal(resolve(?X.tarot_card_question(X)))]))",
+        "semantic_expression": "ask(?X.tarot_reading_pred(X))",
         "alternative": {
             "visual_information": [
                 {
