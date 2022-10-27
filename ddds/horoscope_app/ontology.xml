@@ -24,7 +24,7 @@
   
   <predicate name="horoscope" sort="string"/>
   <predicate name="current_horoscope" sort="string"/>
-  <predicate name="tarot_reading_pred" sort="string"/>
+  <!--<predicate name="tarot_reading_pred" sort="string"/>-->
   <predicate name="tarot_card_question" sort="string"/>
   <predicate name="current_tarot" sort="card"/>
 
