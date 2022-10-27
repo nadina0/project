@@ -33,7 +33,7 @@
     margin-bottom: auto;
     display: flex;
     position: relative;
-    top: 10vh
+    top: 45vh
 }
 
 .control:hover .circle-click {
@@ -49,7 +49,7 @@
 .control .status,
 .control .status-talk {
     width: 100vw;
-    text-align: start;
+    text-align: left;
     color: #bebebe;
     z-index: 1;
     padding-left: 50px;
