@@ -45,6 +45,21 @@
         ]
     },
     {
+        "semantic_expression": "request(guess_sign)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "The different horoscopes and their dates"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://numerologysign.com/wp-content/uploads/2020/09/Zodiac-Signs-List-with-Dates-Symbols.png"
+            }
+        ]
+    },
+    {
         "semantic_expression": "request(one_card_spread_info)",
         "visual_information": [
             {
