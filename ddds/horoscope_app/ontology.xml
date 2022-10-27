@@ -3,6 +3,7 @@
 
   <action name="which_horoscope"/>
   <action name="tarot_reading"/>
+  <action name="tarot_reading_pred"/>
 
   <action name="guess_sign"/>
 
