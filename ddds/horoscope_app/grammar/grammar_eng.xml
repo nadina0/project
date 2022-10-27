@@ -46,8 +46,7 @@
     </one-of>
   </question>
 
-  <!--<action name="tarot_reading"> -->
-  <question speaker="user" predicate="tarot_reading_pred" type="alt_question">
+  <action name="tarot_reading">
     <one-of>
       <item>reading</item>
       <item>tarot reading</item>
@@ -59,8 +58,7 @@
       <item>i want a tarot reading</item>
       <item>i want to learn how to do a tarot reading</item>
     </one-of>
-    </question>
- <!-- </action> -->
+  </action>
 
 
   <question speaker="user" predicate="tarot_card_question" type="alt_question">
