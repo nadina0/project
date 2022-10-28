@@ -19,20 +19,24 @@
     </plan>
   </goal>
 
- 
-
 <goal type="resolve" question_type="wh_question" predicate="horoscope">
     <plan>
     <assume_shared>
      <proposition predicate="current_horoscope" value="horoscope"/>
     </assume_shared>
-        <forget predicate="info_choice"/>
       <findout type="wh_question" predicate="day_search"/>
       <findout type="wh_question" predicate="sign_search"/>
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
+   <postplan>
+      <findout type="yn_question">
+        <resolve predicate="another_horoscope"/>
+      </findout>
+    </postplan>
   </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="another_horoscope">
   
   <goal type="perform"  action="guess_sign">
     <plan>

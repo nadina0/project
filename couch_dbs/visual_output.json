@@ -45,7 +45,7 @@
         ]
     },
     {
-        "semantic_expression": "request(guess_sign)",
+        "semantic_expression": "findout(?X.sign_search(X))",
         "visual_information": [
             {
                 "attribute": "name",
