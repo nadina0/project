@@ -29,14 +29,14 @@
       <findout type="wh_question" predicate="info_choice"/>
       <invoke_service_query predicate="horoscope" type="wh_question"/>
     </plan>
-   <postplan>
+   <!--<postplan>
       <findout type="yn_question">
-        <resolve predicate="another_horoscope"/>
+        <resolve predicate="NAME_OF_THE_PREDICATE_OF_ANOTHER_GOAL"/>
       </findout>
-    </postplan>
+    </postplan>-->
   </goal>
 
-  <goal type="resolve" question_type="wh_question" predicate="another_horoscope">
+  <!--<goal type="resolve" question_type="wh_question" predicate="another_horoscope"> -->
   
   <goal type="perform"  action="guess_sign">
     <plan>
