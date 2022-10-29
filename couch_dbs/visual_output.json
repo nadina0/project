@@ -45,7 +45,7 @@
         ]
     },
     {
-        "semantic_expression": "findout(?X.sign_search(X))",
+        "semantic_expression": "answer(tomorrow)",
         "visual_information": [
             {
                 "attribute": "name",
