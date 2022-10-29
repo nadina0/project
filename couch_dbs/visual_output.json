@@ -35,22 +35,7 @@
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Horoscope test."
-            },
-            {
-                "attribute": "image",
-                "type": "image/png",
-                "value": "https://numerologysign.com/wp-content/uploads/2020/09/Zodiac-Signs-List-with-Dates-Symbols.png"
-            }
-        ]
-    },
-    {
-        "semantic_expression": "ask(?X.horoscope(X))",
-        "visual_information": [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "The different horoscopes and their dates"
+                "value": "The zodiac signs and birthdays."
             },
             {
                 "attribute": "image",
