@@ -30,7 +30,7 @@
         ]
     },
     {
-        "semantic_expression": "ask(?X.sign_search(X)",
+        "semantic_expression": "ask(?X.sign_search(X))",
         "visual_information": [
             {
                 "attribute": "name",
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "semantic_expression": "answer(tomorrow)",
+        "semantic_expression": "ask(?X.horoscope(X))",
         "visual_information": [
             {
                 "attribute": "name",
