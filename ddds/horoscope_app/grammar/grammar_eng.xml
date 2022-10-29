@@ -32,7 +32,8 @@
       <item>What's the horoscope</item>
       <item>Tell me my horoscope</item>
       <item>Tell me the horoscope</item>
-      <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
+      <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/> </item>
+      <item>horoscope for <slot predicate="sign_search"/> <slot predicate="day_search"/>  </item>
       <item>Tell me the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>      
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>horoscope for <slot predicate="sign_search"/> </item>
@@ -175,6 +176,9 @@
       <item><slot predicate="day_search"/> </item>
       <item><slot predicate="info_choice"/> </item>
       <item><slot predicate="card_search"/></item>
+
+      <item><slot predicate="sign_search"/> <slot predicate="day_search"/></item>
+      <item><slot predicate="day_search"/> for <slot predicate="sign_search"/></item>
     </one-of>
   </answer>
 
@@ -358,7 +362,7 @@
 <action name="take_card">take card</action>
 <action name="top_cross">top cross</action>
 
-<question type="yn_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
+<question type="wh_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
 
   <individual name="guess_your_sign">
     <one-of>
