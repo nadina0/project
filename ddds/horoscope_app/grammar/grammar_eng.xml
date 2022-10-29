@@ -36,6 +36,7 @@
       <item>Tell me the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>      
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>horoscope for <slot predicate="sign_search"/> </item>
+      <item>horoscope for <slot predicate="day_search"/> </item>
       <item>tell me the horoscope for <slot predicate="day_search"/> </item>
       <item>the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
       <item>the horoscope for <slot predicate="sign_search"/> </item>
@@ -357,7 +358,7 @@
 <action name="take_card">take card</action>
 <action name="top_cross">top cross</action>
 
-<question type="wh_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
+<question type="yn_question" speaker="all" predicate="more_info_horoscope">more info horoscope</question>
 
   <individual name="guess_your_sign">
     <one-of>
