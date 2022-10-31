@@ -124,23 +124,5 @@
                 }
             ]
         }
-    },
-    {
-        "current_plan_item": "findout(?X.info_choice(X))",
-        "semantic_expression": "answer(info_choice(description))", 
-        "alternative": {
-            "visual_information": [
-                {
-                    "attribute": "name",
-                    "type": "text/plain",
-                    "value": "Mental Healing Spread"
-                },
-                {
-                    "attribute": "image",
-                    "type": "image/jpeg",
-                    "value": "icons/description.png"
-                }
-            ]
-        }
     }
 ]
