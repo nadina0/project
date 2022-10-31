@@ -185,7 +185,6 @@ def get_horoscope():
       if key == info_choice:
         chosen_category = value
         continue
-    print(api_response)
     return query_response(value=chosen_category, grammar_entry=None)
 
 
@@ -196,11 +195,9 @@ def get_tarot():
     facts = request.get_json()["context"]["facts"]
     card = facts["card_search"]["grammar_entry"]
     api_response = get_card_data(card)
-    print(api_response)
     for the_card in api_response['cards']:
       if the_card['name'] == card:
         chosen_card_up = the_card['meaning_up']
         chosen_card_reversed = the_card['meaning_rev']
         break
-    print(api_response)
     return query_response(value=f'Your card upright means: {chosen_card_up}. Reversed, it means: {chosen_card_reversed}', grammar_entry=None)
