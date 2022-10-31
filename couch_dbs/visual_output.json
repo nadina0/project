@@ -1,61 +1,16 @@
 [
     {
-        "semantic_expression": "ask(?X.horoscope(X))",
-        "visual_information": [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "Different horoscopes"
-            },
-            {
-                "attribute": "image",
-                "type": "image/jpeg",
-                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
-            }
-        ]
-    },
-    {
-        "semantic_expression": "ask(?set([goal(resolve(?X.horoscope(X)))",
-        "visual_information": [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "Another text to show if the image cannot be shown"
-            },
-            {
-                "attribute": "image",
-                "type": "image/jpeg",
-                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
-            }
-        ]
-    },
-    {
         "semantic_expression": "ask(?X.sign_search(X))",
         "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "The zodiac signs and birthdays."
+                "value": "The 12 zodiac signs"
             },
             {
                 "attribute": "image",
                 "type": "image/png",
                 "value": "icons/zodiac_signs.jpeg"
-            }
-        ]
-    },
-    {
-        "semantic_expression": "request(one_card_spread_info)",
-        "visual_information": [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "One card spread info."
-            },
-            {
-                "attribute": "image",
-                "type": "image/jpeg",
-                "value": "https://www.ask-oracle.com/wp-content/uploads/2007/12/zodiac_icons.png"
             }
         ]
     }
