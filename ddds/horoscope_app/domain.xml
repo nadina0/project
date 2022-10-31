@@ -44,6 +44,7 @@
 
   <goal type="resolve" question_type="wh_question" predicate="tarot_card_question">
     <plan>
+    <forget_all/>
       <findout type="wh_question" predicate="card_search"/>
       <invoke_service_query predicate="tarot_card_question" type="wh_question"/>
       <forget predicate="card_search"/>
