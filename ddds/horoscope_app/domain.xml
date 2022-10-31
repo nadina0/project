@@ -75,7 +75,6 @@
 
   <goal type="perform" action="do_one_card_spread">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="one_card_reading"/>
 </assume_shared>
@@ -93,7 +92,6 @@
 
   <goal type="perform" action="do_past_present_future">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="ppf_reading"/>
 </assume_shared>
@@ -112,7 +110,6 @@
 
   <goal type="perform" action="do_love_cross_formation">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="love_reading"/>
 </assume_shared>
@@ -133,7 +130,6 @@
 
   <goal type="perform" action="do_mental_healing_spread">
     <plan>
-     <forget_all/>
     <assume_shared>
   <proposition predicate="current_reading" value="mental_health_reading"/>
 </assume_shared>

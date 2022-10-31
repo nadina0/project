@@ -33,6 +33,10 @@
       <item>Tell me my horoscope</item>
       <item>Tell me the horoscope</item>
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/> </item>
+      <item>the <slot predicate="info_choice"/> for <slot predicate="sign_search"/> </item>
+      <item>I want to know the <slot predicate="info_choice"/> for <slot predicate="sign_search"/> </item>
+      <item>I want to know the <slot predicate="info_choice"/> for <slot predicate="sign_search"/> <slot predicate="day_search"/> </item>
+      <item>the <slot predicate="info_choice"/> for <slot predicate="sign_search"/> <slot predicate="day_search"/> </item>
       <item>horoscope for <slot predicate="sign_search"/> <slot predicate="day_search"/>  </item>
       <item>Tell me the horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>      
       <item>horoscope for <slot predicate="day_search"/> for <slot predicate="sign_search"/>  </item>
@@ -74,6 +78,7 @@
       <item>Tell me what this card means</item>
       <item>Tell me about this card</item>
       <item>I want to know what this card means</item>
+      <item>i want to know what the <slot predicate="card_search"/> means</item>
     </one-of>
   </question>
 
