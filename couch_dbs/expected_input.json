@@ -84,7 +84,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://cdn-icons-png.flaticon.com/512/6679/6679577.png"
+                    "value": "ppf_cards.png"
                 }
             ]
         }
@@ -102,7 +102,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://cdn-icons-png.flaticon.com/512/535/535285.png"
+                    "value": "tarot_heart.png"
                 }
             ]
         }
