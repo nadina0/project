@@ -13,5 +13,20 @@
                 "value": "icons/zodiac_signs.jpeg"
             }
         ]
+    },
+    {
+        "semantic_expression": "ask(?X.info_choice(X))",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "The categories"
+            },
+            {
+                "attribute": "image",
+                "type": "image/png",
+                "value": "icons/info_choice.png"
+            }
+        ]
     }
 ]
