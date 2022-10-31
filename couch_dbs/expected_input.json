@@ -12,7 +12,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "horoscope_round.png"
+                    "value": "icons/horoscope_round.png"
                 }
             ]
         }
@@ -30,7 +30,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "tarot_reading.png"
+                    "value": "icons/tarot_reading.png"
                 }
             ]
         }
@@ -48,7 +48,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "tarot_card.png"
+                    "value": "icons/tarot_card.png"
                 }
             ]
         }
@@ -66,7 +66,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "tarot1.png"
+                    "value": "icons/tarot1.png"
                 }
             ]
         }
@@ -84,7 +84,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "ppf_cards.png"
+                    "value": "icons/ppf_cards.png"
                 }
             ]
         }
@@ -102,7 +102,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "tarot_heart.png"
+                    "value": "icons/tarot_heart.png"
                 }
             ]
         }
@@ -120,7 +120,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "mental_healing.png"
+                    "value": "icons/mental_healing.png"
                 }
             ]
         }
