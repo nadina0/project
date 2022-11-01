@@ -14,7 +14,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 200
+    epochs: 150
 #  - name: DucklingEntityExtractor
 #    url: "http://duckling:8000"
 #    dimensions: []  # Add dimensions if the DDD has built-in the sorts integer or datetime e.g. ["number", "time"]
@@ -603,7 +603,6 @@ nlu:
     - beginning
     - never mind that
     - restart
-    - main menu
 
 - intent: request:up
   examples: |
@@ -639,6 +638,7 @@ nlu:
     - next
     - next instruction
     - okay
+    - ok
     - i got it
     - yeah
     - interesting
